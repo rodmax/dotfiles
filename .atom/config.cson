@@ -1,0 +1,120 @@
+"*":
+  "atom-ternjs":
+    inlineFnCompletion: false
+  "autocomplete-python":
+    extraPaths: "/home/max/envs/yes/lib/python2.7/site-packages;$PROJECT/apps"
+    pythonPath: "/home/max/envs/yes/bin/python"
+  core:
+    disabledPackages: [
+      "tabs"
+      "linter-jscs"
+      "fonts"
+      "linter-jshint"
+      "modular-snippets"
+      "vim-mode"
+      "vim-mode-visual-block"
+      "vim-surround"
+      "ex-mode"
+    ]
+    packagesWithKeymapsDisabled: [
+      "emmet"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontFamily: "Source Code Pro"
+    fontSize: 15
+    invisibles: {}
+    preferredLineLength: 120
+    tabLength: 4
+  "exception-reporting":
+    userId: "f51e9b73-80d9-de02-144e-4a98a2e6f759"
+  fonts: {}
+  linter:
+    lintOnFly: false
+  "linter-eslint": {}
+  "linter-flake8":
+    ignoreErrorCodes: [
+      "E128"
+      "C901"
+    ]
+  "linter-jshint": {}
+  "markdown-preview":
+    liveUpdate: false
+  "terminal-plus":
+    ansiColors:
+      normal:
+        black:
+          alpha: 1
+          blue: 10
+          green: 10
+          red: 19
+        blue:
+          alpha: 1
+          blue: 231
+          green: 156
+          red: 156
+        green:
+          alpha: 1
+          blue: 141
+          green: 232
+          red: 141
+      zBright:
+        brightBlue:
+          alpha: 1
+          blue: 225
+          green: 137
+          red: 137
+        brightGreen:
+          alpha: 1
+          blue: 125
+          green: 221
+          red: 125
+    core: {}
+    iconColors:
+      blue:
+        alpha: 1
+        blue: 226
+        green: 169
+        red: 169
+      green:
+        alpha: 1
+        blue: 133
+        green: 237
+        red: 133
+    style:
+      theme: "dracula"
+    toggles:
+      autoClose: true
+  "tree-view":
+    hideIgnoredNames: true
+  "vim-mode-plus":
+    flashOnOperate: false
+    flashOnSearch: false
+    flashOnUndoRedo: false
+    incrementalSearch: true
+    showHoverOnOperate: true
+    showHoverSearchCounter: true
+  "vim-surround": {}
+  welcome:
+    showOnStartup: false
+".angular.html.text":
+  editor:
+    preferredLineLength: 120
+".apib.gfm.html.markdown.source.text":
+  editor:
+    preferredLineLength: 120
+".gfm.html.markdown.mson.source.text":
+  editor:
+    preferredLineLength: 120
+".ini.source":
+  editor:
+    preferredLineLength: 120
+".js.regexp.replacement.source":
+  editor:
+    preferredLineLength: 120
+".js.regexp.source":
+  editor:
+    preferredLineLength: 120
+".js.source":
+  editor:
+    preferredLineLength: 120

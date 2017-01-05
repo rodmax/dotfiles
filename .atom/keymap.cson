@@ -1,0 +1,87 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings
+# * https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+'atom-workspace atom-text-editor:not([mini]).autocomplete-active':
+  'alt-k': 'core:move-up'
+  'alt-j': 'core:move-down'
+
+'.command-palette atom-text-editor,
+.fuzzy-finder atom-text-editor':
+  'alt-k': 'core:move-up'
+  'alt-j': 'core:move-down'
+  'alt-h': 'core:move-left'
+  'alt-l': 'core:move-right'
+
+# '.advanced-open-file':
+#   'alt-k': 'advanced-open-file:move-cursor-up'
+#   'alt-j': 'advanced-open-file:move-cursor-down'
+
+'atom-text-editor.vim-mode:not(.insert-mode)':
+  # unset vim-mode to enable find & replace in current pane
+  'ctrl-f': 'unset!'
+  'alt-shift-e': 'linter:next-error'
+
+# unset because not use and sometimes mistakelly press this combination
+# 'atom-workspace atom-text-editor.vim-mode:not([mini])':
+#   'ctrl-j': 'unset!'
+
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-j': 'core:move-left'
+'atom-text-editor':
+  'ctrl-j': 'core:move-left'
+
+# git-blame toogle to work with vim-mode
+'atom-text-editor':
+  'alt-ctrl-b': 'git-blame:toggle'
+
+# change keymap to prevent conflict with "open file" functionality
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-alt-]': 'symbols-tree-view:toggle'
+
+# Use the same bindings for all go-to-definition resources
+'.platform-linux atom-text-editor[data-grammar="source python"]:not(.mini)':
+  'ctrl-]': 'autocomplete-python:go-to-definition'
+
+'.platform-linux atom-text-editor[data-grammar="source js"]:not(.mini)':
+  'ctrl-]': 'atom-ternjs:definition'
+
+'.platform-linux atom-text-editor:not(.mini)':
+  'ctrl-e': 'emmet:expand-abbreviation'
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+  'g f': 'open-this:here'
+
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+  # Surround family
+  'y s w': 'vim-mode-plus:surround-word'
+  # 'y s': 'vim-mode-plus:surround'
+  # 'y s m':  'vim-mode-plus:map-surround'
+  # 'd s': 'vim-mode-plus:delete-surround'
+  'd s': 'vim-mode-plus:delete-surround-any-pair'
+  # 'c s': 'vim-mode-plus:change-surround'
+  'c s': 'vim-mode-plus:change-surround-any-pair'
+  ': w enter': 'core:save'
+  ': q enter': 'core:close'
+
+'atom-text-editor.vim-mode-plus.visual-mode':
+  'y s': 'vim-mode-plus:surround'
+  'y s m':  'vim-mode-plus:map-surround'
