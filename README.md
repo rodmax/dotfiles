@@ -1,4 +1,5 @@
 # Repository to backup my PC configuration files
+The idea is borrowed [here](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
 ## Init this repository
 ```bash
