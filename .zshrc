@@ -20,9 +20,6 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
 
-export WORKON_HOME=~/envs
-source /usr/local/bin/virtualenvwrapper.sh
-
 export NVM_DIR="/home/max/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 alias dotfiles='/usr/bin/git --git-dir=/home/max/.dotfiles/ --work-tree=/home/max'

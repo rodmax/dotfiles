@@ -142,9 +142,5 @@ NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
 export JAVA_HOME="/usr/lib/jvm/java-7-oracle/jre"
 
-# Init virtualenvwrapper envirnment
-export WORKON_HOME=~/envs
-source /usr/local/bin/virtualenvwrapper.sh
-
 export NVM_DIR="/home/max/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
