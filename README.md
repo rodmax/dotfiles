@@ -16,11 +16,11 @@ dotfiles config user.email "max.rodionov@synesis.ru"
 ### Setup new system(linux mint 18)
 - Install packages
 ```bash
-sudo apt-get install terminator gnome-do git zsh
+sudo apt-get install terminator gnome-do git zsh tree
 ```
 - Set terminator as default terminal in **"Prefered application"** to open using `ctrl-alt-t` 
 - Install vim (8.0) from [here](https://itsfoss.com/vim-8-release-install/)
+- install  `nvm` and `node`
 TODO
 - install some monospace pretty font
 - install atom
-- install nvm and node
