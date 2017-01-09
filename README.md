@@ -12,6 +12,12 @@ echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config user.name "max.rodionov"
 dotfiles config user.email "max.rodionov@synesis.ru"
 ```
+
+## Install `dotfiles` on new machine
+```bash
+wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfiles-install.sh | bash
+```
+
 ## How To
 ### Setup new system(linux mint 18)
 - Install packages
