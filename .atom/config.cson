@@ -1,111 +1,225 @@
 "*":
+  "advanced-new-file":
+    showFilesInAutoComplete: true
+  "atom-beautify":
+    _analyticsUserId: "6126e41b-2772-4581-a5d7-f2dc1183bc3f"
+  "atom-fuzzy-grep":
+    preserveLastSearch: true
   "atom-ternjs":
+    documentation: false
+    guess: false
     inlineFnCompletion: false
+    lint: false
+    origins: false
+    urls: false
+    useSnippets: false
+    useSnippetsAndFunction: true
+  "auto-copyright":
+    owner: "Synesis"
+  "autoclose-html":
+    forceInline: [
+      "title"
+      "h1"
+      "h2"
+      "h3"
+      "h4"
+      "h5"
+      "h6"
+      "div"
+    ]
+  "autocomplete-modules":
+    vendors: [
+      "ui/src"
+      "./"
+      "webui/app"
+    ]
+  "autocomplete-plus":
+    strictMatching: true
   "autocomplete-python":
-    extraPaths: "/home/max/envs/yes/lib/python2.7/site-packages;$PROJECT/apps"
-    pythonPath: "/home/max/envs/yes/bin/python"
+    extraPaths: "/home/max/envs/kx/lib/python2.7/site-packages;$PROJECT/dev"
+    pythonPath: "/home/max/envs/kx/bin/python"
+  "close-tags": {}
   core:
     disabledPackages: [
       "tabs"
+      "htmlhint"
+      "jshint"
+      "close-tags"
+      "turbo-javascript"
+      "minimap"
+      "autocomplete-html"
       "linter-jscs"
-      "fonts"
-      "linter-jshint"
-      "modular-snippets"
-      "vim-mode"
-      "vim-mode-visual-block"
-      "vim-surround"
-      "ex-mode"
+      "symbols-tree-view"
+      "pigments"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "dev/webui/app/kp/"
     ]
     packagesWithKeymapsDisabled: [
+      "term3"
+      "docblockr"
       "emmet"
     ]
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "atom-material-syntax"
+    ]
+  "custom-title":
+    template: "<%= projectName %>: <%= fileName %>"
+  docblockr:
+    simple_mode: true
   editor:
-    fontFamily: "Source Code Pro"
-    fontSize: 15
+    fontFamily: "DejaVu Sans Mono"
     invisibles: {}
+    lineHeight: 1.4
     preferredLineLength: 120
     tabLength: 4
+  emmet: {}
   "exception-reporting":
-    userId: "f51e9b73-80d9-de02-144e-4a98a2e6f759"
-  fonts: {}
+    userId: "7ed21b50-bf44-cebb-2af8-7f706df28d0b"
+  "file-templates": {}
+  "find-and-replace":
+    openProjectFindResultsInRightPane: true
+  "fuzzy-finder": {}
+  "git-blame":
+    customCommitUrlTemplateString: "https://git.synesis.ru/<%- project %>/<%- repo %>/commit/<%- revision %>"
+    useCustomUrlTemplateIfStandardRemotesFail: true
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
+    lightTheme: true
+    onlyHighlightWholeWords: true
+  htmlhint:
+    hideOnNoErrors: true
+  jshint:
+    validateOnlyOnSave: true
   linter:
+    errorPanelHeight: 24
+    inlineTooltipInterval: 100
     lintOnFly: false
-  "linter-eslint": {}
+    showErrorTabProject: false
   "linter-flake8":
+    binaryName: "/home/max/envs/yes/bin/flake8"
+    executablePath: "/home/max/envs/kx/bin/flake8"
     ignoreErrorCodes: [
       "E128"
       "C901"
+      "N802"
     ]
-  "linter-jshint": {}
+    maxLineLength: 120
+  "linter-htmlhint": {}
+  "linter-jscs":
+    onlyConfig: true
+    preset: "yandex"
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
+    lintInlineJavaScript: true
+  "linter-stylint":
+    onlyRunWhenConfig: true
+  "linter-write-good": {}
+  "markdown-pdf": {}
   "markdown-preview":
+    breakOnSingleNewline: true
     liveUpdate: false
+  "markdown-themeable-pdf":
+    codeHighlightingTheme: "ascetic.css"
+    enableCustomFooter: false
+    enableCustomHeader: false
+    openPdfInAtomWorkspace: false
+  "merge-conflicts": {}
+  minimap:
+    absoluteMode: true
+    charHeight: 5
+    charWidth: 2
+  "one-dark-ui": {}
+  pigments: {}
+  "project-manager":
+    showPath: false
+  "python-tools":
+    pythonPath: "/home/max/envs/kx/bin/python"
+  "spell-check": {}
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  "symbols-tree-view": {}
+  tabs: {}
+  term3:
+    colors:
+      background:
+        alpha: 1
+        blue: 54
+        green: 43
+        red: 0
+    fontFamily: "Monospace"
+    fontSize: "15"
   "terminal-plus":
     ansiColors:
       normal:
-        black:
-          alpha: 1
-          blue: 10
-          green: 10
-          red: 19
         blue:
           alpha: 1
-          blue: 231
-          green: 156
-          red: 156
-        green:
-          alpha: 1
-          blue: 141
-          green: 232
-          red: 141
+          blue: 243
+          green: 92
+          red: 92
       zBright:
         brightBlue:
           alpha: 1
-          blue: 225
-          green: 137
-          red: 137
+          blue: 198
+          green: 143
+          red: 143
         brightGreen:
           alpha: 1
-          blue: 125
-          green: 221
-          red: 125
-    core: {}
-    iconColors:
-      blue:
-        alpha: 1
-        blue: 226
-        green: 169
-        red: 169
-      green:
-        alpha: 1
-        blue: 133
-        green: 237
-        red: 133
+          blue: 93
+          green: 136
+          red: 93
+    core:
+      autoRunCommand: " "
     style:
+      defaultPanelHeight: "400px"
       theme: "dracula"
     toggles:
       autoClose: true
   "tree-view":
     hideIgnoredNames: true
+  "vim-mode": {}
   "vim-mode-plus":
-    flashOnOperate: false
-    flashOnSearch: false
-    flashOnUndoRedo: false
     incrementalSearch: true
-    showHoverOnOperate: true
-    showHoverSearchCounter: true
   "vim-surround": {}
   welcome:
     showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+  zentabs:
+    maximumOpenedTabs: 7
 ".angular.html.text":
   editor:
     preferredLineLength: 120
-".apib.gfm.html.markdown.source.text":
+".basic.html.text":
+  editor:
+    autoIndent: true
+    preferredLineLength: 120
+    tabLength: 4
+".coffee.source":
   editor:
     preferredLineLength: 120
-".gfm.html.markdown.mson.source.text":
+".console.python.text":
   editor:
     preferredLineLength: 120
+    tabLength: 4
+".css.source.stylus":
+  editor:
+    preferredLineLength: 120
+".html.text":
+  editor:
+    tabLength: 4
 ".ini.source":
   editor:
     preferredLineLength: 120
@@ -118,3 +232,40 @@
 ".js.source":
   editor:
     preferredLineLength: 120
+    tabLength: 4
+".json.source":
+  editor:
+    preferredLineLength: 120
+".litcoffee.source":
+  editor:
+    preferredLineLength: 120
+".python.regexp.source":
+  editor:
+    preferredLineLength: 120
+".python.source":
+  editor:
+    preferredLineLength: 120
+".python.text.traceback":
+  editor:
+    preferredLineLength: 120
+    tabLength: 4
+".source.stylus":
+  editor:
+    tabLength: 4
+".text.xml":
+  editor:
+    preferredLineLength: 120
+    tabLength: 4
+".text.xml.xsl":
+  editor:
+    preferredLineLength: 120
+    tabLength: 4
+"autocomplete-modules":
+  vendors: [
+    "dev/webui/app"
+  ]
+"autocomplete-python":
+  extraPaths: "/home/max/envs/kx/lib/python2.7/site-packages;$PROJECT/dev"
+  pythonPath: "/home/max/envs/kx/bin/python"
+"linter-flake8":
+  executablePath: "/home/max/envs/kx/bin/flake8"

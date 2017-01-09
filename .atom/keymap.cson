@@ -19,6 +19,14 @@
 # You can find more information about keymaps in these guides:
 # * https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings
 # * https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+'atom-workspace':
+  'ctrl-`': 'term3:open'
+
+'atom-workspace .term3.term3':
+  'ctrl-p': 'unset!'
+  'ctrl-insert': 'term3:copy'
+  'shift-insert': 'term3:paste'
+
 'atom-workspace atom-text-editor:not([mini]).autocomplete-active':
   'alt-k': 'core:move-up'
   'alt-j': 'core:move-down'
@@ -30,23 +38,14 @@
   'alt-h': 'core:move-left'
   'alt-l': 'core:move-right'
 
-# '.advanced-open-file':
-#   'alt-k': 'advanced-open-file:move-cursor-up'
-#   'alt-j': 'advanced-open-file:move-cursor-down'
+'.advanced-open-file':
+  'alt-k': 'advanced-open-file:move-cursor-up'
+  'alt-j': 'advanced-open-file:move-cursor-down'
 
-'atom-text-editor.vim-mode:not(.insert-mode)':
-  # unset vim-mode to enable find & replace in current pane
-  'ctrl-f': 'unset!'
-  'alt-shift-e': 'linter:next-error'
-
-# unset because not use and sometimes mistakelly press this combination
-# 'atom-workspace atom-text-editor.vim-mode:not([mini])':
-#   'ctrl-j': 'unset!'
-
-'atom-workspace atom-text-editor:not([mini])':
-  'ctrl-j': 'core:move-left'
-'atom-text-editor':
-  'ctrl-j': 'core:move-left'
+'atom-workspace atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  'ctrl-j': 'core:page-down'
+  'ctrl-k': 'core:page-up'
+  'ctrl-tab': 'linter:next-error'
 
 # git-blame toogle to work with vim-mode
 'atom-text-editor':
@@ -65,19 +64,20 @@
 
 '.platform-linux atom-text-editor:not(.mini)':
   'ctrl-e': 'emmet:expand-abbreviation'
+  "ctrl-shift-'": 'emmet:update-tag'
+  'ctrl-alt-j': 'emmet:matching-pair'
 
-'atom-text-editor.vim-mode-plus.normal-mode':
+# We disable all docblockr keys expect below
+'atom-text-editor:not([mini])':
+  'enter': 'docblockr:parse-enter'
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'g f': 'open-this:here'
-
 
 'atom-text-editor.vim-mode-plus.normal-mode':
   # Surround family
   'y s w': 'vim-mode-plus:surround-word'
-  # 'y s': 'vim-mode-plus:surround'
-  # 'y s m':  'vim-mode-plus:map-surround'
-  # 'd s': 'vim-mode-plus:delete-surround'
   'd s': 'vim-mode-plus:delete-surround-any-pair'
-  # 'c s': 'vim-mode-plus:change-surround'
   'c s': 'vim-mode-plus:change-surround-any-pair'
   ': w enter': 'core:save'
   ': q enter': 'core:close'

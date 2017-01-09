@@ -95,9 +95,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # uncomment below if your ~/bin/executables not discovered by shell
-#if [ -d "$HOME/bin" ] ; then
-#    PATH="$HOME/bin:$PATH";
-#fi
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH";
+fi
 if [ -d "/opt/montavista" ]; then
     PATH="$PATH:/opt/montavista/pro/devkit/arm/v5t_le/bin:/opt/montavista/pro/bin:/opt/montavista/common/bin";
 fi
@@ -122,7 +122,7 @@ RED="\[\033[0;31m\]"
 YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOR="\[\033[0m\]"
-# "\u@\h"
+
 PS1="$GREEN\u$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 # setup ls command colors output http://leolik.blogspot.com/2008/03/lscolors-ubuntu.html
@@ -130,17 +130,21 @@ eval "`dircolors -b $HOME/.lscolors`"
 
 # Setup NPM packages(see http://stackoverflow.com/questions/10081293/install-npm-into-home-directory-with-distribution-nodejs-package-ubuntu)
 
-# NPM packages in homedir
-NPM_PACKAGES="$HOME/.npm_packages"
-# Tell our environment about user-installed node tools
-PATH="$NPM_PACKAGES/bin:$PATH"
-# Unset manpath so we can inherit from /etc/manpath via the `manpath` command
-unset MANPATH  # delete if you already modified MANPATH elsewhere in your configuration
-MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
-# Tell Node about these packages
-NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+### # NPM packages in homedir
+### NPM_PACKAGES="$HOME/.npm_packages"
+### # Tell our environment about user-installed node tools
+### PATH="$NPM_PACKAGES/bin:$PATH"
+### # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
+### unset MANPATH  # delete if you already modified MANPATH elsewhere in your configuration
+### MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+### # Tell Node about these packages
+### NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
-export JAVA_HOME="/usr/lib/jvm/java-7-oracle/jre"
+# Init virtualenvwrapper envirnment
+export WORKON_HOME=~/envs
+source /usr/local/bin/virtualenvwrapper.sh
 
 export NVM_DIR="/home/max/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+shopt -s globstar
