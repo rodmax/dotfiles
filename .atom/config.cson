@@ -49,8 +49,6 @@
       "minimap"
       "autocomplete-html"
       "linter-jscs"
-      "symbols-tree-view"
-      "pigments"
     ]
     ignoredNames: [
       ".git"
@@ -77,6 +75,7 @@
     simple_mode: true
   editor:
     fontFamily: "DejaVu Sans Mono"
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.4
     preferredLineLength: 120
