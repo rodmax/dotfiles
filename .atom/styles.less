@@ -9,7 +9,6 @@
 **/
 @import "ui-variables";
 
-
 // Customizing left bottom current file path view
 .file-info .current-path {
     color: #ddd;
@@ -22,52 +21,33 @@
     font-weight: bold;
 }
 
- atom-text-editor, atom-text-editor::shadow {
-    // White color for angular expression brace s "{{}}"
-    //  .punctuation.definition.block.begin.angular,
-    //  .punctuation.definition.block.end.angular {
-    //      color: #fff;
-    //  }
+atom-text-editor {
+    // Custom style for https://atom.io/packages/highlight-selected
+    .highlights .highlight-selected.light-theme .region {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: #e77a09;
+        border-radius: 0;
+    }
 
-     // Custom style for https://atom.io/packages/highlight-selected
-     .highlights .highlight-selected.light-theme .region {
-         border-top: none;
-         border-left: none;
-         border-right: none;
-         border-color: #FF9A24;
-         border-radius: 0;
-     }
+    // Patch material syntax colors to prevent "BLUE" color for call chain
+    .meta.function-call.python {
+        color: rgb(205, 211, 222);
+    }
 
-     // Patch material syntax colors to prevent "BLUE" color for call chain
-     .meta.function-call.python {
-         color: rgb(205, 211, 222);
-     }
-     // color for html attribute names
-     .entity.other.attribute-name {
-         color: #82b1ff;
-     }
+    //Hilight trailing whitespaces
+    .lines .line .trailing-whitespace {
+        background: inherit !important;
+        border-bottom: 1px dotted @text-color-warning;
+    }
+    .lines .line.cursor-line .trailing-whitespace {
+        border-bottom: 1px dotted fade(@text-color-warning, 20%);
+    }
+}
 
-     //Hilight trailing whitespaces
-     .lines .line .trailing-whitespace {
-         background: inherit !important;
-         border-bottom: 1px dotted @text-color-warning;
-     }
-     .lines .line.cursor-line .trailing-whitespace {
-         border-bottom: 1px dotted fade(@text-color-warning, 20%);
-     }
-
- }
-
- // Fix to make code in markdown-preview selectable
- .markdown-preview.markdown-preview atom-text-editor::shadow {
-     .source {
-         -webkit-user-select: initial;
-     }
- }
-
-
-//Git blame plugin path
-atom-text-editor::shadow .git-blame, .atom-text-editor .git-blame {
+//Git blame plugin patch to minify place of blame sidebar
+atom-text-editor .git-blame, .atom-text-editor .git-blame {
     width: 270px !important;
 }
 
@@ -76,8 +56,7 @@ atom-text-editor::shadow .git-blame, .atom-text-editor .git-blame {
     color: @text-color-success;
 }
 
-// tab-switcher path to display asterics for modified files
+// tab-switcher patch to display asterics for modified files
 ol.tab-switcher-tab-list .tab-label.modified::before {
     content: ' *';
-    color: @text-color-warning;
 }
