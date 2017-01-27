@@ -194,8 +194,7 @@
   "vim-surround": {}
   welcome:
     showOnStartup: false
-  whitespace:
-    ensureSingleTrailingNewline: false
+  whitespace: {}
   zentabs:
     maximumOpenedTabs: 7
 ".angular.html.text":
