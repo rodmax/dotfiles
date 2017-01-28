@@ -103,6 +103,9 @@
     inlineTooltipInterval: 100
     lintOnFly: false
     showErrorTabProject: false
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
+    eslintrcPath: "/home/max/conf/.eslintrc.js"
   "linter-flake8":
     binaryName: "/home/max/envs/yes/bin/flake8"
     executablePath: "/home/max/envs/kx/bin/flake8"
