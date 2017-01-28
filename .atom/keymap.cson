@@ -73,6 +73,7 @@
 
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'g f': 'open-this:here'
+  ':': 'ex-mode:open'
 
 'atom-text-editor.vim-mode-plus.normal-mode':
   # Surround family
