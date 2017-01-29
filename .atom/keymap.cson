@@ -22,6 +22,10 @@
 'atom-workspace':
   'ctrl-`': 'term3:open'
 
+# revert default atom behaviour that was redefined by vim-mode-plus
+'atom-workspace atom-text-editor':
+  'ctrl-f': 'find-and-replace:show'
+
 'atom-workspace .term3.term3':
   'ctrl-p': 'unset!'
   'ctrl-insert': 'term3:copy'
