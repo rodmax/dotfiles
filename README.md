@@ -22,7 +22,7 @@ wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfi
 ### Setup new system(linux mint 18)
 - Install packages
 ```bash
-sudo apt install terminator gnome-do git zsh tree python3-dev python3-venv python3-pip
+sudo apt install terminator gnome-do git zsh tree python3-dev python3-venv python3-pip g++
 sudo pip3 install --upgrade pip
 ```
 - Set terminator as default terminal in **"Prefered application"** to open using `ctrl-alt-t` 
