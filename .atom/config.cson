@@ -29,6 +29,8 @@
     ]
   "autocomplete-modules":
     vendors: [
+      "station/ui/src"
+      "station/ui"
       "ui/src"
       "./"
       "webui/app"
@@ -215,9 +217,6 @@
   editor:
     preferredLineLength: 120
     tabLength: 4
-".css.source.stylus":
-  editor:
-    preferredLineLength: 120
 ".html.text":
   editor:
     tabLength: 4

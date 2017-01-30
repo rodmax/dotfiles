@@ -5,7 +5,7 @@
         prefix: 'fcr'
         body: """
         /*
-        * Copyright (C) 2016 Synesis LLC. All rights reserved.
+        * Copyright (C) 2017 Synesis LLC. All rights reserved.
         * Author Maxim Rodionov <max.rodionov@synesis.ru>, Synesis LLC www.synesis.ru.
         */
         /*
@@ -19,7 +19,7 @@
         prefix: 'fcr'
         body: """
         <!--
-         Copyright (C) 2016 Synesis LLC. All rights reserved.
+         Copyright (C) 2017 Synesis LLC. All rights reserved.
          Author Maxim Rodionov <max.rodionov@synesis.ru>, Synesis LLC www.synesis.ru.
         -->
         """
