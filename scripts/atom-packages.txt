@@ -27,6 +27,7 @@ linter-jscs@3.5.0
 linter-jshint@3.0.2
 linter-jsonlint@1.3.0
 linter-shellcheck@1.4.3
+linter-stylint@2.2.5
 markdown-scroll-sync@2.1.2
 markdown-themeable-pdf@1.2.0
 modular-snippets@0.1.3
@@ -38,5 +39,3 @@ tab-switcher@1.5.4
 trailing-spaces@0.4.0
 vim-mode-plus@0.81.0
 zentabs@0.8.8
-
-
