@@ -1,18 +1,6 @@
 # Repository to backup my PC configuration files
 The idea is borrowed [here](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
-## Init this repository
-```bash
-git init --bare $HOME/.dotfiles
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-dotfiles config --local status.showUntrackedFiles no
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
-
-# To prevent eror on dotfiles pull we need to set name and email
-dotfiles config user.name "max.rodionov"
-dotfiles config user.email "max.rodionov@synesis.ru"
-```
-
 ## Install `dotfiles` on new machine
 ```bash
 wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfiles-install.sh | bash
