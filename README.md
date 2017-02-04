@@ -16,7 +16,6 @@ sudo pip3 install --upgrade pip
 # Optionally install packages for vmware guest(my home installation)
 sudo apt install open-vm-tools open-vm-tools-desktop
 ```
-- Set terminator as default terminal in **"Prefered application"** to open using `ctrl-alt-t` 
 - Install vim (8.0) from [here](https://itsfoss.com/vim-8-release-install/)
 - Setup ssh key and put it to your github profile
 ```bash
@@ -27,8 +26,13 @@ cat ~/.ssh/id_rsa.pub
 ...
 # And paste to your profile on github.com
 ```
-
+- Install this dotfiles repo
+```bash
+wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfiles-install.sh | bash
+alias dotfile='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dofiles lg # check it
+```
+- Install [ohmyzsh](http://ohmyz.sh/)
+- Set terminator as default terminal in **"Preferred application"** to open using `ctrl-alt-t`
 - install  `nvm` and `node`
-TODO
-- install some monospace pretty font
 - install atom
