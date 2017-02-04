@@ -16,7 +16,7 @@ sudo pip3 install --upgrade pip
 # Optionally install packages for vmware guest(my home installation)
 sudo apt install open-vm-tools open-vm-tools-desktop
 ```
-- To work gnome-do you should change setting of the `menu` in top panel via right click:
+- To make working `gnome-do` you should change settings of the `menu` in top panel via right click:
     - *Main button* tab: change shortcut to Super-R
     - *Applications* tab: Disable search in internet
 - Install vim (8.0) from [here](https://itsfoss.com/vim-8-release-install/)
