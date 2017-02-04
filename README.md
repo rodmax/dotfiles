@@ -12,9 +12,22 @@ wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfi
 ```bash
 sudo apt install terminator gnome-do git zsh tree python3-dev python3-venv python3-pip g++
 sudo pip3 install --upgrade pip
+
+# Optionally install packages for vmware guest(my home installation)
+sudo apt install open-vm-tools open-vm-tools-desktop
 ```
 - Set terminator as default terminal in **"Prefered application"** to open using `ctrl-alt-t` 
 - Install vim (8.0) from [here](https://itsfoss.com/vim-8-release-install/)
+- Setup ssh key and put it to your github profile
+```bash
+# Generating...
+ssh-keygen -t rsa -b 4096 -C "rodionov.m.m@gmail.com"
+# Copying...
+cat ~/.ssh/id_rsa.pub
+...
+# And paste to your profile on github.com
+```
+
 - install  `nvm` and `node`
 TODO
 - install some monospace pretty font
