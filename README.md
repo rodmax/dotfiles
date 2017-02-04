@@ -35,4 +35,9 @@ dofiles lg # check it
 - Install [ohmyzsh](http://ohmyz.sh/)
 - Set terminator as default terminal in **"Preferred application"** to open using `ctrl-alt-t`
 - install  `nvm` and `node`
-- install atom
+- install atom from [deb package](atom.io)
+```
+# Install atom plugins using
+./scripts/atom-install-packages.sh
+```
+
