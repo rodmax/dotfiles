@@ -14,7 +14,11 @@ wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfi
     sudo apt install terminator gnome-do git zsh tree python3-dev python3-venv python3-pip \
         g++ shellcheck
     sudo pip3 install --upgrade pip
-
+    
+    # Optionally for work pc
+    sudo apt install shutter xvfb
+    
+    
     # Optionally install packages for vmware guest(my home installation)
     sudo apt install open-vm-tools open-vm-tools-desktop
     ```
