@@ -23,6 +23,7 @@ wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfi
     - *Applications* tab: Disable search in internet
 - Install vim (8.0) from [here](https://itsfoss.com/vim-8-release-install/)
 - Setup ssh key and put it to your github profile
+    
     ```bash
     # Generating...
     ssh-keygen -t rsa -b 4096 -C "rodionov.m.m@gmail.com"
@@ -31,16 +32,20 @@ wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfi
     ...
     # And paste to your profile on github.com
     ```
+
 - Install this dotfiles repo
+
     ```bash
     wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfiles-install.sh | bash
     alias dotfile='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
     dofiles lg # check it
     ```
+
 - Install [ohmyzsh](http://ohmyz.sh/)
 - Set terminator as default terminal in **"Preferred application"** to open using `ctrl-alt-t`
 - install  `nvm` and `node` [link](https://github.com/creationix/nvm)
 - install atom from [deb package](atom.io)
+
     ```
     # Install atom plugins using
     ./scripts/atom-install-packages.sh
