@@ -153,7 +153,8 @@
     leftEditorColor: "red"
     rightEditorColor: "green"
     syncHorizontalScroll: true
-  "symbols-tree-view": {}
+  "symbols-tree-view":
+    defaultWidth: 300
   tabs: {}
   term3:
     colors:
