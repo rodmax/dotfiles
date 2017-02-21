@@ -35,6 +35,8 @@ linter-jsonlint@1.3.0
 linter-shellcheck@1.4.4
 linter-stylint@2.2.7
 linter-ui-default@1.2.3
+linter-shellcheck@1.4.3
+linter-stylint@2.2.5
 markdown-scroll-sync@2.1.2
 markdown-themeable-pdf@1.2.0
 modular-snippets@0.1.3

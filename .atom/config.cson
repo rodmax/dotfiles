@@ -108,8 +108,6 @@
     disableWhenNoEslintConfig: false
     eslintrcPath: "/home/max/conf/.eslintrc.js"
   "linter-flake8":
-    binaryName: "/home/max/envs/yes/bin/flake8"
-    executablePath: "/home/max/envs/kx/bin/flake8"
     ignoreErrorCodes: [
       "E128"
       "C901"
