@@ -103,10 +103,7 @@
   jshint:
     validateOnlyOnSave: true
   linter:
-    errorPanelHeight: 24
-    inlineTooltipInterval: 100
-    lintOnFly: false
-    showErrorTabProject: false
+    lintOnChange: false
   "linter-eslint":
     disableWhenNoEslintConfig: false
     eslintrcPath: "/home/max/conf/.eslintrc.js"
@@ -128,6 +125,8 @@
     lintInlineJavaScript: true
   "linter-stylint":
     onlyRunWhenConfig: true
+  "linter-ui-default":
+    tooltipFollows: "Keyboard"
   "linter-write-good": {}
   "markdown-pdf": {}
   "markdown-preview":

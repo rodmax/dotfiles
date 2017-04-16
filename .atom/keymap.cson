@@ -42,7 +42,7 @@
 'atom-workspace atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'ctrl-j': 'core:page-down'
   'ctrl-k': 'core:page-up'
-  'ctrl-tab': 'linter:next-error'
+  'ctrl-tab': 'linter-ui-default:next'
 
 # git-blame toogle to work with vim-mode
 'atom-text-editor':

@@ -8,6 +8,7 @@ atom-material-syntax@1.0.2
 atom-ternjs@0.18.2
 autocomplete-modules@1.6.9
 autocomplete-python@1.8.63
+busy-signal@1.3.0
 color-picker@2.2.5
 docblockr@0.9.4
 editorconfig@2.2.2
@@ -17,12 +18,13 @@ file-icons@2.1.3
 git-blame@1.0.1
 git-time-machine@1.5.9
 highlight-selected@0.13.1
+intentions@1.1.2
 language-api-blueprint@1.0.2
 language-cmake@0.3.0
 language-docker@1.1.7
 language-gettext@0.6.1
 language-nginx@0.7.2
-linter@1.11.23
+linter@2.1.4
 linter-api-blueprint@0.4.0
 linter-eslint@8.1.6
 linter-flake8@2.1.5
@@ -30,8 +32,9 @@ linter-htmlhint@1.3.3
 linter-jscs@3.5.0
 linter-jshint@3.0.3
 linter-jsonlint@1.3.0
-linter-stylint@2.2.5
 linter-shellcheck@1.4.4
+linter-stylint@2.2.7
+linter-ui-default@1.2.3
 markdown-scroll-sync@2.1.2
 markdown-themeable-pdf@1.2.0
 modular-snippets@0.1.3
@@ -43,3 +46,5 @@ tab-switcher@1.5.4
 trailing-spaces@0.4.0
 vim-mode-plus@0.82.3
 zentabs@0.8.8
+
+
