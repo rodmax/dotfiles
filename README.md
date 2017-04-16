@@ -12,7 +12,7 @@ wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfi
 - Install packages
     ```bash
     sudo apt install terminator gnome-do git zsh tree python3-dev python3-venv python3-pip \
-        g++ shellcheck
+        g++ shellcheck gitg
     sudo pip3 install --upgrade pip
     
     # Optionally for work pc
