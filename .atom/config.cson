@@ -1,6 +1,8 @@
 "*":
   "advanced-new-file":
     showFilesInAutoComplete: true
+  "api-blueprint-preview":
+    liveUpdate: false
   "atom-beautify":
     _analyticsUserId: "6126e41b-2772-4581-a5d7-f2dc1183bc3f"
   "atom-fuzzy-grep":
