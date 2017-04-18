@@ -1,60 +1,60 @@
 [global_config]
-  hide_tabbar = True
-  window_state = maximise
-  handle_size = 1
+  borderless = True
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   focus = system
-  title_transmit_fg_color = "#000000"
-  title_inactive_fg_color = "#FFFFFF"
-  suppress_multiple_term_dialog = True
-  borderless = True
-  title_transmit_bg_color = "#000000"
-  tab_position = bottom
+  handle_size = 1
+  hide_tabbar = True
   inactive_color_offset = 0.9
+  suppress_multiple_term_dialog = True
+  tab_position = bottom
   title_inactive_bg_color = "#000000"
+  title_inactive_fg_color = "#FFFFFF"
+  title_transmit_bg_color = "#000000"
+  title_transmit_fg_color = "#000000"
+  window_state = maximise
 [keybindings]
-  go_left = <Alt>h
   go_down = <Alt>j
+  go_left = <Alt>h
   go_right = <Alt>l
   go_up = <Alt>k
-[profiles]
-  [[default]]
-    scrollbar_position = hidden
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#586e75:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    background_image = None
-    scrollback_lines = 2000
-    use_system_font = False
-    cursor_color = "#98968d"
-    foreground_color = "#eee8d5"
-    scroll_on_output = False
-    icon_bell = False
-    show_titlebar = False
-    font = DejaVu Sans Mono 14
-    background_color = "#002b36"
-    cursor_blink = False
-    scrollback_infinite = True
-  [[default-old]]
-    scrollbar_position = hidden
-    use_system_font = False
-    scrollback_lines = 2000
-    background_image = None
-    cursor_color = "#faecec"
-    foreground_color = "#c8c8c8"
-    scroll_on_output = False
-    icon_bell = False
-    show_titlebar = False
-    font = Monospace 15
-    cursor_blink = False
-    scrollback_infinite = True
-  [[master]]
-    background_image = None
 [layouts]
   [[default]]
     [[[child1]]]
+      parent = window0
       profile = default
       type = Terminal
-      parent = window0
     [[[window0]]]
-      type = Window
       parent = ""
+      type = Window
 [plugins]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    background_image = None
+    cursor_blink = False
+    cursor_color = "#98968d"
+    font = DejaVu Sans Mono 14
+    foreground_color = "#eee8d5"
+    icon_bell = False
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#586e75:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scroll_on_output = False
+    scrollback_infinite = True
+    scrollback_lines = 2000
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[default-old]]
+    background_image = None
+    cursor_blink = False
+    cursor_color = "#faecec"
+    font = Monospace 15
+    foreground_color = "#c8c8c8"
+    icon_bell = False
+    scroll_on_output = False
+    scrollback_infinite = True
+    scrollback_lines = 2000
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[master]]
+    background_image = None
