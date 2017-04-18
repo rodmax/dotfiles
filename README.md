@@ -26,6 +26,13 @@ wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfi
     - *Main button* tab: change shortcut to Super-R
     - *Applications* tab: Disable search in internet
 - Install vim (8.0) from [here](https://itsfoss.com/vim-8-release-install/)
+- Install [translate-shell utility](https://github.com/soimort/translate-shell)
+    ```bash
+    cd ~/bin
+    wget git.io/trans
+    chmod +x ./trans
+    ```
+
 - Setup ssh key and put it to your github profile
     
     ```bash

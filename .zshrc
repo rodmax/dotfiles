@@ -24,7 +24,12 @@ alias feh="feh -g 800x600"
 alias treel1='tree -L 1 -a'  # i like it instead of 'ls -1a'
 alias treel2='tree -L 2 -a'  # i like it instead of 'ls -1a'
 alias dotfiles='/usr/bin/git --git-dir=/home/max/.dotfiles/ --work-tree=/home/max'
-
+toru() {
+    trans en:ru "$*"
+}
+toen() {
+    trans ru:en "$*"
+}
 
 # Init virtualenvwrapper envirnment
 export WORKON_HOME=~/envs
