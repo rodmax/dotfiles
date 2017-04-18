@@ -54,15 +54,6 @@
       "autocomplete-html"
       "linter-jscs"
     ]
-    ignoredNames: [
-      ".git"
-      ".hg"
-      ".svn"
-      ".DS_Store"
-      "._*"
-      "Thumbs.db"
-      "dev/webui/app/kp/"
-    ]
     packagesWithKeymapsDisabled: [
       "term3"
       "docblockr"
@@ -152,6 +143,7 @@
     ignoreWhitespace: true
     leftEditorColor: "red"
     rightEditorColor: "green"
+    scrollSyncType: "Vertical + Horizontal"
     syncHorizontalScroll: true
   "symbols-tree-view":
     defaultWidth: 300
