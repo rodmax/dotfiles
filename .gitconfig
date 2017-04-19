@@ -8,12 +8,15 @@
 [difftool]
 	prompt = false
 [alias]
-	st	= status -s -b
-	lg = log --graph --pretty=tformat:'%<(10)%C(red)%h %<(14,trunc)%C(blue)%an %<(80,trunc)%C(reset)%s %C(bold blue)%cr%C(reset) %C(green)%d'
+	st = status -s -b
+	lg2 = log --graph --pretty=tformat:'%<(10)%C(red)%h %<(14,trunc)%C(blue)%an %<(60)%C(reset)%s %C(darkyellow)%cr%C(reset) %C(green)%d'
+	lg = log --graph --pretty=tformat:'%<(10)%C(red)%h %<(14,trunc)%C(blue)%an %C(reset)%s %C(cyan)%cr%C(reset) %C(green)%d'
 	gg = grep -En --break --heading
 	ap = add -p
 	ca = commit --amend
 	c = checkout
+	prune = fetch --prune
+	stash-all = stash save --include-untracked
 [merge]
 	tool = meld3way
 	conflictstyle = diff3
@@ -23,6 +26,7 @@
 	cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
 [push]
 	default = current
+	followTags = true
 [branch]
 	autosetuprebase = always
 [pull]
