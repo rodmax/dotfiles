@@ -1,22 +1,22 @@
 [user]
-    name = max.rodionov
-    email = max.rodionov@synesis.ru
+	name = max.rodionov
+	email = max.rodionov@synesis.ru
 [core]
-    excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
 [color]
-    ui = auto
+	ui = auto
 [difftool]
-    prompt = false
+	prompt = false
 [alias]
-    st  = status -s -b
-    lg = log --graph --pretty=tformat:'%<(10)%C(red)%h %<(14,trunc)%C(blue)%an %<(80,trunc)%C(reset)%s %C(bold blue)%cr%C(reset) %C(green)%d'
-    gg = grep -En --break --heading
-    ap = add -p
-    ca = commit --amend
-    c = checkout
+	st	= status -s -b
+	lg = log --graph --pretty=tformat:'%<(10)%C(red)%h %<(14,trunc)%C(blue)%an %<(80,trunc)%C(reset)%s %C(bold blue)%cr%C(reset) %C(green)%d'
+	gg = grep -En --break --heading
+	ap = add -p
+	ca = commit --amend
+	c = checkout
 [merge]
 	tool = meld3way
-    conflictstyle = diff3
+	conflictstyle = diff3
 [mergetool "meld2way"]
 	cmd = meld \"$LOCAL\" \"$MERGED\" \"$REMOTE\"
 [mergetool "meld3way"]
