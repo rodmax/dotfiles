@@ -36,6 +36,7 @@
       "ui/src"
       "./"
       "webui/app"
+      "ui/app"
     ]
   "autocomplete-plus":
     strictMatching: true
@@ -52,7 +53,8 @@
       "turbo-javascript"
       "minimap"
       "autocomplete-html"
-      "linter-jscs"
+      "linter-eslint"
+      "linter-stylint"
     ]
     packagesWithKeymapsDisabled: [
       "term3"
@@ -80,7 +82,7 @@
     userId: "7ed21b50-bf44-cebb-2af8-7f706df28d0b"
   "file-templates": {}
   "find-and-replace":
-    openProjectFindResultsInRightPane: true
+    projectSearchResultsPaneSplitDirection: "right"
   "fuzzy-finder": {}
   "git-blame":
     customCommitUrlTemplateString: "https://git.synesis.ru/<%- project %>/<%- repo %>/commit/<%- revision %>"
