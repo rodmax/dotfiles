@@ -53,7 +53,6 @@
       "turbo-javascript"
       "minimap"
       "autocomplete-html"
-      "linter-eslint"
       "linter-stylint"
     ]
     packagesWithKeymapsDisabled: [
