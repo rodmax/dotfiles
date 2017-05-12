@@ -1,24 +1,17 @@
 # Repository to backup my PC configuration files
 The idea is borrowed [here](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
-## Install `dotfiles` on new machine
-
-```bash
-wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfiles-install.sh | bash
-```
-
-## How To
-### Setup new system(linux mint 18)
+## Setup new system(linux mint 18)
 - Install packages
     ```bash
     sudo apt install terminator gnome-do git zsh tree python3-dev python3-venv python3-pip \
         g++ shellcheck gitg
     sudo pip3 install --upgrade pip
-    
+
     # Optionally for work pc
     sudo apt install shutter xvfb
-    
-    
+
+
     # Optionally install packages for vmware guest(my home installation)
     sudo apt install open-vm-tools open-vm-tools-desktop
     ```
@@ -34,7 +27,7 @@ wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfi
     ```
 
 - Setup ssh key and put it to your github profile
-    
+
     ```bash
     # Generating...
     ssh-keygen -t rsa -b 4096 -C "rodionov.m.m@gmail.com"
@@ -55,9 +48,9 @@ wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfi
 - Install [ohmyzsh](http://ohmyz.sh/)
 - Set terminator as default terminal in **"Preferred application"** to open using `ctrl-alt-t`
 - install  `nvm` and `node` [link](https://github.com/creationix/nvm)
-- install atom from [deb package](atom.io)
+- install atom from [deb package](https://atom.io)
 
     ```
     # Install atom plugins using
-    ./scripts/atom-install-packages.sh
+    ./scripts/atom-install-packages.py
     ```
