@@ -20,6 +20,7 @@ git-time-machine@1.5.9
 highlight-selected@0.13.1
 intentions@1.1.2
 language-api-blueprint@1.0.2
+language-babel@2.65.0
 language-cmake@0.3.0
 language-docker@1.1.7
 language-gettext@0.6.1
