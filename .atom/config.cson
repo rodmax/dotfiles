@@ -186,6 +186,7 @@
       autoClose: true
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   "vim-mode": {}
   "vim-mode-plus":
     incrementalSearch: true
