@@ -83,6 +83,9 @@ def run():
             ATOM_PACKAGES_FILE_NAME,
             '\n\t'.join(list(not_required_anymore))
         ))
+    extra_cmd = 'apm install rodmax/language-html-custom'
+    print(extra_cmd)
+    subprocess.check_call(extra_cmd.split(' '))
 
 
 if __name__ == '__main__':
