@@ -15,7 +15,7 @@
 	ap = add -p
 	ca = commit --amend
 	c = checkout
-	prune = fetch --prune
+	remote-prune = remote prune origin
 	stash-all = stash save --include-untracked
 [merge]
 	tool = meld3way
