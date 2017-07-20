@@ -44,21 +44,20 @@
     ngComponent:
         prefix: 'cmpt'
         body: """
-            import angular from 'angular';
             import mod from '$1';
 
             export const fullName = 'ks$2';
             mod.component(fullName, {
                 bindings: {
                 },
-                controller: $2Ctrl,
                 template: '',
+                controller: [
+                    $2Ctrl
+                ],
             });
 
-            $2Ctrl.$inject = [
-            ];
             function $2Ctrl() {
-                const $ctrl = angular.extend(this, {
+                const $ctrl = Object.assign(this, {
                 });
             }
 
@@ -70,12 +69,12 @@
             import mod from '$1';
 
             export const fullName = mod.name + '.$2';
-            mod.service(fullName, $3);
+            mod.service(fullName, [
+                $3
+            ]);
 
-            $3.$inject = [
-            ];
             function $3() {
-                const $2 = angular.extend(this, {
+                const $2 = Object.assign(this, {
                 });
             }
             """
@@ -85,9 +84,10 @@
             import * as tests from 'tests/main';
 
             describe(__filename, function () {
-                let ctx;
+                let ctx, local, uf;
                 Given(function () {
                     ctx = tests.getCtx();
+                    local = {};
                 });
 
                 describe('$1', function () {
