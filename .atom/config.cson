@@ -109,7 +109,6 @@
   "linter-htmlhint": {}
   "linter-jscs":
     onlyConfig: true
-    preset: "yandex"
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
     lintInlineJavaScript: true
