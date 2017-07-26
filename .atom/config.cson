@@ -96,9 +96,7 @@
     validateOnlyOnSave: true
   linter:
     lintOnChange: false
-  "linter-eslint":
-    disableWhenNoEslintConfig: false
-    eslintrcPath: "/home/max/conf/.eslintrc.js"
+  "linter-eslint": {}
   "linter-flake8":
     ignoreErrorCodes: [
       "E128"
