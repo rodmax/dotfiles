@@ -29,7 +29,8 @@
   'alt-j': 'core:move-down'
 
 '.command-palette atom-text-editor,
-.fuzzy-finder atom-text-editor':
+.fuzzy-finder atom-text-editor,
+atom-panel.modal':
   'alt-k': 'core:move-up'
   'alt-j': 'core:move-down'
   'alt-h': 'core:move-left'
@@ -55,6 +56,11 @@
 # Use the same bindings for all go-to-definition resources
 '.platform-linux atom-text-editor[data-grammar="source python"]:not(.mini)':
   'ctrl-]': 'autocomplete-python:go-to-definition'
+
+'atom-workspace atom-text-editor:not([mini])[data-grammar^="source ts"]':
+  'ctrl-]': 'typescript:go-to-declaration'
+  'g r': 'typescript:find-references'
+  'ctrl-t': 'typescript:return-from-declaration'
 
 '.platform-linux atom-text-editor[data-grammar="source js"]:not(.mini)':
   'ctrl-]': 'atom-ternjs:definition'
