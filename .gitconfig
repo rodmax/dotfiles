@@ -31,3 +31,7 @@
 	autosetuprebase = always
 [pull]
 	rebase = true
+[remote "origin"]
+	prune = true
+[fetch]
+	prune = true
