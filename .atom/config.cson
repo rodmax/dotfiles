@@ -55,6 +55,16 @@
       "autocomplete-html"
       "linter-stylint"
     ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "webui"
+    ]
     packagesWithKeymapsDisabled: [
       "term3"
       "docblockr"
