@@ -1,6 +1,6 @@
 # Synesis projects related snippets
 
-'.source.js,.source.stylus,source.c,source.cpp':
+'.source.js,.source.stylus,.source.c,.source.cpp,.source.ts':
     'Copyright header':
         prefix: 'fcr'
         body: """
