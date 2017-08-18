@@ -6,16 +6,16 @@ atom-jade@0.3.0
 atom-jasmine@0.8.1
 atom-material-syntax@1.0.6
 atom-ternjs@0.18.3
-atom-typescript@11.0.6
+atom-typescript@11.0.7
 autocomplete-modules@1.6.10
-autocomplete-python@1.10.1
+autocomplete-python@1.10.2
 busy-signal@1.4.3
 color-picker@2.2.5
 docblockr@0.11.0
 editorconfig@2.2.2
 emmet@2.4.3
 ex-mode@0.17.0
-file-icons@2.1.10
+file-icons@2.1.11
 git-blame@1.2.1
 git-time-machine@1.5.9
 highlight-selected@0.13.1
@@ -38,7 +38,7 @@ linter-shellcheck@1.4.4
 linter-stylelint@4.0.1
 linter-stylint@2.2.7
 linter-tslint@1.7.0
-linter-ui-default@1.6.4
+linter-ui-default@1.6.7
 markdown-scroll-sync@2.1.2
 markdown-themeable-pdf@1.2.0
 modular-snippets@0.1.3
@@ -50,7 +50,7 @@ regex-railroad-diagram@0.19.3
 symbols-tree-view@0.14.0
 tab-switcher@1.5.6
 trailing-spaces@0.4.0
-vim-mode-plus@0.96.2
+vim-mode-plus@0.97.2
 zentabs@0.8.8
 
 
