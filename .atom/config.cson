@@ -122,6 +122,8 @@
     lintInlineJavaScript: true
   "linter-stylint":
     onlyRunWhenConfig: true
+  "linter-tslint":
+    enableSemanticRules: true
   "linter-ui-default":
     tooltipFollows: "Keyboard"
   "linter-write-good": {}
