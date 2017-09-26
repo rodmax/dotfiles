@@ -6,7 +6,7 @@ atom-jade@0.3.0
 atom-jasmine@0.8.1
 atom-material-syntax@1.0.6
 atom-ternjs@0.18.3
-atom-typescript@11.0.7
+atom-typescript@11.0.9
 autocomplete-modules@1.6.10
 autocomplete-python@1.10.2
 busy-signal@1.4.3
