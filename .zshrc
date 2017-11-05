@@ -98,3 +98,5 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -148,3 +148,5 @@ export NVM_DIR="/home/max/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 shopt -s globstar
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

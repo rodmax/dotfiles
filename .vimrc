@@ -1,4 +1,19 @@
+" vim-plug https://github.com/junegunn/vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+" Initialize plugin system
+call plug#end()
+
+" To make working fzf.vim, see https://github.com/junegunn/fzf#as-vim-plugin
+set rtp+=/usr/local/opt/fzf
+
+
+
 set noswapfile " do not create .swp files
+syntax on
 
 set t_Co=256
 
