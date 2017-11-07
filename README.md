@@ -5,7 +5,7 @@ The idea is borrowed [here](https://developer.atlassian.com/blog/2016/02/best-wa
 - Install packages
     ```bash
     sudo apt install terminator gnome-do git zsh tree python3-dev python3-venv python3-pip \
-        g++ shellcheck gitg
+        g++ shellcheck gitg cmake
     sudo pip3 install --upgrade pip
 
     # Optionally for work pc

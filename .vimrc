@@ -4,20 +4,41 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+Plug 'tpope/vim-surround'
+
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+let g:vim_markdown_folding_disabled = 1
+
+Plug 'editorconfig/editorconfig-vim'
+Plug 'elzr/vim-json'
+Plug 'tpope/vim-sensible'
+Plug 'leafgarland/typescript-vim'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+
+Plug 'Quramy/tsuquyomi'
+
+
 " Initialize plugin system
 call plug#end()
 
+nnoremap <C-p> :GitFiles<cr>
+nnoremap <C-b> :Buffers<cr>
+
+func! SearchFiles()
+    system('git status')
+    echo('hello')
+endfunc
+
 " To make working fzf.vim, see https://github.com/junegunn/fzf#as-vim-plugin
 set rtp+=/usr/local/opt/fzf
-
-
 
 set noswapfile " do not create .swp files
 syntax on
 
 set t_Co=256
 
-" Status line dfdfdf
+" Status line
 set laststatus=2
 " define 3 custom highlight groups
 hi User1 ctermbg=gray ctermfg=black
