@@ -17,6 +17,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 
 Plug 'Quramy/tsuquyomi'
+Plug 'mattn/emmet-vim'
 
 
 " Initialize plugin system

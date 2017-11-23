@@ -66,6 +66,8 @@ atom-panel.modal':
   'ctrl-]': 'atom-ternjs:definition'
 
 '.platform-linux atom-text-editor:not(.mini)':
+  # the same with vim-emmet
+  'ctrl-y ,': 'emmet:expand-abbreviation'
   'ctrl-e': 'emmet:expand-abbreviation'
   "ctrl-shift-'": 'emmet:update-tag'
   'ctrl-alt-j': 'emmet:matching-pair'
