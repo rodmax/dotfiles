@@ -4,9 +4,13 @@
   "api-blueprint-preview":
     liveUpdate: false
   "atom-beautify":
-    _analyticsUserId: "6126e41b-2772-4581-a5d7-f2dc1183bc3f"
+    general:
+      _analyticsUserId: "6126e41b-2772-4581-a5d7-f2dc1183bc3f"
   "atom-fuzzy-grep":
     preserveLastSearch: true
+  "atom-ide-ui":
+    "atom-ide-find-references":
+      defaultLocationForPane: "right"
   "atom-ternjs":
     documentation: false
     guess: false
@@ -45,6 +49,7 @@
     pythonPath: "/home/max/envs/kx/bin/python"
   "close-tags": {}
   core:
+    automaticallyUpdate: false
     disabledPackages: [
       "tabs"
       "htmlhint"
@@ -54,16 +59,7 @@
       "minimap"
       "autocomplete-html"
       "linter-stylint"
-    ]
-    ignoredNames: [
-      ".git"
-      ".hg"
-      ".svn"
-      ".DS_Store"
-      "._*"
-      "Thumbs.db"
-      "desktop.ini"
-      "webui"
+      "linter"
     ]
     packagesWithKeymapsDisabled: [
       "term3"
@@ -94,6 +90,7 @@
     projectSearchResultsPaneSplitDirection: "right"
   "fuzzy-finder": {}
   "git-blame":
+    columnWidth: 311
     customCommitUrlTemplateString: "https://git.synesis.ru/<%- project %>/<%- repo %>/commit/<%- revision %>"
     useCustomUrlTemplateIfStandardRemotesFail: true
   "highlight-selected":
@@ -125,7 +122,8 @@
   "linter-tslint":
     enableSemanticRules: true
   "linter-ui-default":
-    tooltipFollows: "Keyboard"
+    panelHeight: 188
+    tooltipFollows: "Mouse"
   "linter-write-good": {}
   "markdown-pdf": {}
   "markdown-preview":
@@ -195,7 +193,6 @@
       autoClose: true
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   "vim-mode": {}
   "vim-mode-plus":
     incrementalSearch: true
