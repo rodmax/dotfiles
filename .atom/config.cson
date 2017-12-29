@@ -88,6 +88,7 @@
     simple_mode: true
   editor:
     fontFamily: "DejaVu Sans Mono"
+    fontSize: 17
     invisibles: {}
     lineHeight: 1.4
     preferredLineLength: 120
@@ -100,7 +101,7 @@
     projectSearchResultsPaneSplitDirection: "right"
   "fuzzy-finder": {}
   "git-blame":
-    columnWidth: 311
+    columnWidth: 293
     customCommitUrlTemplateString: "https://git.synesis.ru/<%- project %>/<%- repo %>/commit/<%- revision %>"
     useCustomUrlTemplateIfStandardRemotesFail: true
   "highlight-selected":
@@ -131,17 +132,10 @@
   "linter-tslint":
     enableSemanticRules: true
   "linter-ui-default":
-<<<<<<< 1d3cffa69d39dfb2eaa8ffbcf18ec26d679acdbe
-    panelHeight: 188
-    tooltipFollows: "Mouse"
-||||||| merged common ancestors
-    tooltipFollows: "Keyboard"
-=======
     hidePanelWhenEmpty: false
     panelHeight: 99
     showPanel: true
     tooltipFollows: "Mouse"
->>>>>>> atom: save configs
   "linter-write-good": {}
   "markdown-pdf": {}
   "markdown-preview":
@@ -209,16 +203,7 @@
       theme: "dracula"
     toggles:
       autoClose: true
-<<<<<<< 1d3cffa69d39dfb2eaa8ffbcf18ec26d679acdbe
-  "tree-view":
-    hideIgnoredNames: true
-||||||| merged common ancestors
-  "tree-view":
-    hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
-=======
   "tree-view": {}
->>>>>>> atom: save configs
   "vim-mode": {}
   "vim-mode-plus":
     incrementalSearch: true
