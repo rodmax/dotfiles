@@ -57,7 +57,7 @@ atom-panel.modal':
 '.platform-linux atom-text-editor[data-grammar="source python"]:not(.mini)':
   'ctrl-]': 'autocomplete-python:go-to-definition'
 
-'atom-workspace atom-text-editor:not([mini])[data-grammar^="source ts"]':
+'atom-workspace atom-text-editor.vim-mode-plus:not(.insert-mode):not([mini])[data-grammar^="source ts"]':
   'ctrl-]': 'typescript:go-to-declaration'
   'g r': 'typescript:find-references'
   'ctrl-t': 'typescript:return-from-declaration'
