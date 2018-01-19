@@ -60,6 +60,7 @@
       "autocomplete-html"
       "linter-stylint"
       "linter"
+      "linter-ui-default"
     ]
     ignoredNames: [
       ".git"
@@ -88,7 +89,7 @@
     simple_mode: true
   editor:
     fontFamily: "DejaVu Sans Mono"
-    fontSize: 17
+    fontSize: 16
     invisibles: {}
     lineHeight: 1.4
     preferredLineLength: 120
@@ -126,6 +127,7 @@
   "linter-jscs":
     onlyConfig: true
   "linter-jshint":
+    executablePath: "/home/max/work/kipod-x/ui-edge/node_modules/.bin/jshint"
     lintInlineJavaScript: true
   "linter-stylint":
     onlyRunWhenConfig: true
@@ -133,7 +135,7 @@
     enableSemanticRules: true
   "linter-ui-default":
     hidePanelWhenEmpty: false
-    panelHeight: 99
+    panelHeight: 334
     showPanel: true
     tooltipFollows: "Mouse"
   "linter-write-good": {}

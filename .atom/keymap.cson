@@ -43,7 +43,9 @@ atom-panel.modal':
 'atom-workspace atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'ctrl-j': 'core:page-down'
   'ctrl-k': 'core:page-up'
-  'ctrl-tab': 'linter-ui-default:next'
+  # 'ctrl-tab': 'linter-ui-default:next'
+  'ctrl-tab': 'diagnostics:go-to-next-diagnostic'
+  'ctrl-shift-tab': 'diagnostics:go-to-previous-diagnostic'
 
 # git-blame toogle to work with vim-mode
 'atom-text-editor':
