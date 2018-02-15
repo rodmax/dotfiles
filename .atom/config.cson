@@ -20,6 +20,8 @@
     urls: false
     useSnippets: false
     useSnippetsAndFunction: true
+  "atom-typescript":
+    locale: "ru"
   "auto-copyright":
     owner: "Synesis"
   "autoclose-html":
@@ -89,7 +91,6 @@
     simple_mode: true
   editor:
     fontFamily: "DejaVu Sans Mono"
-    fontSize: 16
     invisibles: {}
     lineHeight: 1.4
     preferredLineLength: 120
@@ -155,6 +156,25 @@
     charWidth: 2
   "one-dark-ui": {}
   pigments: {}
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black: "#0e0e0e"
+        blue: "#1682fa"
+        red: "#d54c4c"
+      zBright:
+        brightBlue: "#acacf5"
+        brightGreen: "#48a873"
+        brightRed: "#d55858"
+    customTexts: {}
+    iconColors:
+      blue: "#505061"
+      red: "#ee5d5d"
+    style:
+      animationSpeed: 2
+      fontSize: "16"
+    toggles:
+      autoClose: true
   "project-manager":
     showPath: false
   "python-tools":

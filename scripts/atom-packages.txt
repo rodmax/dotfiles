@@ -2,12 +2,12 @@ Stylus@3.1.1
 advanced-open-file@0.16.7
 api-blueprint-preview@0.7.0
 atom-beautify@0.30.9
-atom-ide-ui@0.7.2
+atom-ide-ui@0.8.1
 atom-jade@0.3.0
 atom-material-syntax@1.0.8
 atom-ternjs@0.18.3
-atom-typescript@12.0.0
-autocomplete-modules@1.10.0
+atom-typescript@12.1.2
+autocomplete-modules@1.11.0
 autocomplete-python@1.10.5
 busy-signal@1.4.3
 color-picker@2.2.5
@@ -22,7 +22,7 @@ highlight-selected@0.13.1
 ide-yaml@0.4.2
 intentions@1.1.5
 language-api-blueprint@1.0.2
-language-babel@2.82.0
+language-babel@2.84.0
 language-cmake@1.1.0
 language-docker@1.1.8
 language-gettext@0.6.1
@@ -47,13 +47,14 @@ markdown-themeable-pdf@1.2.0
 modular-snippets@0.1.3
 open-this@0.5.0
 pigments@0.40.2
+platformio-ide-terminal@2.8.0
 project-plus@1.0.0
 python-indent@1.1.4
 rst-preview@1.3.1
 symbols-tree-view@0.14.0
 tab-switcher@1.5.6
 trailing-spaces@0.4.0
-vim-mode-plus@1.27.0
+vim-mode-plus@1.28.0
 zentabs@0.8.9
 
 
