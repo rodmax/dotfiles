@@ -9,8 +9,7 @@
 	prompt = false
 [alias]
 	st = status -s -b
-	lg2 = log --graph --pretty=tformat:'%<(10)%C(red)%h %<(14,trunc)%C(blue)%an %<(60)%C(reset)%s %C(darkyellow)%cr%C(reset) %C(green)%d'
-	lg = log --graph --pretty=tformat:'%<(10)%C(red)%h %<(14,trunc)%C(blue)%an %C(reset)%s %C(cyan)%cr%C(reset) %C(green)%d'
+	lg = log --graph --pretty=tformat:'%<(10)%C(red)%h %<(14,trunc)%C(blue)%an %C(reset)%s %C(cyan)%cd%C(reset) %C(green)%d' --date=format:'%d-%b/%a %H:%M'
 	gg = grep -En --break --heading
 	ap = add -p
 	ca = commit --amend
