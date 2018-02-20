@@ -1,7 +1,5 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/home/max/.oh-my-zsh
-
-# Set name of the theme to load.
+# Path to your oh-my-zsh installatioexport
+export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
@@ -23,7 +21,7 @@ export EDITOR='vim'
 alias feh="feh -g 800x600"
 alias treel1='tree -L 1 -a'  # i like it instead of 'ls -1a'
 alias treel2='tree -L 2 -a'  # i like it instead of 'ls -1a'
-alias dotfiles='/usr/bin/git --git-dir=/home/max/.dotfiles/ --work-tree=/home/max'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 toru() {
     trans en:ru "$*"
 }
@@ -37,7 +35,7 @@ virtualwrapperScript="/usr/local/bin/virtualenvwrapper.sh"
 [ -s "${virtualwrapperScript}" ] && source ${virtualwrapperScript}
 
 
-export NVM_DIR="/home/max/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
