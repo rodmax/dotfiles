@@ -1,22 +1,22 @@
 Stylus@3.1.1
-advanced-open-file@0.16.7
+advanced-open-file@0.16.8
 api-blueprint-preview@0.7.0
-atom-beautify@0.30.9
-atom-ide-ui@0.8.1
+atom-beautify@0.32.2
+atom-ide-ui@0.9.3
 atom-jade@0.3.0
 atom-material-syntax@1.0.8
 atom-ternjs@0.18.3
-atom-typescript@12.1.2
-autocomplete-modules@1.11.0
+atom-typescript@12.3.7
+autocomplete-modules@1.12.0
 autocomplete-python@1.10.5
 busy-signal@1.4.3
 color-picker@2.2.5
-docblockr@0.13.6
+docblockr@0.13.7
 editorconfig@2.2.2
 emmet@2.4.3
 ex-mode@0.18.0
-file-icons@2.1.16
-git-blame@1.5.0
+file-icons@2.1.17
+git-blame@1.6.0
 git-time-machine@1.5.9
 highlight-selected@0.13.1
 ide-yaml@0.4.2
@@ -54,7 +54,7 @@ rst-preview@1.3.1
 symbols-tree-view@0.14.0
 tab-switcher@1.5.6
 trailing-spaces@0.4.0
-vim-mode-plus@1.28.0
+vim-mode-plus@1.30.0
 zentabs@0.8.9
 
 
