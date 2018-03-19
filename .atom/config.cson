@@ -20,8 +20,7 @@
     urls: false
     useSnippets: false
     useSnippetsAndFunction: true
-  "atom-typescript":
-    locale: "ru"
+  "atom-typescript": {}
   "auto-copyright":
     owner: "Synesis"
   "autoclose-html":
@@ -135,6 +134,7 @@
     onlyRunWhenConfig: true
   "linter-tslint":
     enableSemanticRules: true
+    ignoreTypings: true
   "linter-ui-default":
     hidePanelWhenEmpty: false
     panelHeight: 334
