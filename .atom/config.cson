@@ -92,7 +92,7 @@
     simple_mode: true
   editor:
     fontFamily: "DejaVu Sans Mono"
-    fontSize: 16
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.4
     preferredLineLength: 120
@@ -228,7 +228,8 @@
       theme: "dracula"
     toggles:
       autoClose: true
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "vim-mode": {}
   "vim-mode-plus":
     incrementalSearch: true
