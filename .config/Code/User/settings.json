@@ -1,0 +1,52 @@
+{
+    "editor.fontSize": 16,
+    "editor.rulers": [
+        120
+    ],
+    "terminal.integrated.copyOnSelection": true,
+    "editor.fontFamily": "DejaVu Sans Mono",
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
+    "editor.parameterHints": false,
+    "files.trimTrailingWhitespace": true,
+    "workbench.editor.showTabs": false,
+    "window.zoomLevel": 0,
+    "vim.handleKeys": {
+        "<C-f>": false
+    },
+    "workbench.colorTheme": "Atom Material Theme",
+    "sync.gist": "96c9e688ec0261956bb18d47a6388e9d",
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastUpload": "2018-06-24T21:29:42.030Z",
+    "sync.lastDownload": "2018-06-21T07:20:28.939Z",
+    "sync.forceDownload": false,
+    "workbench.activityBar.visible": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "search.location": "panel",
+    "update.channel": "none",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["g", "r"],
+            "commands": [
+                {
+                    "command": "editor.action.referenceSearch.trigger"
+                },
+            ]
+        }
+    ],
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.lineHeight": 1.25,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "gitlens.blame.format": "${author|12}  ${message|20-}",
+    "gitlens.codeLens.enabled": false
+}
