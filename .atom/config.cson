@@ -64,6 +64,8 @@
       "linter"
       "linter-ui-default"
       "project-plus"
+      "language-babel"
+      "angular-2-typeScript-snippets"
     ]
     ignoredNames: [
       ".git"
@@ -92,7 +94,6 @@
     simple_mode: true
   editor:
     fontFamily: "DejaVu Sans Mono"
-    fontSize: 15
     invisibles: {}
     lineHeight: 1.4
     preferredLineLength: 120
