@@ -43,10 +43,8 @@
     ],
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.25,
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
-    },
-    "gitlens.showWhatsNewAfterUpgrades": false,
-    "gitlens.blame.format": "${author|12}  ${message|20-}",
-    "gitlens.codeLens.enabled": false
+    "vscode_custom_css.imports": [
+        "file:///home/max.rodionov/.config/Code/User/custom-css/index.css"
+    ],
+    "vscode_custom_css.policy": true
 }
