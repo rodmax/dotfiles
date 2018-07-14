@@ -1,1 +1,10 @@
-@import "./explorer-tree-indent-and-guide.css"
+@import url("./explorer-tree-indent-and-guide.css");
+
+/*
+Make bottom left panel element more readable
+*/
+.statusbar-item.left.statusbar-entry {
+    font-size: 14px;
+    padding-left: 16px;
+    color: white;
+}
