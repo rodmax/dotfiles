@@ -1,5 +1,6 @@
 Angular.ng-template
 PeterJausovec.vscode-docker
+be5invis.vscode-custom-css
 codezombiech.gitignore
 dbaeumer.vscode-eslint
 dkundel.vscode-new-file
