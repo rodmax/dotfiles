@@ -8,19 +8,14 @@ The idea is borrowed [here](https://developer.atlassian.com/blog/2016/02/best-wa
 sudo apt install terminator gnome-do git zsh tree shutter python3-dev python3-venv python3-pip \
         g++ shellcheck gitg cmake
 sudo pip3 install --upgrade pip
-
-# Optionally for work pc
-sudo apt install shutter xvfb
-
-
-# Optionally install packages for vmware guest(my home installation)
-sudo apt install open-vm-tools open-vm-tools-desktop
 ```
 
 - To make working `gnome-do` you should change settings of the `menu` in top panel via right click:
     - *Main button* tab: change shortcut to Super-R
     - *Applications* tab: Disable search in internet
+
 - Install vim (8.0) from [here](https://itsfoss.com/vim-8-release-install/) and install plugins using `:PlugInstall`(fzf, etc...)
+
 - Install [translate-shell utility](https://github.com/soimort/translate-shell)
 
 ```bash
