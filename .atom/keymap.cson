@@ -50,6 +50,7 @@ atom-panel.modal':
 # git-blame toogle to work with vim-mode
 'atom-text-editor':
   'alt-ctrl-b': 'git-blame:toggle'
+  'ctrl-shift-H': 'atom-html-preview:toggle'
 
 # change keymap to prevent conflict with "open file" functionality
 'atom-workspace atom-text-editor:not([mini])':
