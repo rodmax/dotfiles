@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "editor.rulers": [
         120
     ],
@@ -29,6 +29,7 @@
     "sync.forceDownload": false,
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.enablePreview": false,
     "search.location": "panel",
     "update.channel": "none",
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -37,12 +38,13 @@
             "commands": [
                 {
                     "command": "editor.action.referenceSearch.trigger"
-                },
+                }
             ]
         }
     ],
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.25,
+    "typescript.preferences.importModuleSpecifier": "non-relative",
     "vscode_custom_css.imports": [
         "file:///home/max.rodionov/.config/Code/User/custom-css/index.css"
     ],
