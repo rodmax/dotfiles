@@ -22,6 +22,8 @@ alias open-file=xdg-open
 alias treel1='tree -L 1 -a'  # i like it instead of 'ls -1a'
 alias treel2='tree -L 2 -a'  # i like it instead of 'ls -1a'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dof=dotfiles  # experimenal
+alias g=git
 toru() {
     trans en:ru "$*"
 }
