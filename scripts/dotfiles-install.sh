@@ -19,5 +19,9 @@ else
     echo "Backing up pre-existing dot files.";
     dotfiles checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfiles-backup/{}
 fi;
+
+# to fix this issue https://stackoverflow.com/a/20338558
+dotfiles config  remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+
 dotfiles checkout master
 dotfiles config status.showUntrackedFiles no
