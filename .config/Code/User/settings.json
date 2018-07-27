@@ -8,6 +8,7 @@
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": false,
     "editor.parameterHints": false,
+    "terminal.integrated.fontFamily": "DejaVu Sans Mono",
     "files.trimTrailingWhitespace": true,
     "workbench.editor.showTabs": false,
     "window.zoomLevel": 0,
