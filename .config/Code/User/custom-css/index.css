@@ -19,3 +19,8 @@ Make bottom left panel element more readable
 .quick-open-tree .monaco-tree .monaco-tree-rows>.monaco-tree-row>.content {
     padding-left: 8px;
 }
+
+
+.monaco-quick-open-widget {
+    top: 200px !important;
+}
