@@ -37,5 +37,7 @@
     "vscode_custom_css.imports": [
         "file:///home/max.rodionov/.config/Code/User/custom-css/index.css"
     ],
-    "vscode_custom_css.policy": true
+    "vscode_custom_css.policy": true,
+    "merge-conflict.codeLens.enabled": false,
+    "merge-conflict.decorators.enabled": false
 }
