@@ -13,6 +13,7 @@ mkaufman.HTMLHint
 ms-python.python
 patbenatar.advanced-new-file
 PeterJausovec.vscode-docker
+pranaygp.vscode-css-peek
 rebornix.project-snippets
 shinnn.stylelint
 sleistner.vscode-fileutils
@@ -22,3 +23,4 @@ tobiasalthoff.atom-material-theme
 vincaslt.highlight-matching-tag
 vscodevim.vim
 waderyan.gitblame
+Zignd.html-css-class-completion
