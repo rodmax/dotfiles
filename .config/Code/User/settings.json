@@ -7,7 +7,6 @@
     "editor.fontFamily": "DejaVu Sans Mono",
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": false,
-    "editor.parameterHints": false,
     "terminal.integrated.fontFamily": "DejaVu Sans Mono",
     "files.trimTrailingWhitespace": true,
     "workbench.editor.showTabs": false,
@@ -39,5 +38,8 @@
     ],
     "vscode_custom_css.policy": true,
     "merge-conflict.codeLens.enabled": false,
-    "merge-conflict.decorators.enabled": false
+    "merge-conflict.decorators.enabled": false,
+    "editor.parameterHints.enabled": false,
+    "breadcrumbs.enabled": true,
+    "workbench.settings.editor": "json"
 }
