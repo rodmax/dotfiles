@@ -40,6 +40,10 @@
     "merge-conflict.codeLens.enabled": false,
     "merge-conflict.decorators.enabled": false,
     "editor.parameterHints.enabled": false,
-    "breadcrumbs.enabled": true,
-    "workbench.settings.editor": "json"
+    "breadcrumbs.enabled": false,
+    "workbench.settings.editor": "json",
+    "advancedNewFile.exclude": {
+        "ui/node_modules": true,
+        "node_modules": true
+    }
 }
