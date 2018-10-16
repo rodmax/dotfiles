@@ -2,7 +2,6 @@ Angular.ng-template
 be5invis.vscode-custom-css
 codezombiech.gitignore
 dbaeumer.vscode-eslint
-dkundel.vscode-new-file
 EditorConfig.EditorConfig
 eg2.tslint
 formulahendry.auto-rename-tag
