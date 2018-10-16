@@ -24,3 +24,11 @@ Make bottom left panel element more readable
 .monaco-quick-open-widget {
     top: 200px !important;
 }
+
+/* Add red "!" to "unsaved changes" icon */
+.icon.menu-item-action-item-icon-3:after {
+    content: "*";
+    color:  red;
+    font-weight: bold;
+    font-size: 18px;
+}
