@@ -11,7 +11,6 @@ Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_disabled = 1
 
 Plug 'editorconfig/editorconfig-vim'
-Plug 'elzr/vim-json'
 Plug 'tpope/vim-sensible'
 Plug 'leafgarland/typescript-vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
