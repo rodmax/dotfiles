@@ -14,6 +14,7 @@ patbenatar.advanced-new-file
 PeterJausovec.vscode-docker
 pranaygp.vscode-css-peek
 rebornix.project-snippets
+robertohuertasm.vscode-icons
 shinnn.stylelint
 sleistner.vscode-fileutils
 sysoev.language-stylus
