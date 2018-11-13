@@ -24,6 +24,7 @@ alias treel2='tree -L 2 -a'  # i like it instead of 'ls -1a'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dof=dotfiles  # experimenal
 alias g=git
+alias r='npm run'
 toru() {
     trans en:ru "$*"
 }
@@ -46,4 +47,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin
