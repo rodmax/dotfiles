@@ -25,6 +25,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dof=dotfiles  # experimenal
 alias g=git
 alias r='npm run'
+alias notify-me='notify-send -i face-cool -u low "Job Done!!!" || notify-send -i face-crying -u critical "Job FAILED :("'  # Usage: "npm build && notify-me"
 toru() {
     trans en:ru "$*"
 }
