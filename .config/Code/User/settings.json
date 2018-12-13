@@ -40,7 +40,7 @@
     "merge-conflict.codeLens.enabled": false,
     "merge-conflict.decorators.enabled": false,
     "editor.parameterHints.enabled": false,
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     "workbench.settings.editor": "json",
     "advancedNewFile.exclude": {
         "ui/node_modules": true,
@@ -144,4 +144,7 @@
         "workbench.action.toggleMaximizedPanel",
         "workbench.action.togglePanel"
     ],
+    "html.format.wrapAttributes": "force-expand-multiline",
+    "vsicons.projectDetection.autoReload": true,
+    "shellcheck.disableVersionCheck": true
 }
