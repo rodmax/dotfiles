@@ -146,5 +146,7 @@
     ],
     "html.format.wrapAttributes": "force-expand-multiline",
     "vsicons.projectDetection.autoReload": true,
-    "shellcheck.disableVersionCheck": true
+    "shellcheck.disableVersionCheck": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
