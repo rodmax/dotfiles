@@ -1,13 +1,13 @@
 {
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "editor.rulers": [
         120
     ],
+    "editor.fontFamily": "'Fira Code', 'DejaVu Sans Mono', monospace",
+    "editor.renderIndentGuides": true,
+    "editor.fontLigatures": true,
     "terminal.integrated.copyOnSelection": true,
-    "editor.fontFamily": "DejaVu Sans Mono",
-    "editor.minimap.enabled": false,
-    "editor.renderIndentGuides": false,
-    "terminal.integrated.fontFamily": "DejaVu Sans Mono",
+    "terminal.integrated.fontFamily": "'Fira Code','DejaVu Sans Mono'",
     "files.trimTrailingWhitespace": true,
     "workbench.editor.showTabs": false,
     "window.zoomLevel": 0,
@@ -15,6 +15,10 @@
         "<C-f>": false
     },
     "workbench.colorTheme": "Atom Material Theme",
+    "workbench.colorCustomizations": {
+        "editorIndentGuide.background": "#2b3b3f",
+        "editorIndentGuide.activeBackground": "#39494a",
+    },
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.enablePreview": false,
@@ -46,7 +50,7 @@
         "ui/node_modules": true,
         "node_modules": true
     },
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "terminal.integrated.commandsToSkipShell": [
         "editor.action.toggleTabFocusMode",
         "workbench.action.debug.continue",
@@ -145,8 +149,9 @@
         "workbench.action.togglePanel"
     ],
     "html.format.wrapAttributes": "force-expand-multiline",
-    "vsicons.projectDetection.autoReload": true,
-    "shellcheck.disableVersionCheck": true,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.minimap.enabled": false,
+    "material-icon-theme.folders.theme": "classic",
+    "material-icon-theme.activeIconPack": "",
 }
