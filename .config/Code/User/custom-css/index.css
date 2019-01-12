@@ -25,8 +25,8 @@ Make bottom left panel element more readable
     top: 200px !important;
 }
 
-/* Add red "!" to "unsaved changes" icon */
-.icon.menu-item-action-item-icon-3:after {
+/* Add red "*" to "unsaved changes" icon */
+.icon.menu-item-action-item-icon-4:after {
     content: "*";
     color:  red;
     font-weight: bold;
