@@ -8,6 +8,7 @@ eg2.tslint
 GregorBiswanger.json2ts
 lextudio.restructuredtext
 Mikael.Angular-BeastCode
+mkaufman.HTMLHint
 mrmlnc.vscode-scss
 ms-python.python
 patbenatar.advanced-new-file
