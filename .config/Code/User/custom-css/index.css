@@ -32,3 +32,13 @@ Make bottom left panel element more readable
     font-weight: bold;
     font-size: 18px;
 }
+
+
+/* Add margin to search results */
+[aria-label*="matches"] {
+    margin-top: 8px;
+}
+
+[aria-label*="matches"] .label-name {
+    font-size: 14px;
+}
