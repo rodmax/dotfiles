@@ -16,6 +16,7 @@ PeterJausovec.vscode-docker
 PKief.material-icon-theme
 pnp.polacode
 pranaygp.vscode-css-peek
+sanderledegen.angular-follow-selector
 shinnn.stylelint
 sysoev.language-stylus
 timonwong.shellcheck
