@@ -18,6 +18,8 @@
     "workbench.colorCustomizations": {
         "editorIndentGuide.background": "#2b3b3f",
         "editorIndentGuide.activeBackground": "#39494a",
+        "list.activeSelectionBackground": "#333",
+        "list.focusBackground": "#222",
     },
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
