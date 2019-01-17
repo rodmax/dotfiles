@@ -3,10 +3,11 @@ be5invis.vscode-custom-css
 codezombiech.gitignore
 cyrilletuzi.angular-schematics
 dbaeumer.vscode-eslint
+DotJoshJohnson.xml
 EditorConfig.EditorConfig
 eg2.tslint
-GregorBiswanger.json2ts
 lextudio.restructuredtext
+MariusAlchimavicius.json-to-ts
 Mikael.Angular-BeastCode
 mkaufman.HTMLHint
 mrmlnc.vscode-scss
@@ -16,6 +17,7 @@ PeterJausovec.vscode-docker
 PKief.material-icon-theme
 pnp.polacode
 pranaygp.vscode-css-peek
+qub.qub-xml-vscode
 sanderledegen.angular-follow-selector
 shinnn.stylelint
 sysoev.language-stylus

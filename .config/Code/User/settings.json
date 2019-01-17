@@ -156,4 +156,6 @@
     "editor.minimap.enabled": false,
     "material-icon-theme.folders.theme": "classic",
     "material-icon-theme.activeIconPack": "",
+    "xmlTools.enableXmlTreeViewCursorSync": true,
+    "xmlTools.splitAttributesOnFormat": true,
 }
