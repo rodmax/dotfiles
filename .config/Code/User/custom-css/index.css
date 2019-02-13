@@ -5,7 +5,7 @@ Make vim ":rm"-like commands more readable
 */
 .statusbar-item.left.statusbar-entry:last-child > span {
     font-size: 15px;
-    color: #00BCD4;
+    color: #c3e88d;
 }
 
 
