@@ -24,6 +24,7 @@
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.enablePreview": false,
+    "workbench.settings.useSplitJSON": true,
     "search.location": "panel",
     "update.channel": "none",
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -158,4 +159,5 @@
     "material-icon-theme.activeIconPack": "",
     "xmlTools.enableXmlTreeViewCursorSync": true,
     "xmlTools.splitAttributesOnFormat": true,
+    "workbench.statusBar.feedback.visible": false,
 }
