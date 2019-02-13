@@ -1,12 +1,11 @@
 @import url("./explorer-tree-indent-and-guide.css");
 
 /*
-Make bottom left panel element more readable
+Make vim ":rm"-like commands more readable
 */
-.statusbar-item.left.statusbar-entry {
-    font-size: 14px;
-    padding-left: 16px;
-    color: white;
+.statusbar-item.left.statusbar-entry:last-child > span {
+    font-size: 15px;
+    color: #00BCD4;
 }
 
 
@@ -26,19 +25,9 @@ Make bottom left panel element more readable
 }
 
 /* Add red "*" to "unsaved changes" icon */
-.icon.menu-item-action-item-icon-4:after {
+.icon.menu-item-action-item-icon-5:after {
     content: "*";
     color:  red;
     font-weight: bold;
     font-size: 18px;
-}
-
-
-/* Add margin to search results */
-[aria-label*="matches"] {
-    margin-top: 8px;
-}
-
-[aria-label*="matches"] .label-name {
-    font-size: 14px;
 }
