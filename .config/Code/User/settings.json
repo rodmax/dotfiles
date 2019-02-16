@@ -19,6 +19,7 @@
         "editorIndentGuide.background": "#2b3b3f",
         "editorIndentGuide.activeBackground": "#39494a",
         "list.activeSelectionBackground": "#333",
+        "list.inactiveFocusBackground": "#444",
         "list.focusBackground": "#222",
     },
     "workbench.activityBar.visible": false,
