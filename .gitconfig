@@ -1,6 +1,6 @@
 [user]
 	name = max.rodionov
-	email = max.rodionov@synesis.ru
+	email = rodionov.m.m@gmail.com
 [core]
 	excludesfile = ~/.gitignore
 	pager = diff-so-fancy | less --tabs=4 -RFX
