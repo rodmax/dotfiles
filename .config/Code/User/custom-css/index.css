@@ -31,3 +31,13 @@ Make vim ":rm"-like commands more readable
     font-weight: bold;
     font-size: 18px;
 }
+
+.task-statusbar-item-label-counter[title*="Errors"]:not([title="0 Errors"]) {
+    color: #f48771;
+    font-weight: bold;
+}
+
+.task-statusbar-item-label-error[title*="Errors"]:not([title="0 Errors"]) {
+    background-color: #f48771 !important;
+
+}
