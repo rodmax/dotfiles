@@ -161,4 +161,6 @@
     "xmlTools.enableXmlTreeViewCursorSync": true,
     "xmlTools.splitAttributesOnFormat": true,
     "workbench.statusBar.feedback.visible": false,
+    "explorer.autoReveal": true,
+    "workbench.list.keyboardNavigation": "simple"
 }
