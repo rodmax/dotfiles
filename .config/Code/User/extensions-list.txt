@@ -12,6 +12,7 @@ Mikael.Angular-BeastCode
 mkaufman.HTMLHint
 mrmlnc.vscode-scss
 ms-python.python
+newfuture.htmlhint
 patbenatar.advanced-new-file
 PeterJausovec.vscode-docker
 PKief.material-icon-theme
@@ -20,6 +21,7 @@ pranaygp.vscode-css-peek
 qub.qub-xml-vscode
 sanderledegen.angular-follow-selector
 shinnn.stylelint
+streetsidesoftware.code-spell-checker
 sysoev.language-stylus
 timonwong.shellcheck
 tobiasalthoff.atom-material-theme
