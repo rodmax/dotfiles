@@ -20,7 +20,7 @@
         "editorIndentGuide.activeBackground": "#39494a",
         "list.activeSelectionBackground": "#333",
         "list.inactiveFocusBackground": "#444",
-        "list.focusBackground": "#222",
+        "list.focusBackground": "#222"
     },
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
@@ -67,6 +67,8 @@
     "workbench.list.keyboardNavigation": "simple",
     "terminal.integrated.commandsToSkipShell": [
         // Send quick open's keybinding to the shell
-        "-workbench.action.quickOpen",
-    ]
+        "-workbench.action.quickOpen"
+    ],
+    "typescript.preferences.quoteStyle": "single",
+    "javascript.preferences.quoteStyle": "single"
 }
