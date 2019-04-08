@@ -40,7 +40,7 @@
     ],
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.25,
-    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.preferences.importModuleSpecifier": "relative",
     "vscode_custom_css.imports": [
         "file:///home/max.rodionov/.config/Code/User/custom-css/index.css"
     ],
@@ -57,7 +57,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "html.format.wrapAttributes": "force-expand-multiline",
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
     "editor.minimap.enabled": false,
     "material-icon-theme.folders.theme": "classic",
     "material-icon-theme.activeIconPack": "",
