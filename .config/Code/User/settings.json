@@ -3,11 +3,9 @@
     "editor.rulers": [
         120
     ],
-    "editor.fontFamily": "'Fira Code', 'DejaVu Sans Mono', monospace",
     "editor.renderIndentGuides": true,
     "editor.fontLigatures": true,
     "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.fontFamily": "'Fira Code','DejaVu Sans Mono'",
     "files.trimTrailingWhitespace": true,
     "workbench.editor.showTabs": false,
     "window.zoomLevel": 0,
@@ -66,9 +64,11 @@
     "explorer.autoReveal": true,
     "workbench.list.keyboardNavigation": "simple",
     "terminal.integrated.commandsToSkipShell": [
-        // Send quick open's keybinding to the shell
         "-workbench.action.quickOpen"
     ],
     "typescript.preferences.quoteStyle": "single",
-    "javascript.preferences.quoteStyle": "single"
+    "cSpell.language": "en,ru",
+    "cSpell.userWords": [
+        "googlemaps"
+    ]
 }
