@@ -49,3 +49,13 @@ export NVM_DIR="$HOME/.nvm"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin
+
+# TMUX startup
+
+if [ -z "$TMUX" ]; then
+    if [ "$SSH_CONNECTION" != "" ]; then
+        tmux attach-session -t ssh || tmux new-session -s ssh
+    else
+        tmux attach -t default || tmux new -s default
+    fi
+fi
