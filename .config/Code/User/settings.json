@@ -25,7 +25,7 @@
     "workbench.editor.enablePreview": false,
     "workbench.settings.useSplitJSON": true,
     "search.location": "panel",
-    "update.channel": "none",
+    "update.mode": "none",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["g", "r"],
@@ -57,7 +57,6 @@
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
     "editor.minimap.enabled": false,
     "material-icon-theme.folders.theme": "classic",
-    "material-icon-theme.activeIconPack": "",
     "xmlTools.enableXmlTreeViewCursorSync": true,
     "xmlTools.splitAttributesOnFormat": true,
     "workbench.statusBar.feedback.visible": false,
@@ -68,7 +67,19 @@
     ],
     "typescript.preferences.quoteStyle": "single",
     "cSpell.language": "en,ru",
-    "cSpell.userWords": [
-        "googlemaps"
+    "cSpell.dictionaryDefinitions": [
+        {
+            "name": "dev-work",
+            "path": "/home/max.rodionov/.vscode-dict.cspell.txt"
+        },
+
+        {
+            "name": "dev-home",
+            "path": "/home/max/.vscode-dict.cspell.txt"
+        }
+    ],
+    "cSpell.dictionaries": [
+        "dev-work",
+        "dev-home"
     ]
 }
