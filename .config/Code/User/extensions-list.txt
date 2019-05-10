@@ -12,12 +12,12 @@ Mikael.Angular-BeastCode
 mkaufman.HTMLHint
 mrmlnc.vscode-scss
 ms-python.python
+ms-vscode.vscode-typescript-tslint-plugin
 newfuture.htmlhint
 patbenatar.advanced-new-file
 PeterJausovec.vscode-docker
 PKief.material-icon-theme
 pnp.polacode
-pranaygp.vscode-css-peek
 pucelle.vscode-css-navigation
 qub.qub-xml-vscode
 sanderledegen.angular-follow-selector
@@ -29,4 +29,3 @@ timonwong.shellcheck
 tobiasalthoff.atom-material-theme
 vscodevim.vim
 waderyan.gitblame
-Zignd.html-css-class-completion
