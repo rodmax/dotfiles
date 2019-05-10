@@ -81,5 +81,6 @@
     "cSpell.dictionaries": [
         "dev-work",
         "dev-home"
-    ]
+    ],
+    "tslint.alwaysShowRuleFailuresAsWarnings": false
 }

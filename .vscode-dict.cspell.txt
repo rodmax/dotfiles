@@ -10,3 +10,4 @@ markerclustererplus
 multiline
 testcafe
 tslib
+scrollable
