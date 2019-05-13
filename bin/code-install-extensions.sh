@@ -4,7 +4,7 @@ extensionsList=$HOME/.config/Code/User/extensions-list.txt
 set -ev
 
 # Install new / Update installed
-for ext in $(cat ~/.config/Code/User/extensions-list.txt); do code --install-extension ${ext}; done
+for ext in $(cat ~/.config/Code/User/extensions-list.txt); do code --install-extension ${ext} || echo "\tskipped... 😢"; done
 
 
 # Delete if not found in extensions list
