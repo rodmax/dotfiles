@@ -14,3 +14,7 @@ scrollable
 stylelint
 multiselect
 injectable
+datepicker
+datetime
+autosize
+paginator
