@@ -13,3 +13,4 @@ tslib
 scrollable
 stylelint
 multiselect
+injectable
