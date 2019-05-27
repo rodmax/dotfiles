@@ -58,6 +58,10 @@ set statusline+=%3*  "switch to User3 highlight
 set statusline+=\ line\ %l:%v   "line number
 set statusline+=\ \ [total\ %L]   "line number
 
+" Spell check settings
+set spell spelllang=en_us
+set spellfile=~/.vim/spell/en.utf-8.add
+set spellcapcheck=
 
 
 " tab symbol size 4, replace tab with spaces
