@@ -3,7 +3,7 @@
 /*
 Make vim ":rm"-like commands more readable
 */
-.statusbar-item.left.statusbar-entry:last-child > span {
+.statusbar-item.left.statusbar-entry[statusbar-entry-priority="null"] > span {
     font-size: 15px;
     color: #c3e88d;
 }
