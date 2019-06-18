@@ -6,6 +6,7 @@
   hide_tabbar = True
   inactive_color_offset = 0.9
   suppress_multiple_term_dialog = True
+  always_on_top = False
   tab_position = bottom
   title_inactive_bg_color = "#000000"
   title_inactive_fg_color = "#FFFFFF"
