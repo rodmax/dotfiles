@@ -16,6 +16,8 @@
     "workbench.colorCustomizations": {
         "editorIndentGuide.background": "#2b3b3f",
         "editorIndentGuide.activeBackground": "#39494a",
+        "editorWarning.foreground": "#ff7043",
+        "editorInfo.foreground": "#ffff00",
         "list.activeSelectionBackground": "#333",
         "list.inactiveFocusBackground": "#444",
         "list.focusBackground": "#222"
@@ -40,7 +42,7 @@
     "terminal.integrated.lineHeight": 1.25,
     "typescript.preferences.importModuleSpecifier": "relative",
     "vscode_custom_css.imports": [
-        "file:///home/max.rodionov/.config/Code/User/custom-css/index.css"
+        "file:///home/max/.config/Code/User/custom-css/index.css"
     ],
     "vscode_custom_css.policy": true,
     "merge-conflict.codeLens.enabled": false,
@@ -69,11 +71,6 @@
     "cSpell.language": "en,ru",
     "cSpell.dictionaryDefinitions": [
         {
-            "name": "dev-work",
-            "path": "/home/max.rodionov/.vscode-dict.cspell.txt"
-        },
-
-        {
             "name": "dev-home",
             "path": "/home/max/.vscode-dict.cspell.txt"
         }
@@ -82,5 +79,8 @@
         "dev-work",
         "dev-home"
     ],
-    "tslint.alwaysShowRuleFailuresAsWarnings": false
+    "tslint.alwaysShowRuleFailuresAsWarnings": false,
+    "cSpell.userWords": [
+        "visualstudio"
+    ]
 }
