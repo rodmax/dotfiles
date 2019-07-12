@@ -11,7 +11,7 @@ sudo apt update
 
 sudo apt install terminator tmux git zsh tree shutter shellcheck gitg gawk vim
 
-
+mkdir ~/.nvm
 mkdir -p ~/bin
 cd ~/bin
 wget git.io/trans
