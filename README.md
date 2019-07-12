@@ -39,8 +39,9 @@ cat ~/.ssh/id_rsa.pub
 ```bash
 export PATH="$HOME/bin:$PATH"
 wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfiles-install.sh | bash
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-dofiles lg # check it
+alias dof='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dof lg # check it
+dof branch --set-upstream-to=origin/master master
 ```
 
 ## Install `ohmyzsh`
