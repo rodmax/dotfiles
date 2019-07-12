@@ -51,6 +51,6 @@ dof branch --set-upstream-to=origin/master master
 Install  `nvm` and `node` [link](https://github.com/creationix/nvm)
 
 ```bash
-nvm install 10
-nvm alias defaul 10
+nvm install 12
+nvm alias defaul 12
 ```
