@@ -12,11 +12,10 @@ Mikael.Angular-BeastCode
 mikestead.dotenv
 mkaufman.HTMLHint
 mrmlnc.vscode-scss
+ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.vscode-typescript-tslint-plugin
-newfuture.htmlhint
 patbenatar.advanced-new-file
-PeterJausovec.vscode-docker
 PKief.material-icon-theme
 pnp.polacode
 pucelle.vscode-css-navigation
