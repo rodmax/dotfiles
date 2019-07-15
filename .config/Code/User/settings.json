@@ -81,6 +81,8 @@
     ],
     "tslint.alwaysShowRuleFailuresAsWarnings": false,
     "cSpell.userWords": [
+        "Snackbar",
+        "Unmount",
         "visualstudio"
     ]
 }
