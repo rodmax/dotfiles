@@ -16,8 +16,6 @@
     "workbench.colorCustomizations": {
         "editorIndentGuide.background": "#2b3b3f",
         "editorIndentGuide.activeBackground": "#39494a",
-        "editorWarning.foreground": "#ff7043",
-        "editorInfo.foreground": "#ffff00",
         "list.activeSelectionBackground": "#333",
         "list.inactiveFocusBackground": "#444",
         "list.focusBackground": "#222"
@@ -84,5 +82,7 @@
         "Snackbar",
         "Unmount",
         "visualstudio"
-    ]
+    ],
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.indent": 16
 }
