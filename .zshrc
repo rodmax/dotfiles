@@ -56,7 +56,9 @@ if [ -z "$TMUX" ]; then
     if [ "$SSH_CONNECTION" != "" ]; then
         tmux attach-session -t ssh || tmux new-session -s ssh
     else
-        # Right now i have some issue with colors so by default do not create tmux session
-        # tmux attach -t default || tmux new -s default
+        # Create but not attach some default sessions
+        for session in "start" "test"; do
+            tmux has-session -t ${session} 2>/dev/null || tmux new-session -d -s ${session}
+        done
     fi
 fi
