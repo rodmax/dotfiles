@@ -34,3 +34,14 @@ gitlab
 maxlength
 menuitemradio
 Синезис
+Devtools,
+datorama,
+figma,
+inited,
+ngdevtools,
+nospace,
+siema,
+testid,
+visibilitychange,
+деактивации
+

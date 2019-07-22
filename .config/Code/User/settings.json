@@ -84,5 +84,6 @@
         "visualstudio"
     ],
     "workbench.tree.renderIndentGuides": "always",
+    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
     "workbench.tree.indent": 16
 }
