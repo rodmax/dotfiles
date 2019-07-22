@@ -6,15 +6,16 @@ cyrilletuzi.angular-schematics
 dbaeumer.vscode-eslint
 DotJoshJohnson.xml
 EditorConfig.EditorConfig
+eg2.tslint
 lextudio.restructuredtext
 MariusAlchimavicius.json-to-ts
 Mikael.Angular-BeastCode
+mikestead.dotenv
 mkaufman.HTMLHint
 mrmlnc.vscode-scss
 ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.vscode-typescript-tslint-plugin
-newfuture.htmlhint
 patbenatar.advanced-new-file
 PKief.material-icon-theme
 pucelle.vscode-css-navigation
