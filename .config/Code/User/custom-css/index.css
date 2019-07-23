@@ -1,7 +1,7 @@
 /*
 Make vim ":rm"-like commands more readable
 */
-.statusbar-item.left.statusbar-entry[statusbar-entry-priority="null"] > span {
+#vscodevim\.vim.statusbar-item {
     font-size: 15px;
     color: #c3e88d;
 }
