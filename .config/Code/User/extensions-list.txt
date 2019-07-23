@@ -6,7 +6,6 @@ cyrilletuzi.angular-schematics
 dbaeumer.vscode-eslint
 DotJoshJohnson.xml
 EditorConfig.EditorConfig
-eg2.tslint
 lextudio.restructuredtext
 MariusAlchimavicius.json-to-ts
 Mikael.Angular-BeastCode
