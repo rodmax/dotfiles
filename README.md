@@ -1,7 +1,7 @@
 # Repository to backup my PC configuration files
 The idea is borrowed [here](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
-## Setup new system(linux mint 18)
+## Setup new system(right now works with ubuntu-based dists)
 - Install packages
 
 ```bash
