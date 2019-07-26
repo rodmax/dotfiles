@@ -54,5 +54,5 @@ Install  `nvm` and `node` [link](https://github.com/creationix/nvm)
 nvm install 12
 nvm alias defaul 12
 # At the moment i used need global npm packages
-npm i -g vmd @angular/cli npm-check-updates
+npm i -g vmd @angular/cli npm-check-updates ndb
 ```
