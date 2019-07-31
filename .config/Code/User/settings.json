@@ -16,9 +16,10 @@
     "workbench.colorCustomizations": {
         "editorIndentGuide.background": "#2b3b3f",
         "editorIndentGuide.activeBackground": "#39494a",
-        "list.activeSelectionBackground": "#333",
-        "list.inactiveFocusBackground": "#444",
-        "list.focusBackground": "#222"
+        "list.inactiveFocusBackground": "#4e342e",
+        "list.focusBackground": "#3e2723",
+        "list.activeSelectionBackground": "#455a64",
+        "list.inactiveSelectionBackground": "#37474f"
     },
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
@@ -81,7 +82,10 @@
     "cSpell.userWords": [
         "Snackbar",
         "Unmount",
-        "visualstudio"
+        "WAKEUP",
+        "junit",
+        "visualstudio",
+        "xlink"
     ],
     "workbench.tree.renderIndentGuides": "always",
     "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
