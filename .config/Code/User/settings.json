@@ -85,7 +85,10 @@
         "WAKEUP",
         "junit",
         "visualstudio",
-        "xlink"
+        "xlink",
+        "visualstudio",
+        "camelcase",
+        "visualstudio"
     ],
     "workbench.tree.renderIndentGuides": "always",
     "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
