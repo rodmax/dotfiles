@@ -8,7 +8,6 @@ DotJoshJohnson.xml
 EditorConfig.EditorConfig
 lextudio.restructuredtext
 MariusAlchimavicius.json-to-ts
-Mikael.Angular-BeastCode
 mikestead.dotenv
 mkaufman.HTMLHint
 mrmlnc.vscode-scss
@@ -27,4 +26,3 @@ timonwong.shellcheck
 tobiasalthoff.atom-material-theme
 vscodevim.vim
 waderyan.gitblame
-zuoez02.tslint-snippets
