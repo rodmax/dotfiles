@@ -83,12 +83,11 @@
         "Snackbar",
         "Unmount",
         "WAKEUP",
+        "camelcase",
+        "frontmatter",
         "junit",
         "visualstudio",
-        "xlink",
-        "visualstudio",
-        "camelcase",
-        "visualstudio"
+        "xlink"
     ],
     "workbench.tree.renderIndentGuides": "always",
     "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
