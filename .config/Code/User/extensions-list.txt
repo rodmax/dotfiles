@@ -16,6 +16,7 @@ ms-python.python
 ms-vscode.vscode-typescript-tslint-plugin
 patbenatar.advanced-new-file
 PKief.material-icon-theme
+Prisma.vscode-graphql
 pucelle.vscode-css-navigation
 qub.qub-xml-vscode
 sanderledegen.angular-follow-selector
@@ -24,5 +25,6 @@ streetsidesoftware.code-spell-checker
 streetsidesoftware.code-spell-checker-russian
 timonwong.shellcheck
 tobiasalthoff.atom-material-theme
+VisualStudioExptTeam.vscodeintellicode
 vscodevim.vim
 waderyan.gitblame
