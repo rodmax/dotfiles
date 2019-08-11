@@ -45,7 +45,6 @@
     ],
     "vscode_custom_css.policy": true,
     "merge-conflict.codeLens.enabled": false,
-    "merge-conflict.decorators.enabled": false,
     "editor.parameterHints.enabled": false,
     "breadcrumbs.enabled": true,
     "workbench.settings.editor": "json",
@@ -91,5 +90,7 @@
     ],
     "workbench.tree.renderIndentGuides": "always",
     "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
-    "workbench.tree.indent": 16
+    "workbench.tree.indent": 16,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
