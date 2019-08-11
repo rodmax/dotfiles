@@ -18,6 +18,9 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 
 
+alias tmuxa='tmux a -t'
+alias tmuxn='tmux new -s'
+
 alias open-file=xdg-open
 alias treel1='tree -L 1 -a'  # i like it instead of 'ls -1a'
 alias treel2='tree -L 2 -a'  # i like it instead of 'ls -1a'
