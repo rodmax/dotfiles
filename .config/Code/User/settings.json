@@ -94,5 +94,7 @@
     "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
     "workbench.tree.indent": 16,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "telemetry.enableTelemetry": false,
+    "qub-xml-vscode.telemetry.enabled": false
 }
