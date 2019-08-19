@@ -60,6 +60,12 @@ set statusline+=\ \ [total\ %L]   "line number
 
 " Spell check settings
 set spell spelllang=en_us
+hi clear SpellBad
+hi clear SpellLocal
+hi SpellBad cterm=underline ctermfg=yellow
+hi SpellLocal cterm=underline ctermfg=yellow
+
+
 set spellfile=~/.vim/spell/en.utf-8.add
 set spellcapcheck=
 
@@ -74,9 +80,6 @@ set list
 
 " show ^M symbols, prevent adding ^M symbols
 set fileformats=unix
-
-" Error highlighting
-hi SpellBad cterm=bold ctermfg=white ctermbg=red
 
 " File specific settings
 au BufNewFile,BufRead .jshintrc,.csslintrc setlocal filetype=json
