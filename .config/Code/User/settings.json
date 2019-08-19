@@ -82,6 +82,8 @@
         "Snackbar",
         "Unmount",
         "WAKEUP",
+        "WIALON",
+        "bundlesize",
         "camelcase",
         "frontmatter",
         "junit",
