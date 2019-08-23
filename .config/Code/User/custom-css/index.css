@@ -43,3 +43,9 @@ Make vim ":rm"-like commands more readable
 .part.statusbar.debugging {
     background-color: rgba(204, 102, 51, 0.3) !important;
 }
+
+/* Visually distinct control panel with terminal/output/... */
+.part.panel.bottom {
+    box-shadow: #141414 0px -1px 4px 0px;
+}
+
