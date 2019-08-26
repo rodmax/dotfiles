@@ -89,6 +89,7 @@
         "camelcase",
         "frontmatter",
         "junit",
+        "styleext",
         "visualstudio",
         "xlink"
     ],
