@@ -22,23 +22,12 @@ Make vim ":rm"-like commands more readable
     top: 200px !important;
 }
 
-/* Add red "*" to "unsaved changes" icon */
-.icon.menu-item-action-item-icon-5:after {
-    content: "*";
-    color:  red;
-    font-weight: bold;
-    font-size: 18px;
+/* Highlight "not saved" icon it top right corner of editor */
+.action-label.icon.menu-item-action-item-icon-4 {
+    background-color: #f4877161;
 }
 
-.task-statusbar-item-label-counter[title*="Errors"]:not([title="0 Errors"]) {
-    color: #f48771;
-    font-weight: bold;
-}
 
-.task-statusbar-item-label-error[title*="Errors"]:not([title="0 Errors"]) {
-    background-color: #f48771 !important;
-
-}
 
 .part.statusbar.debugging {
     background-color: rgba(204, 102, 51, 0.3) !important;
@@ -49,3 +38,10 @@ Make vim ":rm"-like commands more readable
     box-shadow: #141414 0px -1px 4px 0px;
 }
 
+/* Highilight errors and warnings statuses in bottom panel */
+#status\.problems[title*="Errors"] .octicon-error {
+    color: #f44336;
+}
+#status\.problems[title*="Warnings"] .octicon-warning {
+    color: #FF9800;
+}
