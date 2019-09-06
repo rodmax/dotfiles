@@ -6,6 +6,7 @@ cyrilletuzi.angular-schematics
 dbaeumer.vscode-eslint
 DotJoshJohnson.xml
 EditorConfig.EditorConfig
+esbenp.prettier-vscode
 lextudio.restructuredtext
 MariusAlchimavicius.json-to-ts
 mikestead.dotenv
@@ -14,6 +15,7 @@ mrmlnc.vscode-scss
 ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.vscode-typescript-tslint-plugin
+natewallace.angular2-inline
 newfuture.htmlhint
 patbenatar.advanced-new-file
 PKief.material-icon-theme
