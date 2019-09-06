@@ -15,12 +15,15 @@
 	remote-prune = remote prune origin
 	stash-all = stash save --include-untracked
 [merge]
-	tool = meld3way
-	conflictstyle = diff3
+	tool = smerge
+	conflictstyle=diff3
 [mergetool "meld2way"]
 	cmd = meld \"$LOCAL\" \"$MERGED\" \"$REMOTE\"
 [mergetool "meld3way"]
 	cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
+[mergetool "smerge"]
+	cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	trustExitCode = true
 [push]
 	default = current
 	followTags = true
