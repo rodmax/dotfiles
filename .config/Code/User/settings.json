@@ -86,6 +86,7 @@
         "Unmount",
         "WAKEUP",
         "WIALON",
+        "arraybuffer",
         "bundlesize",
         "camelcase",
         "frontmatter",
