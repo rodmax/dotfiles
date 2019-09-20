@@ -1,4 +1,5 @@
 Angular.ng-template
+aprilandjan.ascii-tree-generator
 be5invis.vscode-custom-css
 codezombiech.gitignore
 CoenraadS.bracket-pair-colorizer-2
@@ -9,6 +10,7 @@ EditorConfig.EditorConfig
 esbenp.prettier-vscode
 lextudio.restructuredtext
 MariusAlchimavicius.json-to-ts
+mhutchie.git-graph
 mikestead.dotenv
 mkaufman.HTMLHint
 mrmlnc.vscode-scss
