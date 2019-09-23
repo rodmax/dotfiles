@@ -16,8 +16,8 @@
     "workbench.colorCustomizations": {
         "editorIndentGuide.background": "#2b3b3f",
         "editorIndentGuide.activeBackground": "#39494a",
-        "list.inactiveFocusBackground": "#4e342e",
-        "list.focusBackground": "#3e2723",
+        "list.inactiveFocusBackground": "#1a237e",
+        "list.focusBackground": "#0d47a1",
         "list.activeSelectionBackground": "#455a64",
         "list.inactiveSelectionBackground": "#37474f"
     },
@@ -79,6 +79,7 @@
     ],
     "tslint.alwaysShowRuleFailuresAsWarnings": false,
     "cSpell.userWords": [
+        "Interop",
         "Platonova",
         "Snackbar",
         "Synesis",
@@ -89,6 +90,7 @@
         "arraybuffer",
         "bundlesize",
         "camelcase",
+        "downlevel",
         "frontmatter",
         "junit",
         "styleext",
