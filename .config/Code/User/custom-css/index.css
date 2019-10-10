@@ -4,6 +4,7 @@ Make vim ":rm"-like commands more readable
 #vscodevim\.vim.statusbar-item {
     font-size: 15px;
     color: #c3e88d;
+    background-color: rgba(10, 10, 10, 0.4);
 }
 
 

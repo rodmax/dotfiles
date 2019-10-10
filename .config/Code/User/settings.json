@@ -79,6 +79,7 @@
     ],
     "tslint.alwaysShowRuleFailuresAsWarnings": false,
     "cSpell.userWords": [
+        "Geocoded",
         "Interop",
         "Platonova",
         "Snackbar",
@@ -93,6 +94,7 @@
         "downlevel",
         "frontmatter",
         "junit",
+        "mkdir",
         "styleext",
         "vapp",
         "visualstudio",
