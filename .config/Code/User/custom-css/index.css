@@ -24,7 +24,7 @@ Make vim ":rm"-like commands more readable
 }
 
 /* Highlight "not saved" icon it top right corner of editor */
-.action-label.icon.menu-item-action-item-icon-4 {
+.action-label.icon.menu-item-action-item-icon-3 {
     background-color: #f4877161;
 }
 
