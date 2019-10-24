@@ -97,7 +97,8 @@
         "styleext",
         "vapp",
         "visualstudio",
-        "xlink"
+        "xlink",
+        "yagni"
     ],
     "workbench.tree.renderIndentGuides": "always",
     "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
