@@ -91,6 +91,7 @@
         "bundlesize",
         "camelcase",
         "downlevel",
+        "esnext",
         "frontmatter",
         "junit",
         "mkdir",
