@@ -40,9 +40,15 @@ Make vim ":rm"-like commands more readable
 }
 
 /* Highilight errors and warnings statuses in bottom panel */
-#status\.problems[title*="Errors"] .octicon-error {
-    color: #f44336;
+#status\.problems[title*="Errors"] .codicon-error {
+    font-weight: bold;
+    color: rgb(248, 128, 112);
 }
-#status\.problems[title*="Warnings"] .octicon-warning {
+#status\.problems[title*="Warnings"] .codicon-warning {
+    font-weight: bold;
     color: #FF9800;
+}
+#status\.problems[title*="Infos"] .codicon-info {
+    font-weight: bold;
+    color: #0c7d9d;
 }
