@@ -109,9 +109,5 @@
     "qub-xml-vscode.telemetry.enabled": false,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 4,
-    "prettier.printWidth": 100
+    }
 }
