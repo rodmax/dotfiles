@@ -1,31 +1,22 @@
 # Repository to backup my PC configuration files
 The idea is borrowed [here](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
-## Setup new system(right now works with ubuntu-based dists)
-- Install packages
+## Setup new system(right now works with ubuntu-based distro)
+
+1. Download helper script
 
 ```bash
-# From here https://itsfoss.com/vim-8-release-install/
-sudo add-apt-repository ppa:jonathonf/vim
-sudo apt update
-
-sudo apt install terminator tmux git zsh tree shutter shellcheck gitg gawk vim
-
-mkdir ~/.nvm
-mkdir -p ~/bin
-cd ~/bin
-wget git.io/trans
-chmod +x ./trans
-
-# [translate-shell utility](https://github.com/soimort/translate-shell)
-cd ~/bin
-wget git.io/trans
-chmod +x ./trans
-
-ssh-keygen -t rsa -b 4096 -C "rodionov.m.m@gmail.com"
+wget https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/setup.sh -o /tmp/setup.sh
+chmod +x /tmp/setup.sh
 ```
 
-## Put SSH key to github accaunt
+2. Install initial set of programs
+
+```bash
+/tmp/setup.sh run_0
+```
+
+3. Put SSH key to github account
 
 ```bash
 # Copying...
@@ -34,25 +25,24 @@ cat ~/.ssh/id_rsa.pub
 # And paste to your profile on github.com
 ```
 
-## Install this `dotfiles` repo
+4. Clone and init dotfiles  repository
 
 ```bash
-export PATH="$HOME/bin:$PATH"
-wget -qO- https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/dotfiles-install.sh | bash
-alias dof='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-dof lg # check it
-dof branch --set-upstream-to=origin/master master
+/tmp/setup.sh run_1
 ```
 
-## Install `ohmyzsh`
-[ohmyzsh](http://ohmyz.sh/)
-
-## Install node and nvm
-Install  `nvm` and `node` [link](https://github.com/creationix/nvm)
+5. Install ohmyzsh
 
 ```bash
-nvm install 12
-nvm alias defaul 12
-# At the moment i used need global npm packages
-npm i -g vmd @angular/cli npm-check-updates ndb
+/tmp/setup.sh run_1
 ```
+
+6. Install node + nvm
+
+```bash
+/tmp/setup.sh run_2
+```
+
+7. Install vim plugins
+
+Open vim and run `:PlugInstall`
