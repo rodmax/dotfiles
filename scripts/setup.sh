@@ -7,15 +7,30 @@ run_0() {
     sudo add-apt-repository ppa:jonathonf/vim
     sudo apt update
 
-    sudo apt install terminator tmux git zsh tree shutter shellcheck gitg gawk vim
+    sudo apt install terminator tmux git zsh tree shutter shellcheck gitg gawk vim shutter libappindicator-dev
 
     mkdir -p ~/bin
     cd ~/bin
     wget git.io/trans
     chmod +x ./trans
 
+    run_0_1
+
     # ssh-keygen -t rsa -b 4096 -C "rodionov.m.m@gmail.com"
     echo -e "Please setup ssh key on github and run 'run_1' command"
+}
+
+run_0_1() {
+    # Receipt from https://itsfoss.com/shutter-edit-button-disabled/
+    # Bellow command should be run after libappindicator-dev installed (see apt install in run_0 )
+    sudo cpan -i Gtk2::AppIndicator
+
+    mkdir ~/libgoo-canvas-perl && cd ~/libgoo-canvas-perl
+    wget https://launchpad.net/ubuntu/+archive/primary/+files/libgoocanvas-common_1.0.0-1_all.deb
+    wget https://launchpad.net/ubuntu/+archive/primary/+files/libgoocanvas3_1.0.0-1_amd64.deb
+    wget https://launchpad.net/ubuntu/+archive/primary/+files/libgoo-canvas-perl_0.06-2ubuntu3_amd64.deb
+    sudo dpkg -i *.deb
+    sudo apt install -f
 }
 
 run_1() {
@@ -75,6 +90,9 @@ set -x  # print executing commands
 case $command in
     run_0)
         run_0
+        ;;
+    run_0_1)
+        run_0_1 # NOTE: this step already included in run_0 but we can do it separatally
         ;;
     run_1)
         run_1
