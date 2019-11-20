@@ -93,6 +93,8 @@
         "downlevel",
         "esnext",
         "frontmatter",
+        "gitignore",
+        "jscpd",
         "junit",
         "mkdir",
         "styleext",
