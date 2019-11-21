@@ -97,6 +97,7 @@
         "frontmatter",
         "gitignore",
         "jscpd",
+        "gcloud",
         "junit",
         "mkdir",
         "ohmyzsh",
