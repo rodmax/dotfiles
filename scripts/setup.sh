@@ -50,9 +50,14 @@ run_1() {
 
 run_2() {
     echo "Installing ohmyzsh and friends..."
-    sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+    run_2_1
+}
+
+run_2_1() {
+    echo "Installing zsh-autosuggestions..."
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 }
+
 
 run_3() {
     echo "Installing nvm/npm/node..."
@@ -76,6 +81,9 @@ case $command in
         ;;
     run_2)
         run_2
+        ;;
+    run_2_1)
+        run_2_1
         ;;
     run_3)
         run_3
