@@ -92,6 +92,7 @@
         "camelcase",
         "chmod",
         "dotfiles",
+        "codecov",
         "downlevel",
         "esnext",
         "frontmatter",
@@ -99,8 +100,15 @@
         "jscpd",
         "gcloud",
         "junit",
+        "lcov",
         "mkdir",
+<<<<<<< HEAD
         "ohmyzsh",
+||||||| merged common ancestors
+=======
+        "repos",
+        "rodmax",
+>>>>>>> vscode: update settings.json
         "styleext",
         "vapp",
         "visualstudio",
@@ -115,5 +123,20 @@
     "qub-xml-vscode.telemetry.enabled": false,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+<<<<<<< HEAD
     }
+||||||| merged common ancestors
+    },
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 100
+=======
+    },
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 100,
+    "typescript.tsserver.log": "verbose"
+>>>>>>> vscode: update settings.json
 }
