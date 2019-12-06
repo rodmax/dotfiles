@@ -103,13 +103,9 @@
         "junit",
         "lcov",
         "mkdir",
-<<<<<<< HEAD
         "ohmyzsh",
-||||||| merged common ancestors
-=======
         "repos",
         "rodmax",
->>>>>>> vscode: update settings.json
         "styleext",
         "vapp",
         "visualstudio",
