@@ -79,5 +79,9 @@
         "key": "shift+f12",
         "command": "-editor.action.referenceSearch.trigger",
         "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-    }
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer"
+    },
 ]

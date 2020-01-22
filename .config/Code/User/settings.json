@@ -78,8 +78,10 @@
     ],
     "tslint.alwaysShowRuleFailuresAsWarnings": false,
     "cSpell.userWords": [
+        "Cacheble",
         "Geocoded",
         "Interop",
+        "Lifecycle",
         "Platonova",
         "Snackbar",
         "Synesis",
@@ -88,6 +90,7 @@
         "Uploader",
         "WAKEUP",
         "WIALON",
+        "ZINDEX",
         "arraybuffer",
         "bundlesize",
         "camelcase",
@@ -126,5 +129,6 @@
     "prettier.singleQuote": true,
     "prettier.tabWidth": 4,
     "prettier.printWidth": 100,
-    "typescript.tsserver.log": "verbose"
+    "typescript.tsserver.log": "verbose",
+    "html.mirrorCursorOnMatchingTag": false
 }
