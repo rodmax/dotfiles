@@ -34,15 +34,20 @@ cat ~/.ssh/id_rsa.pub
 5. Install ohmyzsh
 
 ```bash
-/tmp/setup.sh run_1
+/tmp/setup.sh run_2
 ```
 
 6. Install node + nvm
 
 ```bash
-/tmp/setup.sh run_2
+/tmp/setup.sh run_3
 ```
 
 7. Install vim plugins
 
-Open vim and run `:PlugInstall`
+    Open vim and run `:PlugInstall`
+
+8. Install "shellcheck"
+
+    apt repository is out of date
+    so install pre-compiled [Linux, x86_64 binary](https://github.com/koalaman/shellcheck#installing) to `$HOME/bin` instead
