@@ -1,6 +1,6 @@
 {
     "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontSize": 13,
+    "editor.fontSize": 15,
     "editor.fontLigatures": true,
     "editor.rulers": [
         120
@@ -26,7 +26,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.enablePreview": false,
     "workbench.settings.useSplitJSON": true,
-    "search.location": "panel",
     "update.mode": "none",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
@@ -131,5 +130,6 @@
     "prettier.tabWidth": 4,
     "prettier.printWidth": 100,
     "typescript.tsserver.log": "verbose",
-    "html.mirrorCursorOnMatchingTag": false
+    "html.mirrorCursorOnMatchingTag": false,
+    "editor.semanticHighlighting.enabled": true
 }
