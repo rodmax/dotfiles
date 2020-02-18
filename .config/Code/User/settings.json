@@ -8,7 +8,9 @@
     "editor.renderIndentGuides": true,
     "terminal.integrated.copyOnSelection": true,
     "files.trimTrailingWhitespace": true,
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 4,
     "window.zoomLevel": 0,
     "vim.handleKeys": {
         "<C-f>": false
