@@ -12,19 +12,11 @@
     },
     {
         "key": "alt+]",
-        "command": "workbench.action.openNextRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "ctrl+tab",
-        "command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
     },
     {
         "key": "alt+[",
-        "command": "workbench.action.openPreviousRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "ctrl+shift+tab",
-        "command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
+        "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker"
     },
     {
         "key": "ctrl+shift+\\",
@@ -70,11 +62,6 @@
         "key": "ctrl+1",
         "command": "-workbench.action.focusFirstEditorGroup"
     },
-    // {
-    //     "key": "g r",
-    //     "command": "editor.action.referenceSearch.trigger",
-    //     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor && vim.mode != 'Insert'"
-    // },
     {
         "key": "shift+f12",
         "command": "-editor.action.referenceSearch.trigger",
