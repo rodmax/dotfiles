@@ -101,6 +101,7 @@
         "dotfiles",
         "downlevel",
         "esnext",
+        "forin",
         "frontmatter",
         "gcloud",
         "gitignore",
@@ -133,5 +134,8 @@
     "prettier.printWidth": 100,
     "typescript.tsserver.log": "verbose",
     "html.mirrorCursorOnMatchingTag": false,
-    "editor.semanticHighlighting.enabled": true
+    "editor.semanticHighlighting.enabled": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
