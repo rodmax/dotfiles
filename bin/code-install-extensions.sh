@@ -1,21 +1,27 @@
 #!/bin/bash
 
 extensionsList=$HOME/.config/Code/User/extensions-list.txt
-set -ev
+set -e
 
 # Install new / Update installed
-for ext in $(cat ~/.config/Code/User/extensions-list.txt); do code --install-extension ${ext} || echo "\tskipped... 😢"; done
+grep -v '^ *#' <  "$extensionsList" | while IFS= read -r ext
+do
+    printf "[%s]\n" "$ext"
+    code --install-extension "${ext}" || printf "skipped 👀 \n\n"
+    printf "\n"
+done
+
 
 
 # Delete if not found in extensions list
 currentlyInstalled=/tmp/code-extensions-list.txt
 code --list-extensions > ${currentlyInstalled}
-needToDelete=$(comm -23 ${currentlyInstalled} ${extensionsList})
+needToDelete=$(comm -23 "${currentlyInstalled}" "${extensionsList}")
 
 for ext in $needToDelete; do
-    read -p "Delete '$ext' (y/n) extension? " choice
+    read -rp "Delete '$ext' (y/n) extension? " choice
     case "$choice" in
-    y|Y ) code --uninstall-extension ${ext};;
+    y|Y ) code --uninstall-extension "${ext}";;
     n|N ) echo "skipped";;
     * ) ;;
     esac
