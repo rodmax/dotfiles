@@ -23,9 +23,9 @@ Make vim ":rm"-like commands more readable
     top: 200px !important;
 }
 
-/* Highlight "not saved" icon it top right corner of editor */
-.action-label.icon.menu-item-action-item-icon-3 {
-    background-color: #f4877161;
+/* Make close icon "red" for not saved tab content*/
+.tab.dirty>.tab-close .action-label:before {
+    color: #F44336;
 }
 
 
@@ -56,4 +56,10 @@ Make vim ":rm"-like commands more readable
 /* Highlight enabled options(regexp/whole world/etc...) in search panel */
 .monaco-custom-checkbox.checked {
     color: #75beff !important;
+}
+
+.tab.active.tab-border-top>.tab-border-top-container {
+    margin-top: 2px;
+    background-color: #8BC34A !important;
+    height: 2px !important;
 }

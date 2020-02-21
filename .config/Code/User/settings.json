@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
     "editor.fontSize": 15,
     "editor.fontLigatures": true,
     "editor.rulers": [
@@ -10,7 +10,7 @@
     "files.trimTrailingWhitespace": true,
     "workbench.editor.showTabs": true,
     "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 4,
+    "workbench.editor.limit.value": 6,
     "window.zoomLevel": 0,
     "vim.handleKeys": {
         "<C-f>": false
@@ -84,6 +84,7 @@
         "Geocoded",
         "Interop",
         "Lifecycle",
+        "NETPING",
         "Platonova",
         "Snackbar",
         "Synesis",
@@ -109,6 +110,7 @@
         "junit",
         "lcov",
         "mkdir",
+        "monospace",
         "ohmyzsh",
         "repos",
         "rodmax",
