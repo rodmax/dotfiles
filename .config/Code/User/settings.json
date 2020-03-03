@@ -109,6 +109,7 @@
         "jscpd",
         "junit",
         "lcov",
+        "minmax",
         "mkdir",
         "monospace",
         "ohmyzsh",

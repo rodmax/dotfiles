@@ -60,6 +60,10 @@ Make vim ":rm"-like commands more readable
 
 .tab.active.tab-border-top>.tab-border-top-container {
     margin-top: 2px;
-    background-color: #8BC34A !important;
-    height: 2px !important;
+    background-color: #f48771 !important;
+    height: 4px !important;
+}
+
+.tab.active.tab-border-top .label-name {
+    font-weight: 500;
 }
