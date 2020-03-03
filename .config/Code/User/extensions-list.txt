@@ -17,10 +17,12 @@ mikestead.dotenv
 mrmlnc.vscode-scss
 ms-azuretools.vscode-docker
 ms-python.python
+ms-vscode.cpptools
 ms-vscode.vscode-typescript-tslint-plugin
 natewallace.angular2-inline
 patbenatar.advanced-new-file
 PKief.material-icon-theme
+platformio.platformio-ide
 Prisma.vscode-graphql
 pucelle.vscode-css-navigation
 qub.qub-xml-vscode
