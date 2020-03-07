@@ -27,9 +27,9 @@ Prisma.vscode-graphql
 pucelle.vscode-css-navigation
 qub.qub-xml-vscode
 sanderledegen.angular-follow-selector
+shinnn.stylelint
 streetsidesoftware.code-spell-checker
 streetsidesoftware.code-spell-checker-russian
-stylelint.vscode-stylelint
 timonwong.shellcheck
 tobiasalthoff.atom-material-theme
 VisualStudioExptTeam.vscodeintellicode
