@@ -15,7 +15,7 @@
     "vim.handleKeys": {
         "<C-f>": false
     },
-    "workbench.colorTheme": "Overnight Slumber",
+    "workbench.colorTheme": "Atom Material Theme",
     "workbench.colorCustomizations": {
         "editorIndentGuide.background": "#2b3b3f",
         "editorIndentGuide.activeBackground": "#39494a",

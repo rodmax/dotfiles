@@ -1,7 +1,6 @@
 Angular.ng-template
 aprilandjan.ascii-tree-generator
 be5invis.vscode-custom-css
-cev.overnight
 codezombiech.gitignore
 CoenraadS.bracket-pair-colorizer-2
 cyrilletuzi.angular-schematics
