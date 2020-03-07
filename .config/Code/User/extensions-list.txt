@@ -1,4 +1,5 @@
 Angular.ng-template
+antfu.i18n-ally
 aprilandjan.ascii-tree-generator
 be5invis.vscode-custom-css
 codezombiech.gitignore

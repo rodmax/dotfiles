@@ -140,5 +140,7 @@
     "editor.semanticHighlighting.enabled": true,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "i18n-ally.sortKeys": true,
+    "i18n-ally.annotations": false
 }
