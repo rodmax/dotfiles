@@ -9,7 +9,7 @@ test $UID -eq 0 && user_color='red'
 
 PROMPT='%{$fg[$user_color]%}[%~/]$(parse_git_dirty) %{$reset_color%}'
 RPROMPT+="%{$fg[green]%}"
-RPROMPT+='$(git_current_branch)[$(git_commits_ahead)/${git_commits_behaind}]'
+RPROMPT+='$(git_current_branch)[↑$(git_commits_ahead)/↓$(git_commits_behind)]'
 RPROMPT+="%{$reset_color%}"
 RPROMPT+="${return_code}"
 
