@@ -58,12 +58,8 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin
 # TMUX startup
 
 if [ -z "$TMUX" ]; then
-    if [ "$SSH_CONNECTION" != "" ]; then
-        tmux attach-session -t ssh || tmux new-session -s ssh
-    else
-        # Create but not attach some default sessions
-        for session in "start" "test"; do
-            tmux has-session -t ${session} 2>/dev/null || tmux new-session -d -s ${session}
-        done
-    fi
+    # Create but not attach some default sessions
+    for session in "start" "test"; do
+        tmux has-session -t ${session} 2>/dev/null || tmux new-session -d -s ${session}
+    done
 fi
