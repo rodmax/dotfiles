@@ -3,11 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-if [[ -n "$SSH_CLIENT" || -n "$SSH2_CLIENT" ]]; then
-    ZSH_THEME="bira" #"robbyrussell"
-else
-    ZSH_THEME="rodmax" #"robbyrussell"
-fi
+ZSH_THEME="rodmax"
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 
