@@ -1,3 +1,4 @@
 *.pyc
 \.local
 \.vimrc_local
+node_modules/
