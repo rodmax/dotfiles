@@ -83,6 +83,22 @@ run_3() {
     npm i -g vmd @angular/cli npm-check-updates ndb vmd
 }
 
+run_4() {
+    echo "Setup flameshot as system screenthot app"
+    # https://askubuntu.com/a/1116076
+    gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot '[]'
+    gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \
+        "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
+    gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ \
+        name 'flameshot'
+    gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ \
+        command '/usr/bin/flameshot gui'
+    gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ \
+        binding 'Print'
+}
+
+
+
 command=$1
 shift
 
@@ -105,6 +121,9 @@ case $command in
         ;;
     run_3)
         run_3
+        ;;
+    run_4)
+        run_4
         ;;
     *)
         echo "Unknown command \"$command\" passed"
