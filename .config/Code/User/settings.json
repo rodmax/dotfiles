@@ -144,11 +144,10 @@
     "prettier.tabWidth": 4,
     "prettier.printWidth": 100,
     "typescript.tsserver.log": "verbose",
-    "html.mirrorCursorOnMatchingTag": false,
+    "editor.renameOnType": true,
     "editor.semanticHighlighting.enabled": true,
     "i18n-ally.sortKeys": true,
     "i18n-ally.annotations": false,
-    "timeline.showView": true,
     "i18n-ally.keystyle": "flat",
     "i18n-ally.preferredDelimiter": ".",
     "[typescript]": {
