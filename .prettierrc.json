@@ -7,5 +7,14 @@
     "useTabs": false,
     "semi": true,
     "jsxSingleQuote": true,
-    "arrowParens": "avoid"
+    "jsxBracketSameLine": false,
+    "arrowParens": "avoid",
+    "overrides": [
+        {
+            "files": "package*json",
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
 }
