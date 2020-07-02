@@ -6,8 +6,7 @@ The idea is borrowed [here](https://developer.atlassian.com/blog/2016/02/best-wa
 1. Download helper script
 
 ```bash
-wget https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/setup.sh -o /tmp/setup.sh
-chmod +x /tmp/setup.sh
+wget https://raw.githubusercontent.com/rodmax/dotfiles/master/scripts/setup.sh -O /tmp/setup.sh && chmod +x /tmp/setup.sh
 ```
 
 2. Install initial set of programs
