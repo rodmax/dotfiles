@@ -7,7 +7,7 @@ run_0() {
     sudo add-apt-repository ppa:jonathonf/vim
     sudo apt update
 
-    sudo apt install terminator tmux git zsh tree shutter gitg gawk vim shutter libappindicator-dev flameshot
+    sudo apt install terminator tmux git zsh tree gitg gawk vim libappindicator-dev flameshot
 
     mkdir -p ~/bin
     cd ~/bin
@@ -34,7 +34,7 @@ run_0_1() {
 }
 
 run_1() {
-    echo "Cloning dotfiles repo..."
+    echo "Cloning dotfiles repo...[FIXME] bellow screept may not working"
     export PATH="$HOME/bin:$PATH"
 
     alias dof='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
