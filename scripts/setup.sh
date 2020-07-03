@@ -77,9 +77,11 @@ run_2_1() {
 
 run_3() {
     echo "Installing nvm/npm/node..."
-    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
-    nvm install 12
-    nvm alias defaul 12
+    # wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+    nvm install 14
+    nvm alias defaul 14
     # At the moment i use bellow global npm packages
     npm i -g vmd @angular/cli npm-check-updates ndb vmd
 }
