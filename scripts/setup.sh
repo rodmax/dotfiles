@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e  # exit on any command error
 
-
 run_0() {
     # From here https://itsfoss.com/vim-8-release-install/
     sudo add-apt-repository ppa:jonathonf/vim
@@ -37,8 +36,6 @@ run_1() {
     echo "Cloning dotfiles repo...[FIXME] bellow screept may not working"
     export PATH="$HOME/bin:$PATH"
 
-    alias dof='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
     repo="git@github.com:rodmax/dotfiles.git"
 
 
@@ -65,10 +62,10 @@ run_1() {
 
 run_2() {
     echo "Installing ohmyzsh and friends..."
-    run_2_1
-}
+    rm -rf .oh-my-zsh
+    sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+    dof checkout ~/.zshrc ~/.oh-my-zsh
 
-run_2_1() {
     echo "Installing zsh-autosuggestions..."
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 }
@@ -96,6 +93,11 @@ run_4() {
     gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ \
         binding 'Print'
 }
+
+dof() {
+    git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
+}
+
 
 
 
