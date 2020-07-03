@@ -41,6 +41,7 @@ run_1() {
 
     git clone --bare ${repo} $HOME/.dotfiles
     mkdir -p .dotfiles-backup
+    dof config user.email rodionov.m.m@gmail.com
 
     dof checkout
     if [ $? = 0 ]; then
@@ -64,6 +65,9 @@ run_2() {
     echo "Installing ohmyzsh and friends..."
     rm -rf .oh-my-zsh
     sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+}
+
+run_2_1() {
     dof checkout ~/.zshrc ~/.oh-my-zsh
 
     echo "Installing zsh-autosuggestions..."
