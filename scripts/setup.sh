@@ -16,6 +16,7 @@ run_0() {
     chmod +x ./trans
 
     run_0_2
+    run_0_3
 
     # ssh-keygen -t rsa -b 4096 -C "rodionov.m.m@gmail.com"
     echo -e "Please setup ssh key on github and run 'run_1' command"
@@ -30,6 +31,15 @@ run_0_2() {
     gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['']"
     gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward  "['']"
     gsettings set org.freedesktop.ibus.general.hotkey triggers "['']"
+}
+
+run_0_3() {
+    defaultHomeFolder=/home/max
+    if [ "$HOME" != "$defaultHomeFolder" ]; then
+        # It is needed to some resources from vscode config hardcoded to /home/max/... folder
+        echo "Creating symbolic link $defaultHomeFolder to folder $HOME..."
+        sudo ln -s /home/max "/home/$(whoami)"
+    fi
 }
 
 run_1() {
