@@ -2,9 +2,7 @@
     "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
     "editor.fontSize": 15,
     "editor.fontLigatures": true,
-    "editor.rulers": [
-        120
-    ],
+    "editor.rulers": [120],
     "editor.renderIndentGuides": true,
     "terminal.integrated.copyOnSelection": true,
     "files.trimTrailingWhitespace": true,
@@ -42,9 +40,7 @@
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.25,
     "typescript.preferences.importModuleSpecifier": "auto",
-    "vscode_custom_css.imports": [
-        "file:///home/max/.config/Code/User/custom-css/index.css"
-    ],
+    "vscode_custom_css.imports": ["file:///home/max/.config/Code/User/custom-css/index.css"],
     "vscode_custom_css.policy": true,
     "merge-conflict.codeLens.enabled": false,
     "editor.parameterHints.enabled": false,
@@ -63,9 +59,7 @@
     "xmlTools.splitAttributesOnFormat": true,
     "explorer.autoReveal": true,
     "workbench.list.keyboardNavigation": "simple",
-    "terminal.integrated.commandsToSkipShell": [
-        "-workbench.action.quickOpen"
-    ],
+    "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
     "typescript.preferences.quoteStyle": "single",
     "cSpell.language": "en,ru",
     "cSpell.dictionaryDefinitions": [
@@ -74,10 +68,7 @@
             "path": "/home/max/.vscode-dict.cspell.txt"
         }
     ],
-    "cSpell.dictionaries": [
-        "dev-work",
-        "dev-home"
-    ],
+    "cSpell.dictionaries": ["dev-work", "dev-home"],
     "tslint.alwaysShowRuleFailuresAsWarnings": false,
     "cSpell.userWords": [
         "Cacheble",
@@ -101,6 +92,7 @@
         "chmod",
         "codecov",
         "codeframe",
+        "commitlint",
         "docx",
         "dotfiles",
         "downlevel",
@@ -120,6 +112,7 @@
         "minmax",
         "mkdir",
         "monospace",
+        "ngcc",
         "ohmyzsh",
         "polylines",
         "println",
@@ -159,7 +152,16 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
