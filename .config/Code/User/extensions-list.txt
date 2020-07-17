@@ -28,6 +28,7 @@ platformio.platformio-ide
 Prisma.vscode-graphql
 pucelle.vscode-css-navigation
 qub.qub-xml-vscode
+redhat.vscode-yaml
 streetsidesoftware.code-spell-checker
 streetsidesoftware.code-spell-checker-russian
 stylelint.vscode-stylelint
