@@ -163,5 +163,6 @@
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "emojisense.emojiDecoratorsEnabled": false,
 }

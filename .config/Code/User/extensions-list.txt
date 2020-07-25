@@ -2,6 +2,7 @@ Angular.ng-template
 antfu.i18n-ally
 aprilandjan.ascii-tree-generator
 be5invis.vscode-custom-css
+bierner.emojisense
 bierner.markdown-emoji
 codezombiech.gitignore
 CoenraadS.bracket-pair-colorizer-2
