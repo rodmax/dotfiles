@@ -140,11 +140,7 @@ eval "`dircolors -b $HOME/.lscolors`"
 ### # Tell Node about these packages
 ### NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
-# Init virtualenvwrapper envirnment
-export WORKON_HOME=~/envs
-source /usr/local/bin/virtualenvwrapper.sh
-
-export NVM_DIR="/home/max/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 shopt -s globstar

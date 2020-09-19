@@ -27,8 +27,7 @@ alias tmuxn='tmux new -s'
 alias open-file=xdg-open
 alias treel1='tree -L 1 -a'  # i like it instead of 'ls -1a'
 alias treel2='tree -L 2 -a'  # i like it instead of 'ls -1a'
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dof=dotfiles  # experimenal
+alias dof='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias g=git
 alias r='npm run'
 alias notify-me='notify-send -i face-cool -u low "Job Done!!!" || notify-send -i face-crying -u critical "Job FAILED :("'  # Usage: "npm build && notify-me"
@@ -38,12 +37,6 @@ toru() {
 toen() {
     trans ru:en "$*"
 }
-
-# Init virtualenvwrapper envirnment
-export WORKON_HOME=~/envs
-virtualwrapperScript="/usr/local/bin/virtualenvwrapper.sh"
-[ -s "${virtualwrapperScript}" ] && source ${virtualwrapperScript}
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
