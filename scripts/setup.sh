@@ -36,7 +36,7 @@ run_0_3() {
     if [ "$HOME" != "$defaultHomeFolder" ]; then
         # It is needed to some resources from vscode config hardcoded to /home/max/... folder
         echo "Creating symbolic link $defaultHomeFolder to folder $HOME..."
-        sudo ln -s /home/max "/home/$(whoami)"
+        sudo ln -s "/home/$(whoami)"  /home/max
     fi
 }
 
@@ -113,38 +113,8 @@ dof() {
 }
 
 
-
-
 command=$1
 shift
 
 set -x  # print executing commands
-case $command in
-    run_0)
-        run_0
-        ;;
-    run_0_1)
-        run_0_1 # NOTE: this step already included in run_0 but we can do it separatally
-        ;;
-    run_0_2)
-        run_0_2 # NOTE: this step already included in run_0 but we can do it separatally
-        ;;
-    run_1)
-        run_1
-        ;;
-    run_2)
-        run_2
-        ;;
-    run_2_1)
-        run_2_1
-        ;;
-    run_3)
-        run_3
-        ;;
-    run_4)
-        run_4
-        ;;
-    *)
-        echo "Unknown command \"$command\" passed"
-        exit 1
-esac
+$command
