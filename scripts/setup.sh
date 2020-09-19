@@ -29,6 +29,19 @@ run_0_2() {
     gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['']"
     gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward  "['']"
     gsettings set org.freedesktop.ibus.general.hotkey triggers "['']"
+    
+    # Use flameshot as default tool for screenshot global hot keys
+    # https://askubuntu.com/a/1116076
+    echo "Setup flameshot as system screenthot app"
+    gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot '[]'
+    gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \
+        "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
+    gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ \
+        name 'flameshot'
+    gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ \
+        command 'flameshot gui'
+    gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ \
+        binding 'Print'
 }
 
 run_0_3() {
@@ -98,19 +111,6 @@ run_3() {
     npm i -g vmd @angular/cli npm-check-updates ndb
 }
 
-run_4() {
-    echo "Setup flameshot as system screenthot app"
-    # https://askubuntu.com/a/1116076
-    gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot '[]'
-    gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \
-        "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
-    gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ \
-        name 'flameshot'
-    gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ \
-        command 'flameshot gui'
-    gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ \
-        binding 'Print'
-}
 
 dof() {
     git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
