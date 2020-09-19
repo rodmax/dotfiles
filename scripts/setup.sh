@@ -69,6 +69,7 @@ run_1() {
     dof config status.showUntrackedFiles no
 
     dof fetch
+    dof branch --set-upstream-to=origin/master master
 }
 
 run_2() {
