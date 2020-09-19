@@ -94,7 +94,7 @@ run_3() {
     nvm install 14
     nvm alias defaul 14
     # At the moment i use bellow global npm packages
-    npm i -g vmd @angular/cli npm-check-updates ndb vmd
+    npm i -g vmd @angular/cli npm-check-updates ndb
 }
 
 run_4() {
