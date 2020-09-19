@@ -75,6 +75,7 @@ run_2() {
     echo "Installing ohmyzsh and friends..."
     rm -rf .oh-my-zsh
     sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+    echo "Restart terminal and run run_2_1 command to finish oh-my-zsh installing"
 }
 
 run_2_1() {
