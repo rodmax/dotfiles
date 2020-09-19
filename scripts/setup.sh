@@ -50,9 +50,12 @@ run_1() {
     git clone --bare ${repo} $HOME/.dotfiles
     mkdir -p .dotfiles-backup
     dof config user.email rodionov.m.m@gmail.com
-
+    
+    set +e
     dof checkout
-    if [ $? = 0 ]; then
+    err=$?
+    set -e
+    if [ $err = 0 ]; then
         echo "Successfully checked out dotfiles.";
     else
         echo "Backing up pre-existing dot files.";
@@ -65,8 +68,7 @@ run_1() {
     dof checkout master
     dof config status.showUntrackedFiles no
 
-    dof lg # check it
-    dof branch --set-upstream-to=origin/master master
+    dof fetch
 }
 
 run_2() {
