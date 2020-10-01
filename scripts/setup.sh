@@ -16,6 +16,10 @@ run_0() {
     run_0_2
     run_0_3
 
+    # Needed to correct work vscode/webpack processes
+    # https://github.com/gatsbyjs/gatsby/issues/11406#issuecomment-458769756
+    echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
     # ssh-keygen -t rsa -b 4096 -C "rodionov.m.m@gmail.com"
     echo -e "Please setup ssh key on github and run 'run_1' command"
 }
