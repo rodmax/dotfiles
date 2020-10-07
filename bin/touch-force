@@ -1,0 +1,16 @@
+#!/bin/sh
+# Create as many empty files as you likes
+# Exmaples:
+#
+# > touch-force root/x.{tsx,scss} root/nested/folder/b.a
+# > tree root/
+# root/
+# ├── b.a
+# ├── nested
+# │   └── folder
+# │       └── b.a
+# ├── x.scss
+# └── x.tsx
+mkdir -p $(dirname $@)
+touch $@
+
