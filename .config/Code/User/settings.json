@@ -166,5 +166,5 @@
     },
     "emojisense.emojiDecoratorsEnabled": false,
     "editor.renderWhitespace": "trailing",
-    "terminal.integrated.shell.linux":"/usr/bin/zsh",
+    "terminal.integrated.shell.linux": "/usr/bin/zsh"
 }

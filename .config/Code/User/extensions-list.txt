@@ -4,6 +4,7 @@ aprilandjan.ascii-tree-generator
 be5invis.vscode-custom-css
 bierner.emojisense
 bierner.markdown-emoji
+bierner.markdown-mermaid
 codezombiech.gitignore
 CoenraadS.bracket-pair-colorizer-2
 cyrilletuzi.angular-schematics
@@ -14,6 +15,7 @@ esbenp.prettier-vscode
 GitHub.vscode-pull-request-github
 lextudio.restructuredtext
 MariusAlchimavicius.json-to-ts
+meganrogge.template-string-converter
 mhutchie.git-graph
 mikestead.dotenv
 mrmlnc.vscode-scss
@@ -27,7 +29,6 @@ natewallace.angular2-inline
 patbenatar.advanced-new-file
 PKief.material-icon-theme
 platformio.platformio-ide
-Prisma.vscode-graphql
 pucelle.vscode-css-navigation
 qub.qub-xml-vscode
 redhat.vscode-yaml
