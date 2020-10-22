@@ -164,6 +164,9 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[code-snippets]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "emojisense.emojiDecoratorsEnabled": false,
     "editor.renderWhitespace": "trailing",
     "terminal.integrated.shell.linux": "/usr/bin/zsh"
