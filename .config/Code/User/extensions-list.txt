@@ -35,6 +35,7 @@ redhat.vscode-yaml
 streetsidesoftware.code-spell-checker
 streetsidesoftware.code-spell-checker-russian
 stylelint.vscode-stylelint
+sysoev.language-stylus
 timonwong.shellcheck
 tobiasalthoff.atom-material-theme
 VisualStudioExptTeam.vscodeintellicode
