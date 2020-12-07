@@ -13,6 +13,7 @@
 	ca = commit --amend
 	c = checkout
 	remote-prune = remote prune origin
+	br = branch --sort=-committerdate --format='%(if)%(upstream:track)%(then)%(if:equals=[gone])%(upstream:track)%(then)%(color:red)%(else)%(color:yellow)%(end)%(end)%(align:left,50)%(HEAD)%(refname:lstrip=-1)%(end) %(align:left,30)%(if)%(upstream)%(then)%(upstream:remotename)%(upstream:track)%(else)<no upstream>%(end)%(end)%(committerdate)'
 	stash-all = stash save --include-untracked
 [merge]
 	tool = smerge
