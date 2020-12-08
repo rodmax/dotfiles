@@ -6,7 +6,7 @@ run_0() {
     sudo add-apt-repository ppa:jonathonf/vim
     sudo apt update
 
-    sudo apt install terminator tmux git zsh tree gitg gawk vim libappindicator-dev flameshot htop
+    sudo apt install terminator tmux git zsh tree gitg gawk vim libappindicator-dev flameshot htop xclip
 
     mkdir -p ~/bin
     cd ~/bin

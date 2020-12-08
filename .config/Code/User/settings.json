@@ -143,6 +143,7 @@
     "i18n-ally.annotations": false,
     "i18n-ally.keystyle": "flat",
     "i18n-ally.preferredDelimiter": ".",
+    "i18n-ally.review.enabled": false,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
