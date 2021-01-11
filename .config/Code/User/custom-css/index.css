@@ -70,3 +70,8 @@ Make vim ":rm"-like commands more readable
     color: white;
     box-shadow: 1px -2px 6px 2px #8BC34A;
 }
+
+/** Highlight current branch */
+.statusbar-item#status\.scm {
+    color: #75beff
+}
