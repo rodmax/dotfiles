@@ -30,7 +30,7 @@ Make vim ":rm"-like commands more readable
     box-shadow: #00BCD4 0px -1px 4px 0px;
 }
 
-/* Highilight errors and warnings statuses in bottom panel */
+/* Highlight errors and warnings statuses in bottom panel */
 #status\.problems[title*="Errors"] .codicon-error {
     font-weight: bold;
     color: rgb(248, 128, 112);
