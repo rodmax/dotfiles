@@ -7,7 +7,7 @@ run_0() {
     sudo add-apt-repository ppa:jonathonf/vim
     sudo apt update
 
-    sudo apt install terminator tmux git zsh tree gitg gawk vim libappindicator-dev flameshot htop xclip
+    sudo apt install terminator tmux git zsh tree gitg gawk vim libappindicator-dev flameshot htop xclip code shellcheck
 
     mkdir -p ~/bin
     cd ~/bin
@@ -113,7 +113,7 @@ run_3() {
     nvm install 14
     nvm alias defaul 14
     # At the moment i use bellow global npm packages
-    npm i -g vmd @angular/cli npm-check-updates ndb commitizen
+    npm i -g vmd npm-check-updates ndb commitizen
 }
 
 
