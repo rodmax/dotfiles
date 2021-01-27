@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e  # exit on any command error
+set -x
 
 run_0() {
     # From here https://itsfoss.com/vim-8-release-install/
