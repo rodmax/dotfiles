@@ -39,7 +39,6 @@
     ],
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.25,
-    "typescript.preferences.importModuleSpecifier": "auto",
     "vscode_custom_css.imports": ["file:///home/max/.config/Code/User/custom-css/index.css"],
     "vscode_custom_css.policy": true,
     "merge-conflict.codeLens.enabled": false,
@@ -50,7 +49,6 @@
         "ui/node_modules": true,
         "node_modules": true
     },
-    "workbench.iconTheme": "material-icon-theme",
     "html.format.wrapAttributes": "force-expand-multiline",
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
     "editor.minimap.enabled": false,
@@ -115,10 +113,12 @@
         "ngcc",
         "ohmyzsh",
         "polylines",
+        "printf",
         "println",
         "repos",
         "rodmax",
         "scrollwheel",
+        "shellcheck",
         "styleext",
         "tabindex",
         "vapp",
@@ -137,7 +137,7 @@
     "prettier.tabWidth": 4,
     "prettier.printWidth": 100,
     "typescript.tsserver.log": "verbose",
-    "editor.renameOnType": true,
+    "editor.linkedEditing": true,
     "editor.semanticHighlighting.enabled": true,
     "i18n-ally.sortKeys": true,
     "i18n-ally.annotations": false,
@@ -171,5 +171,8 @@
     "emojisense.emojiDecoratorsEnabled": false,
     "editor.renderWhitespace": "trailing",
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "python.languageServer": "Pylance",
+    "cSpell.enableFiletypes": ["dockerfile", "shellscript", "dotenv"],
+    "python.showStartPage": false
 }

@@ -1,4 +1,3 @@
-# Path to your oh-my-zsh installatioexport
 export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -20,7 +19,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export EDITOR='vim'
 
-
+# cSpell:words tmuxa tmuxn treel dotfiles kubectl toru toen
 alias tmuxa='tmux a -t'
 alias tmuxn='tmux new -s'
 
@@ -30,7 +29,7 @@ alias treel2='tree -L 2 -a'  # i like it instead of 'ls -1a'
 alias dof='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias g=git
 alias r='npm run'
-alias notify-me='notify-send -i face-cool -u low "Job Done!!!" || notify-send -i face-crying -u critical "Job FAILED :("'  # Usage: "npm build && notify-me"
+
 toru() {
     trans en:ru "$*"
 }
@@ -55,7 +54,6 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-export JAVA_HOME=$HOME/android-tools/jdk
 # TMUX startup
 
 if [ -z "$TMUX" ]; then

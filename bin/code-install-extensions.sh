@@ -12,11 +12,13 @@ do
 done
 
 
-
 # Delete if not found in extensions list
 currentlyInstalled=/tmp/code-extensions-list.txt
 code --list-extensions > ${currentlyInstalled}
-needToDelete=$(comm -23 "${currentlyInstalled}" "${extensionsList}")
+
+# cSpell:words nocheck
+needToDelete=$(comm --nocheck-order -23 "${currentlyInstalled}" "${extensionsList}")
+
 
 for ext in $needToDelete; do
     read -rp "Delete '$ext' (y/n) extension? " choice
