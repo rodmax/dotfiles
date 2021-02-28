@@ -174,5 +174,6 @@
     "explorer.confirmDelete": false,
     "python.languageServer": "Pylance",
     "cSpell.enableFiletypes": ["dockerfile", "shellscript", "dotenv"],
-    "python.showStartPage": false
+    "python.showStartPage": false,
+    "emojisense.unicodeCompletionsEnabled": false
 }
