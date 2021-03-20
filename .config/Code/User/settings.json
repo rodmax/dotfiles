@@ -9,7 +9,6 @@
     "workbench.editor.showTabs": true,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.value": 6,
-    "window.zoomLevel": 0,
     "vim.handleKeys": {
         "<C-f>": false
     },
