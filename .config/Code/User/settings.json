@@ -39,7 +39,6 @@
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.25,
     "vscode_custom_css.imports": ["file:///home/max/.config/Code/User/custom-css/index.css"],
-    "vscode_custom_css.policy": true,
     "merge-conflict.codeLens.enabled": false,
     "editor.parameterHints.enabled": false,
     "breadcrumbs.enabled": true,
@@ -174,5 +173,12 @@
     "python.languageServer": "Pylance",
     "cSpell.enableFiletypes": ["dockerfile", "shellscript", "dotenv"],
     "python.showStartPage": false,
-    "emojisense.unicodeCompletionsEnabled": false
+    "emojisense.unicodeCompletionsEnabled": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "docker.showStartPage": false
 }

@@ -7,7 +7,6 @@ ZSH_THEME="rodmax"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 
 
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -29,6 +28,7 @@ alias treel2='tree -L 2 -a'  # i like it instead of 'ls -1a'
 alias dof='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias g=git
 alias r='npm run'
+alias notify-cli-status='zenity --notification --window-icon=face-cool --text="CLI Task Done!!!" || zenity --error --text="CLI Task Failed"'
 
 toru() {
     trans en:ru "$*"
@@ -47,12 +47,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin
-
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # TMUX startup
 
