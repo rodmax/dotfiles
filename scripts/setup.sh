@@ -113,7 +113,7 @@ run_3() {
     nvm install 14
     nvm alias defaul 14
     # At the moment i use bellow global npm packages
-    npm i -g vmd npm-check-updates ndb commitizen
+    npm i -g vmd npm-check-updates ndb commitizen git-split-diffs
 }
 
 

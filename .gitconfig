@@ -1,6 +1,6 @@
 [core]
 	excludesfile = ~/.gitignore
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = git-split-diffs --color | less -RFX
 [color]
 	ui = true
 [difftool]
