@@ -1,0 +1,15 @@
+apt_packages:
+  - terminator
+  - tmux
+  - git
+  - gitg
+  - zsh
+  - tree
+  - gawk
+  - vim
+  - libappindicator-dev
+  - flameshot
+  - htop
+  - xclip
+  - code
+  - shellcheck

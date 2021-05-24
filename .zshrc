@@ -11,7 +11,7 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker kubectl jira docker-compose zsh-autosuggestions)
+plugins=(docker kubectl docker-compose zsh-autosuggestions poetry)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -28,7 +28,7 @@ alias treel2='tree -L 2 -a'  # i like it instead of 'ls -1a'
 alias dof='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias g=git
 alias r='npm run'
-alias notify-cli-status='zenity --notification --window-icon=face-cool --text="CLI Task Done!!!" || zenity --error --text="CLI Task Failed"'
+alias notify-cmd-status='zenity --notification --window-icon=face-cool --text="CLI Task Done!!!" || zenity --error --text="CLI Task Failed"'
 
 toru() {
     trans en:ru "$*"

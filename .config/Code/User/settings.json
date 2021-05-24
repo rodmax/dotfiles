@@ -180,5 +180,13 @@
             "filenamePattern": "*.ipynb"
         }
     ],
-    "docker.showStartPage": false
+    "docker.showStartPage": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "yaml.customTags": [
+        "!encrypted/pkcs1-oaep scalar",
+        "!vault scalar"
+    ],
+    "redhat.telemetry.enabled": false
 }
