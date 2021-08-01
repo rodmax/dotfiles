@@ -108,12 +108,16 @@ run_2_1() {
 run_3() {
     echo "Installing nvm/npm/node..."
     wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+    run_3_1 16
+}
+
+run_3_1() {
     export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-    nvm install 14
-    nvm alias defaul 14
+    nvm install $1
+    nvm alias defaul $1
     # At the moment i use bellow global npm packages
-    npm i -g vmd npm-check-updates ndb commitizen git-split-diffs
+    npm i -g vmd@latest npm-check-updates@latest ndb@latest commitizen@latest git-split-diffs@latest npm@latest
 }
 
 
@@ -121,9 +125,11 @@ dof() {
     git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
 
+echo $PATH
+
 
 command=$1
 shift
 
 set -x  # print executing commands
-$command
+$command $@
