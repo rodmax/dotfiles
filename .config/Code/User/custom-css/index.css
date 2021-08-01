@@ -15,8 +15,12 @@ Make vim ":rm"-like commands more readable
 
 
 /* Make close icon "red" for not saved tab content*/
-.tab.dirty>.tab-close .action-label:before {
+.tab.dirty .codicon-close:before {
     color: #F44336;
+}
+
+.tab.active {
+    background-color: #37474f !important;
 }
 
 
