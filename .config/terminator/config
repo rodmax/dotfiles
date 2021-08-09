@@ -1,23 +1,37 @@
 [global_config]
-  borderless = True
-  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   focus = system
   handle_size = 1
-  hide_tabbar = True
-  inactive_color_offset = 0.9
-  suppress_multiple_term_dialog = True
-  always_on_top = False
-  tab_position = bottom
-  title_inactive_bg_color = "#000000"
-  title_inactive_fg_color = "#FFFFFF"
-  title_transmit_bg_color = "#000000"
-  title_transmit_fg_color = "#000000"
   window_state = maximise
+  borderless = True
+  tab_position = bottom
+  hide_tabbar = True
+  title_transmit_fg_color = "#000000"
+  title_transmit_bg_color = "#000000"
+  title_inactive_fg_color = "#FFFFFF"
+  title_inactive_bg_color = "#000000"
+  inactive_color_offset = 0.9
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  suppress_multiple_term_dialog = True
 [keybindings]
+  go_up = <Alt>k
   go_down = <Alt>j
   go_left = <Alt>h
   go_right = <Alt>l
-  go_up = <Alt>k
+[profiles]
+  [[default]]
+    icon_bell = False
+    background_color = "#002b36"
+    cursor_blink = False
+    cursor_color = "#98968d"
+    font = DejaVu Sans Mono 14
+    foreground_color = "#eee8d5"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_lines = 2000
+    scrollback_infinite = True
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#586e75:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+    background_image = None
 [layouts]
   [[default]]
     [[[child1]]]
@@ -28,34 +42,3 @@
       parent = ""
       type = Window
 [plugins]
-[profiles]
-  [[default]]
-    background_color = "#002b36"
-    background_image = None
-    cursor_blink = False
-    cursor_color = "#98968d"
-    font = DejaVu Sans Mono 14
-    foreground_color = "#eee8d5"
-    icon_bell = False
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#586e75:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    scroll_on_output = False
-    scrollback_infinite = True
-    scrollback_lines = 2000
-    scrollbar_position = hidden
-    show_titlebar = False
-    use_system_font = False
-  [[default-old]]
-    background_image = None
-    cursor_blink = False
-    cursor_color = "#faecec"
-    font = Monospace 15
-    foreground_color = "#c8c8c8"
-    icon_bell = False
-    scroll_on_output = False
-    scrollback_infinite = True
-    scrollback_lines = 2000
-    scrollbar_position = hidden
-    show_titlebar = False
-    use_system_font = False
-  [[master]]
-    background_image = None
