@@ -115,6 +115,7 @@
     "python.formatting.provider": "black",
     "cSpell.enableFiletypes": ["dockerfile", "shellscript", "dotenv"],
     "python.showStartPage": false,
+    "atlascode.jira.enabled": false,
     "emojisense.unicodeCompletionsEnabled": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
@@ -140,9 +141,7 @@
         "jupyter-notebook": "left"
     },
     "shellcheck.enableQuickFix": true,
-    "shellcheck.exclude": [
-        "SC1091"
-    ],
+    "shellcheck.exclude": ["SC1091"],
     "atlascode.jira.lastCreateSiteAndProject": {
         "siteId": "33c85a8f-aae5-4110-91d5-1c741f1288b8",
         "projectKey": "DSG"
