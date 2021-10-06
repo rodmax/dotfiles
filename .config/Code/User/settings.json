@@ -4,6 +4,7 @@
     "editor.fontLigatures": true,
     "editor.rulers": [120],
     "editor.renderIndentGuides": true,
+    "editor.bracketPairColorization.enabled": true,
     "terminal.integrated.copyOnSelection": true,
     "files.trimTrailingWhitespace": true,
     "workbench.editor.showTabs": true,

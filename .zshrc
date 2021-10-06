@@ -11,7 +11,7 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker kubectl docker-compose zsh-autosuggestions poetry)
+plugins=(docker kubectl docker-compose zsh-autosuggestions poetry pyenv)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -56,3 +56,7 @@ if [ -z "$TMUX" ]; then
         tmux has-session -t ${session} 2>/dev/null || tmux new-session -d -s ${session}
     done
 fi
+
+function pretty_csv {
+    column -t -s, "$@" | less -F -S -X -K
+}
