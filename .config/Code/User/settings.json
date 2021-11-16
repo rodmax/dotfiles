@@ -1,6 +1,6 @@
 {
     "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "editor.rulers": [120],
     "editor.renderIndentGuides": true,
@@ -68,7 +68,6 @@
     "cSpell.dictionaries": ["dev-work", "dev-home"],
     "tslint.alwaysShowRuleFailuresAsWarnings": false,
     "workbench.tree.renderIndentGuides": "always",
-    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
     "workbench.tree.indent": 16,
     "editor.suggestSelection": "first",
     "telemetry.enableTelemetry": false,
