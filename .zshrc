@@ -60,3 +60,5 @@ fi
 function pretty_csv {
     column -t -s, "$@" | less -F -S -X -K
 }
+
+export PATH="$HOME/.poetry/bin:$PATH"

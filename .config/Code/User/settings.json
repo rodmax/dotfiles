@@ -3,7 +3,6 @@
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "editor.rulers": [120],
-    "editor.renderIndentGuides": true,
     "editor.bracketPairColorization.enabled": true,
     "terminal.integrated.copyOnSelection": true,
     "files.trimTrailingWhitespace": true,
@@ -66,11 +65,10 @@
         }
     ],
     "cSpell.dictionaries": ["dev-work", "dev-home"],
-    "tslint.alwaysShowRuleFailuresAsWarnings": false,
     "workbench.tree.renderIndentGuides": "always",
     "workbench.tree.indent": 16,
     "editor.suggestSelection": "first",
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "qub-xml-vscode.telemetry.enabled": false,
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
@@ -114,13 +112,10 @@
     "python.languageServer": "Pylance",
     "python.formatting.provider": "black",
     "cSpell.enableFiletypes": ["dockerfile", "shellscript", "dotenv"],
-    "python.showStartPage": false,
-    "atlascode.jira.enabled": false,
     "emojisense.unicodeCompletionsEnabled": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
-    "docker.showStartPage": false,
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -134,16 +129,12 @@
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
     "editor.wordWrap": "off",
     "yaml.schemas": {
-        "file:///home/max/.vscode/extensions/atlassian.atlascode-2.9.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///home/max/.vscode/extensions/atlassian.atlascode-2.10.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
     "shellcheck.enableQuickFix": true,
-    "shellcheck.exclude": ["SC1091"],
-    "atlascode.jira.lastCreateSiteAndProject": {
-        "siteId": "33c85a8f-aae5-4110-91d5-1c741f1288b8",
-        "projectKey": "DSG"
-    }
+    "shellcheck.exclude": ["SC1091"]
 }
