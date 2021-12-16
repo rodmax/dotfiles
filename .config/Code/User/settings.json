@@ -136,5 +136,13 @@
         "jupyter-notebook": "left"
     },
     "shellcheck.enableQuickFix": true,
-    "shellcheck.exclude": ["SC1091"]
+    "shellcheck.exclude": [
+        "SC1091"
+    ],
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
 }
