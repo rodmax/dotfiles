@@ -6,7 +6,7 @@ authors = ["max.rodionov"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-ansible = "^3.4.0"
+ansible = "^4.2.0"
 
 [tool.poetry.dev-dependencies]
 
