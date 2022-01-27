@@ -12,14 +12,14 @@
     "vim.handleKeys": {
         "<C-f>": false
     },
-    "workbench.colorTheme": "Atom Material Theme",
+    "workbench.colorTheme": "Default Light+",
     "workbench.colorCustomizations": {
-        "editorIndentGuide.background": "#2b3b3f",
-        "editorIndentGuide.activeBackground": "#39494a",
-        "list.inactiveFocusBackground": "#1a237e",
-        "list.focusBackground": "#0d47a1",
-        "list.activeSelectionBackground": "#455a64",
-        "list.inactiveSelectionBackground": "#37474f"
+        // "editorIndentGuide.background": "#2b3b3f"
+        // "editorIndentGuide.activeBackground": "#39494a"
+        // "list.inactiveFocusBackground": "#1a237e",
+        // "list.focusBackground": "#0d47a1"
+        // "list.activeSelectionBackground": "#455a64",
+        // "list.inactiveSelectionBackground": "#37474f"
     },
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
@@ -65,6 +65,46 @@
         }
     ],
     "cSpell.dictionaries": ["dev-work", "dev-home"],
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "git-commit",
+        "go",
+        "graphql",
+        "handlebars",
+        "haskell",
+        "html",
+        "jade",
+        "java",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "jsonc",
+        "jupyter",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "plaintext",
+        "python",
+        "pug",
+        "restructuredtext",
+        "rust",
+        "scala",
+        "scss",
+        "swift",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "vue",
+        "yaml",
+        "yml",
+        "ansible",
+        "ansible-jinja"
+    ],
     "workbench.tree.renderIndentGuides": "always",
     "workbench.tree.indent": 16,
     "editor.suggestSelection": "first",
@@ -136,13 +176,13 @@
         "jupyter-notebook": "left"
     },
     "shellcheck.enableQuickFix": true,
-    "shellcheck.exclude": [
-        "SC1091"
-    ],
+    "shellcheck.exclude": ["SC1091"],
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
-    }
+    },
+    "material-icon-theme.opacity": null,
+    "cSpell.userWords": ["mkdir"]
 }

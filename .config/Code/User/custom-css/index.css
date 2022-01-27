@@ -19,10 +19,6 @@ Improve font and color of vim command line (":rm"-like commands)
     color: #F44336;
 }
 
-.tab.active {
-    background-color: #37474f !important;
-}
-
 
 
 .part.statusbar.debugging {
@@ -55,7 +51,6 @@ Improve font and color of vim command line (":rm"-like commands)
 
 .tab.active.tab-border-top>.tab-border-top-container {
     margin-top: 2px;
-    background-color: #f48771 !important;
     height: 4px !important;
 }
 

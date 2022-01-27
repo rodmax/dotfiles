@@ -61,4 +61,6 @@ function pretty_csv {
     column -t -s, "$@" | less -F -S -X -K
 }
 
-export PATH="$HOME/.poetry/bin:$PATH"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

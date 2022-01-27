@@ -41,7 +41,11 @@
 	frag = magenta bold
 	commit = yellow bold
 	whitespace = red reverse
-[user]
-	name = max.rodionov
 [init]
 	defaultBranch = main
+[user]
+	name = max.rodionov
+[includeIf "gitdir:~/w/nooga/"]
+	path = ~/.gitconfig.nooga
+[includeIf "gitdir:~/w/me/"]
+	path = ~/.gitconfig.me
