@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=JMeter
+Comment=JMeter
+Icon=/home/max/tools/jmeter/docs/images/jmeter_square.svg
+Exec=/home/max/tools/jmeter/bin/jmeter
+Terminal=false

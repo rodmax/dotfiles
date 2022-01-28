@@ -11,7 +11,7 @@ chmod +x /tmp/setup.sh
 ```
 
 2. Install initial set of programs
-Run `/tmp/setup.sh run_*` commands step by step
+Run `/tmp/setup.sh run_{number}` commands step by step
 
 3. Install vim plugins
 
@@ -21,3 +21,6 @@ Run `/tmp/setup.sh run_*` commands step by step
 
     apt repository is out of date
     so install pre-compiled [Linux, x86_64 binary](https://github.com/koalaman/shellcheck#installing) to `$HOME/bin` instead
+5. JMeter
+This repo provide bin wrapper and desktop icon for JMeter tool
+If you want use it, please donwload last version to `~/tools/jmeter/` folder
