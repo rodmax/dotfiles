@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=SQLDeveloper
+Comment=SQLDeveloper by Oracle
+Icon=/home/max/tools/sqldeveloper/icon.png
+Exec=/home/max/tools/sqldeveloper/sqldeveloper.sh
+Terminal=false
