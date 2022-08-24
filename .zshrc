@@ -11,7 +11,7 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker kubectl docker-compose zsh-autosuggestions poetry pyenv)
+plugins=(docker kubectl docker-compose zsh-autosuggestions pyenv poetry)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -57,10 +57,8 @@ if [ -z "$TMUX" ]; then
     done
 fi
 
-function pretty_csv {
-    column -t -s, "$@" | less -F -S -X -K
-}
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$HOME/.poetry/bin:$PATH"
