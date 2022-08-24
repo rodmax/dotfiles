@@ -3,6 +3,9 @@
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "editor.rulers": [120],
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#444"
+    },
     "editor.bracketPairColorization.enabled": true,
     "terminal.integrated.copyOnSelection": true,
     "files.trimTrailingWhitespace": true,
@@ -11,15 +14,6 @@
     "workbench.editor.limit.value": 6,
     "vim.handleKeys": {
         "<C-f>": false
-    },
-    "workbench.colorTheme": "Default Light+",
-    "workbench.colorCustomizations": {
-        // "editorIndentGuide.background": "#2b3b3f"
-        // "editorIndentGuide.activeBackground": "#39494a"
-        // "list.inactiveFocusBackground": "#1a237e",
-        // "list.focusBackground": "#0d47a1"
-        // "list.activeSelectionBackground": "#455a64",
-        // "list.inactiveSelectionBackground": "#37474f"
     },
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
@@ -71,6 +65,7 @@
         "cpp",
         "csharp",
         "css",
+        "csv",
         "git-commit",
         "go",
         "graphql",
@@ -183,6 +178,11 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "material-icon-theme.opacity": null,
-    "cSpell.userWords": ["mkdir"]
+    "vs-kubernetes": {
+        "vscode-kubernetes.minikube-path.linux": "/home/max/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube",
+        "vscode-kubernetes.helm-path.linux": "/home/max/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vs-kubernetes.knownKubeconfigs": ["/home/max/.kube/config.do"],
+        "vs-kubernetes.kubeconfig": "/home/max/.kube/config.do"
+    },
+    "workbench.colorTheme": "Atom Material Theme"
 }
