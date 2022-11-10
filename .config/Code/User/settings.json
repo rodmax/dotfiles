@@ -9,6 +9,9 @@
     "editor.bracketPairColorization.enabled": true,
     "terminal.integrated.copyOnSelection": true,
     "files.trimTrailingWhitespace": true,
+    "files.associations": {
+        "*.hql": "sql"
+    },
     "workbench.editor.showTabs": true,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.value": 6,
@@ -17,7 +20,6 @@
     },
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.editor.enablePreview": false,
     "workbench.settings.useSplitJSON": true,
     "update.mode": "none",
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -52,13 +54,6 @@
     "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
     "typescript.preferences.quoteStyle": "single",
     "cSpell.language": "en,ru",
-    "cSpell.dictionaryDefinitions": [
-        {
-            "name": "dev-home",
-            "path": "/home/max/.vscode-dict.cspell.txt"
-        }
-    ],
-    "cSpell.dictionaries": ["dev-work", "dev-home"],
     "cSpell.enabledLanguageIds": [
         "asciidoc",
         "c",
@@ -90,6 +85,7 @@
         "rust",
         "scala",
         "scss",
+        "sql",
         "swift",
         "text",
         "typescript",
@@ -164,7 +160,7 @@
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
     "editor.wordWrap": "off",
     "yaml.schemas": {
-        "file:///home/max/.vscode/extensions/atlassian.atlascode-2.10.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///home/max/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "notebook.cellToolbarLocation": {
         "default": "right",
@@ -181,8 +177,18 @@
     "vs-kubernetes": {
         "vscode-kubernetes.minikube-path.linux": "/home/max/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube",
         "vscode-kubernetes.helm-path.linux": "/home/max/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
-        "vs-kubernetes.knownKubeconfigs": ["/home/max/.kube/config.do"],
+        "vs-kubernetes.knownKubeconfigs": [
+            "/home/max/.kube/config.do",
+            "/home/max/.kube/config.az.dev"
+        ],
         "vs-kubernetes.kubeconfig": "/home/max/.kube/config.do"
     },
-    "workbench.colorTheme": "Atom Material Theme"
+    "workbench.colorTheme": "Atom Material Theme",
+    "atlascode.jira.todoIssues.enabled": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    }
 }

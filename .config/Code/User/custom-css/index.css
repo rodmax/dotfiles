@@ -27,7 +27,7 @@ Improve font and color of vim command line (":rm"-like commands)
 
 /* Visually distinct control panel with terminal/output/... */
 .part.panel.bottom {
-    box-shadow: #00BCD4 0px -1px 4px 0px;
+    box-shadow: #dbf6fa 0px -1px 4px 0px;
 }
 
 /* Highlight errors and warnings statuses in bottom panel */

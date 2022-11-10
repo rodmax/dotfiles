@@ -34,11 +34,11 @@ run_0_2() {
     gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['']"
     gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward  "['']"
     gsettings set org.freedesktop.ibus.general.hotkey triggers "['']"
-    
+
     # Use flameshot as default tool for screenshot global hot keys
     # https://askubuntu.com/a/1116076
     echo "Setup flameshot as system screenthot app"
-    gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot '[]'
+    # gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot '[]'
     gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \
         "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
     gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ \
@@ -68,7 +68,7 @@ run_1() {
     git clone --bare ${repo} $HOME/.dotfiles
     mkdir -p .dotfiles-backup
     dof config user.email rodionov.m.m@gmail.com
-    
+
     set +e
     dof checkout
     err=$?

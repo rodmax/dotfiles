@@ -23,6 +23,7 @@ alias tmuxa='tmux a -t'
 alias tmuxn='tmux new -s'
 
 alias open-file=xdg-open
+alias tree='tree --dirsfirst -F'
 alias treel1='tree -L 1 -a'  # i like it instead of 'ls -1a'
 alias treel2='tree -L 2 -a'  # i like it instead of 'ls -1a'
 alias dof='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
@@ -60,5 +61,3 @@ fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-export PATH="$HOME/.poetry/bin:$PATH"
