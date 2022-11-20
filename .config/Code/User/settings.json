@@ -4,7 +4,9 @@
     "editor.fontLigatures": true,
     "editor.rulers": [120],
     "workbench.colorCustomizations": {
-        "statusBar.background": "#444"
+        "statusBar.background": "#444",
+        "list.activeSelectionBackground": "#048",
+        "panel.border": "#aaa"
     },
     "editor.bracketPairColorization.enabled": true,
     "terminal.integrated.copyOnSelection": true,
@@ -179,9 +181,10 @@
         "vscode-kubernetes.helm-path.linux": "/home/max/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
         "vs-kubernetes.knownKubeconfigs": [
             "/home/max/.kube/config.do",
-            "/home/max/.kube/config.az.dev"
+            "/home/max/.kube/config.az.dev",
+            "/home/max/.kube/az-prod-config"
         ],
-        "vs-kubernetes.kubeconfig": "/home/max/.kube/config.do"
+        "vs-kubernetes.kubeconfig": "/home/max/.kube/az-prod-config"
     },
     "workbench.colorTheme": "Atom Material Theme",
     "atlascode.jira.todoIssues.enabled": false,

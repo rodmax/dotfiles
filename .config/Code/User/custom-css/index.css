@@ -25,21 +25,16 @@ Improve font and color of vim command line (":rm"-like commands)
     background-color: rgba(204, 102, 51, 0.3) !important;
 }
 
-/* Visually distinct control panel with terminal/output/... */
-.part.panel.bottom {
-    box-shadow: #dbf6fa 0px -1px 4px 0px;
-}
-
 /* Highlight errors and warnings statuses in bottom panel */
-#status\.problems[title*="Errors"] .codicon-error {
+#status\.problems[aria-label*="Errors"] .codicon-error {
     font-weight: bold;
     color: rgb(248, 128, 112);
 }
-#status\.problems[title*="Warnings"] .codicon-warning {
+#status\.problems[aria-label*="Warnings"] .codicon-warning {
     font-weight: bold;
     color: #FF9800;
 }
-#status\.problems[title*="Infos"] .codicon-info {
+#status\.problems[aria-label*="Infos"] .codicon-info {
     font-weight: bold;
     color: #0c7d9d;
 }
