@@ -5,8 +5,11 @@
     "editor.rulers": [120],
     "workbench.colorCustomizations": {
         "statusBar.background": "#444",
-        "list.activeSelectionBackground": "#048",
-        "panel.border": "#aaa"
+        "list.activeSelectionBackground": "#036",
+        "list.inactiveSelectionBackground": "#046",
+        "list.focusBackground": "#046",
+        "list.inactiveFocusBackground": "#048",
+        "panel.border": "#aaa",
     },
     "editor.bracketPairColorization.enabled": true,
     "terminal.integrated.copyOnSelection": true,
@@ -193,5 +196,5 @@
         "**/.bloop": true,
         "**/.metals": true,
         "**/.ammonite": true
-    }
+    },
 }
