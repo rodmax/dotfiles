@@ -107,7 +107,7 @@ run_2_1() {
 
 run_3() {
     echo "Installing nvm/npm/node..."
-    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
     run_3_1 16
 }
 
