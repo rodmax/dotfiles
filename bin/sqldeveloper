@@ -1,0 +1,2 @@
+#!/bin/bash
+~/tools/sqldeveloper/sqldeveloper.sh $@ </dev/null &>/dev/null &
