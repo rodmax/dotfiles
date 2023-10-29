@@ -7,7 +7,10 @@ run_0() {
     sudo add-apt-repository ppa:jonathonf/vim
     sudo apt update
 
-    sudo apt install terminator tmux git zsh tree gitg gawk vim libappindicator-dev flameshot htop xclip code shellcheck
+    sudo apt install \
+        terminator git zsh tree gitg gawk vim \
+        libappindicator-dev flameshot htop xclip code shellcheck \
+        make
 
     mkdir -p ~/bin
     cd ~/bin
@@ -59,7 +62,7 @@ run_0_3() {
 }
 
 run_1() {
-    echo "Cloning dotfiles repo...[FIXME] bellow screept may not working"
+    echo "Cloning dotfiles repo...[FIXME] bellow script may not working"
     export PATH="$HOME/bin:$PATH"
 
     repo="git@github.com:rodmax/dotfiles.git"
@@ -118,22 +121,6 @@ run_3_1() {
     nvm alias defaul $1
     # At the moment i use bellow global npm packages
     npm i -g vmd@latest npm-check-updates@latest ndb@latest commitizen@latest git-split-diffs@latest npm@latest
-}
-
-run_4() {
-    # Approach borrowed from https://mfcallahan.blog/2022/06/24/make-nemo-the-default-file-manager-on-ubuntu/
-    # + added movement of .desktop file to prevent appear Nautilus in applications prompt panel
-    echo "Install Nemo and setup it replace Nautilus(gnome Files)"
-
-    sudo apt install nemo
-
-    gsettings set org.gnome.desktop.background  show-desktop-icons false
-    gsettings set org.nemo.desktop              show-desktop-icons true
-
-    xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
-    xdg-mime query default inode/directory | grep nemo # check option set
-
-    sudo mv /usr/share/applications/org.gnome.Nautilus.desktop /usr/share/applications/org_gnome_Nautilus_desktop__rename-to-hide-in-apps-promt
 }
 
 

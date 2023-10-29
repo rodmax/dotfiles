@@ -1,8 +1,10 @@
 [core]
 	excludesfile = ~/.gitignore
-	pager = git-split-diffs --color | less -RFX
+#pager = git-split-diffs --color | less -RFX
 [color]
 	ui = true
+#[split-diffs]
+#	theme-name=github-light
 [difftool]
 	prompt = false
 [alias]

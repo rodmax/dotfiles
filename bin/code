@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# For some reason maintainers decided to remove the code binary from the PATH
-# See more https://stackoverflow.com/q/66261813
-# shellcheck disable=SC2068
-/usr/share/code/bin/code $@

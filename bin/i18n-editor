@@ -1,2 +1,0 @@
-#!/bin/bash
-java -jar $HOME/bin/i18n-editor.jar </dev/null &>/dev/null &
