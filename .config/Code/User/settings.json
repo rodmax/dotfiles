@@ -237,5 +237,6 @@
     ],
     "[sql]": {
         "editor.defaultFormatter": "mtxr.sqltools"
-    }
+    },
+    "sqltools.highlightQuery": false
 }
