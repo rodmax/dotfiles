@@ -1,6 +1,5 @@
 #!/bin/bash
-set -e  # exit on any command error
-set -x
+set -ex
 
 run_0() {
     # From here https://itsfoss.com/vim-8-release-install/
@@ -18,8 +17,8 @@ run_0() {
 
     sudo apt install \
         terminator git zsh tree gitg gawk vim \
-        libappindicator-dev flameshot htop xclip code shellcheck \
-        make
+        libappindicator-dev flameshot htop xclip shellcheck \
+        make curl
 
     mkdir -p ~/bin
     cd ~/bin
@@ -33,8 +32,7 @@ run_0() {
     # https://github.com/gatsbyjs/gatsby/issues/11406#issuecomment-458769756
     echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
-    # ssh-keygen -t rsa -b 4096 -C "rodionov.m.m@gmail.com"
-    echo -e "Please setup ssh key on github and run 'run_1' command"
+    echo -e "Please add ssh key on github and run 'run_1' command"
 }
 
 run_0_2() {
@@ -49,7 +47,7 @@ run_0_2() {
 
     # Use flameshot as default tool for screenshot global hot keys
     # https://askubuntu.com/a/1116076
-    echo "Setup flameshot as system screenthot app"
+    echo "Setup flameshot as system screenshot app"
     # gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot '[]'
     gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \
         "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
@@ -127,7 +125,7 @@ run_3_1() {
     export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
     nvm install $1
-    nvm alias defaul $1
+    nvm alias default $1
     # At the moment i use bellow global npm packages
     npm i -g vmd@latest npm-check-updates@latest ndb@latest commitizen@latest git-split-diffs@latest npm@latest
 }

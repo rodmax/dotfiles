@@ -1,0 +1,24 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "armhf",
+        "commitizen",
+        "dotfiles",
+        "flameshot",
+        "freedesktop",
+        "gitg",
+        "gsettings",
+        "ibus",
+        "inotify",
+        "jonathonf",
+        "libappindicator",
+        "ohmyzsh",
+        "rodmax",
+        "xclip"
+    ],
+    "ignoreWords": [],
+    "import": []
+}

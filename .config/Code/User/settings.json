@@ -193,8 +193,9 @@
         "**/.metals": true,
         "**/.ammonite": true
     },
-    "yaml.customTags": ["!reference sequence"],
-    "workbench.colorTheme": "Atom Material Theme",
+    "yaml.customTags": [
+        "!reference sequence"
+    ],
     "sqltools.results.location": "current",
     "sqltools.autoOpenSessionFiles": false,
     "peacock.favoriteColors": [
@@ -238,5 +239,8 @@
     "[sql]": {
         "editor.defaultFormatter": "mtxr.sqltools"
     },
-    "sqltools.highlightQuery": false
+    "sqltools.highlightQuery": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "workbench.colorTheme": "Atom Material Theme",
+    "metals.javaHome": "/home/max/.jabba/jdk/openjdk@1.17.0"
 }
