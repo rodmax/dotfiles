@@ -6,18 +6,16 @@ ZSH_THEME="rodmax"
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 
-
-# output help from "pyenv init"/"pyenv virtualenv-init"
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
+
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker kubectl zsh-autosuggestions pyenv)
+plugins=(docker kubectl zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 
