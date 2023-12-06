@@ -11,7 +11,7 @@
         "*.hql": "sql",
         ".env.*": "dotenv"
     },
-    "workbench.editor.showTabs": true,
+    "workbench.editor.showTabs": "multiple",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.value": 6,
     "vim.handleKeys": {
@@ -19,7 +19,6 @@
         "<C-a>": false,
         "<C-p>": false
     },
-    "workbench.activityBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.settings.useSplitJSON": true,
     "update.mode": "none",
@@ -100,14 +99,18 @@
         "ansible",
         "ansible-jinja",
         "makefile",
-        "dockercompose"
+        "dockercompose",
+        "jinja-properties"
     ],
     "workbench.tree.renderIndentGuides": "always",
     "workbench.tree.indent": 16,
     "workbench.colorCustomizations": {
-      "panel.border": "#bbb",
-      "editor.wordHighlightBackground": "#121",
-      "editor.selectionBackground": "#191530"
+        "panel.border": "#bbb",
+        "editor.wordHighlightBackground": "#121",
+        "editor.selectionBackground": "#191530",
+        "list.activeSelectionBackground": "#333",
+        "list.focusBackground": "#353535",
+        "list.inactiveSelectionBackground": "#444"
     },
     "editor.suggestSelection": "first",
     "telemetry.telemetryLevel": "off",
@@ -126,6 +129,16 @@
     "i18n-ally.keystyle": "flat",
     "i18n-ally.preferredDelimiter": ".",
     "i18n-ally.review.enabled": false,
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+    },
+    "[terraform-vars]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+    },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -149,6 +162,9 @@
     },
     "[code-snippets]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "emojisense.emojiDecoratorsEnabled": false,
     "editor.renderWhitespace": "selection",
@@ -193,9 +209,7 @@
         "**/.metals": true,
         "**/.ammonite": true
     },
-    "yaml.customTags": [
-        "!reference sequence"
-    ],
+    "yaml.customTags": ["!reference sequence"],
     "sqltools.results.location": "current",
     "sqltools.autoOpenSessionFiles": false,
     "peacock.favoriteColors": [
@@ -242,5 +256,6 @@
     "sqltools.highlightQuery": false,
     "terminal.integrated.defaultProfile.linux": "zsh",
     "workbench.colorTheme": "Atom Material Theme",
-    "metals.javaHome": "/home/max/.jabba/jdk/openjdk@1.17.0"
+    "metals.javaHome": "/home/max/.jabba/jdk/openjdk@1.17.0",
+    "workbench.activityBar.location": "hidden"
 }

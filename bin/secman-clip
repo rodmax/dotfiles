@@ -1,3 +1,13 @@
 #!/bin/bash
 set -euo pipefail
-~/scripts/secman.sh clip "$1"
+
+secret_name=${1:-}
+secman_script=~/scripts/secman.sh
+
+if [ "${secret_name}" = "" ]; then
+    ${secman_script} list
+    printf "\n\nEnter secret name from above list:\n"
+    read -r secret_name
+fi
+
+~/scripts/secman.sh clip "$secret_name"

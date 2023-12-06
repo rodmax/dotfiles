@@ -28,6 +28,7 @@ create_secret () {
 }
 
 list_secret () {
+    printf "\n-= KNOWN SECRETS =-\n\n"
     ls -1 ${secret_dir} | xargs basename --suffix=${secret_suffix}
 }
 
