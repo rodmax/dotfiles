@@ -1,2 +1,2 @@
 #!/bin/bash
-~/tools/jmeter/bin/jmeter $@
+~/tools/apache-jmeter-5.6.3/bin/jmeter $@ 1>/dev/null 2>/dev/null &

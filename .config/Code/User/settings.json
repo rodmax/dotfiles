@@ -100,17 +100,22 @@
         "ansible-jinja",
         "makefile",
         "dockercompose",
-        "jinja-properties"
+        "jinja-properties",
+        "jinja-yaml",
+        "pip-requirements"
     ],
     "workbench.tree.renderIndentGuides": "always",
     "workbench.tree.indent": 16,
     "workbench.colorCustomizations": {
         "panel.border": "#bbb",
-        "editor.wordHighlightBackground": "#121",
-        "editor.selectionBackground": "#191530",
-        "list.activeSelectionBackground": "#333",
-        "list.focusBackground": "#353535",
-        "list.inactiveSelectionBackground": "#444"
+        "editor.wordHighlightBackground": "#0c0d0d",
+        "editor.selectionBackground": "#031c49",
+
+        "list.focusBackground": "#2a3744",
+        "list.inactiveFocusBackground": "#2a3744",
+
+        "list.activeSelectionBackground": "#1d3a75",
+        "list.inactiveSelectionBackground": "#1f4081",
     },
     "editor.suggestSelection": "first",
     "telemetry.telemetryLevel": "off",
@@ -152,7 +157,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -170,7 +175,6 @@
     "editor.renderWhitespace": "selection",
     "explorer.confirmDelete": false,
     "python.languageServer": "Pylance",
-    "python.formatting.provider": "black",
     "cSpell.enableFiletypes": ["dockerfile", "shellscript", "dotenv"],
     "emojisense.unicodeCompletionsEnabled": false,
     "workbench.editorAssociations": {
@@ -210,8 +214,6 @@
         "**/.ammonite": true
     },
     "yaml.customTags": ["!reference sequence"],
-    "sqltools.results.location": "current",
-    "sqltools.autoOpenSessionFiles": false,
     "peacock.favoriteColors": [
         {
             "name": "Angular Red",
@@ -253,9 +255,16 @@
     "[sql]": {
         "editor.defaultFormatter": "mtxr.sqltools"
     },
-    "sqltools.highlightQuery": false,
     "terminal.integrated.defaultProfile.linux": "zsh",
     "workbench.colorTheme": "Atom Material Theme",
     "metals.javaHome": "/home/max/.jabba/jdk/openjdk@1.17.0",
+    "cSpell.userWords": ["organisation"],
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path-linux": "/home/max/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vscode-kubernetes.kubectl-path-linux": "/home/max/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path-linux": "/home/max/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    },
+    "metals.serverVersion": "1.3.5+68-5948c4fe-SNAPSHOT",
+    "makefile.configureOnOpen": false,
     "workbench.activityBar.location": "hidden"
 }

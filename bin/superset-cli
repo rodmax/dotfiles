@@ -1,6 +1,0 @@
-#!/bin/bash
-
-set -e -u -o pipefail
-automationGitDir=~/w/nooga/deepsage/automation/
-cd "$automationGitDir"
-tools/superset-cli.sh $@
