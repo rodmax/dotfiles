@@ -1,0 +1,200 @@
+#!/usr/bin/env python3
+"""
+SSH Theme Toggle
+Borrowed from https://github.com/fboender/sshbg
+This script changes the background color of your terminal when you SSH into a
+remote host.
+
+The script reads a configuration file that defines the
+background colors for different hosts. The configuration file is in JSON
+format and contains a list of profiles.
+
+Each profile has
+- name,
+- background color,
+- and a list of host patterns.
+
+The script is designed to be used with
+SSH and can be configured to run automatically when you connect to a
+remote host. To use the script, you need to add a line to your SSH
+configuration file (usually located at ~/.ssh/config):
+
+PermitLocalCommand yes
+Host *
+    LocalCommand ssh-theme-toggle "%n" ~/bin/ssh-theme.conf.json
+
+"""
+
+import os
+import typing
+import time
+import sys
+import json
+import re
+
+class SSHThemeProfile(typing.TypedDict):
+    name: str
+    """
+    Name of the profile.
+    """
+
+    background: str
+    """
+    Background color for the profile.
+    """
+
+    host_patterns: list[str]
+    """
+    List of patterns that match the host names for this profile.
+    """
+
+class SSHThemeConfig(typing.TypedDict):
+    profiles: list[SSHThemeProfile]
+
+    local_terminal_background: str
+    """
+    background color for local terminal used when not connected to a remote host
+    """
+
+    remote_fallback_background: str
+    """
+    background color used when no profile matches the remote host
+    """
+
+bg_esc = "\033]11;{}\a"
+
+
+class SSHThemeToggleError(Exception):
+    def __init__(self, msg: str, exit_code: int):
+        super().__init__(msg)
+        self.msg = msg
+        self.exit_code = exit_code
+
+
+def err_exit(err_msg: str, exit_code: int):
+    """
+    Print error to stderr and exit with exit code.
+    """
+    sys.stderr.write("{}\n".format(err_msg))
+    sys.exit(exit_code)
+
+
+def parse_config(config_file: str) -> SSHThemeConfig:
+    """
+    Read and parse configuration file.
+    """
+    config_contents = open(config_file, "r").read()
+    try:
+        config = json.loads(config_contents)
+        return config
+    except ValueError:
+        raise SSHThemeToggleError("Invalid JSON file: {}".format(config_file), 2)
+
+
+def get_colors(config: SSHThemeConfig, hostname: str) -> typing.Tuple[str, str] | None:
+    """
+    Return ANSI Escape sequences for local and remote hostname's background colors
+    """
+    local_bg_color = config["local_terminal_background"]
+    remote_bg_color = config["remote_fallback_background"]
+
+    for profile in config["profiles"]:
+        for pattern in profile["host_patterns"]:
+            if re.match(pattern, hostname):
+                remote_bg_color = profile["background"]
+                break
+        if remote_bg_color:
+            break
+
+    return (
+        bg_esc.format(local_bg_color),
+        bg_esc.format(remote_bg_color)
+    )
+
+
+def is_interactive(pid, hostname):
+    """
+    Verify that this SSH connection is interactive. Returns True if the
+    background should be changed, and False otherwise. Things that make a
+    connection Non-interactive:
+
+    - It's a forwarding connection (ProxyForward, -W, netcat)
+    - The user requested a remote command (ssh foo.com ls)
+    """
+    cmdline = open("/proc/{}/cmdline".format(pid), "r").read().split('\0')
+
+    hostname_index = None
+    try:
+        hostname_index = cmdline.index(hostname)
+    except ValueError:
+        # Hostname not found in commandline arguments. Maybe the username was
+        # included (user@hostname)?
+        for index, arg in enumerate(cmdline):
+            if arg.split('@')[-1] == hostname:
+                hostname_index = index
+    if hostname_index is None:
+        return
+
+    ssh_args = cmdline[:hostname_index]
+    rest_args = cmdline[hostname_index + 1:]
+
+    # ProxyForward with "ssh -W"
+    if "-W" in ssh_args:
+        return False
+
+    # Remote execute command or ProxyForward with netcat
+    if rest_args != [""]:
+        return False
+
+    return True
+
+
+def wait_parent_pid(parent_pid):
+    """
+    Wait until `parent_pid` has exited.
+    """
+    while True:
+        try:
+            os.kill(parent_pid, 0)
+        except OSError:
+            # Parent pid (ssh) exited
+            return
+        time.sleep(0.1)
+
+
+if __name__ == "__main__":
+    try:
+        # Arguments
+        if len(sys.argv) < 2:
+            err_exit("Usage: {} <hostname> <conf-file-path>".format(sys.argv[0]), 1)
+        hostname = sys.argv[1]
+        conf_file = sys.argv[2]
+        config_file = os.path.expanduser(conf_file)
+
+        config = parse_config(config_file)
+        colors = get_colors(config, hostname)
+        if not colors:
+            # No colors defined for hostname
+            sys.exit(0)
+        bg_esc_reset, bg_esc_host = colors
+
+        # Get our parent pid, which is the PID for the ssh process.
+        ssh_pid = os.getppid()
+
+        # Verify that this is not a forwarding connection.
+        if not is_interactive(ssh_pid, hostname):
+            # Don't do anything or SSH will wait for our forked child.
+            sys.exit(0)
+
+        # Write out the ANSI escape seq to change background color
+        sys.stdout.write(bg_esc_host)
+
+        # Fork into the background so we can wait for the ssh process to exit.
+        pid = os.fork()
+        if pid == 0:
+            # Child process. Wait for ssh process to exit
+            wait_parent_pid(ssh_pid)
+            # Reset the background color
+            sys.stdout.write(bg_esc_reset)
+    except SSHThemeToggleError as err:
+        err_exit(err.msg, err.exit_code)

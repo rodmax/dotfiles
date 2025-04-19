@@ -1,0 +1,28 @@
+{
+  "local_terminal_background": "#002b36",
+  "remote_fallback_background": "#222",
+  "profiles": [
+    {
+      "name": "dev",
+      "background": "#1A1A2B",
+      "host_patterns":  [
+        ".*dev.*"
+      ]
+    },
+    {
+      "name": "stage",
+      "background": "#1A1A05",
+      "host_patterns":  [
+        ".*preprod.*",
+        ".*stage.*"
+      ]
+    },
+    {
+      "name": "prod",
+      "background": "#3C0A0A",
+      "host_patterns":  [
+        ".*prod.*"
+      ]
+    }
+  ]
+}
