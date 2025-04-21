@@ -1,0 +1,10 @@
+#compdef secman-clip
+
+_secman-clip() {
+    local -a secrets
+    # Get list of secrets from secman.sh
+    secrets=(${(f)"$(~/scripts/secman.sh list 2>/dev/null)"})
+    _describe 'secrets' secrets
+}
+
+_secman-clip "$@"

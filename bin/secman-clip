@@ -5,8 +5,9 @@ secret_name=${1:-}
 secman_script=~/scripts/secman.sh
 
 if [ "${secret_name}" = "" ]; then
+    printf "\n\nKnown secrets:\n\n"
     ${secman_script} list
-    printf "\n\nEnter secret name from above list:\n"
+    printf "\nEnter secret name from above list: "
     read -r secret_name
 fi
 
