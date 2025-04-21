@@ -6,5 +6,6 @@ words:
   - getppid
   - netcat
   - preprod
+  - secman
 ignoreWords: []
 import: []

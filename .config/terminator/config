@@ -10,8 +10,9 @@
   title_inactive_fg_color = "#FFFFFF"
   title_inactive_bg_color = "#000000"
   inactive_color_offset = 0.9
-  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   suppress_multiple_term_dialog = True
+  title_use_system_font = False
+  title_font = JetBrains Mono NL Medium Italic 14
 [keybindings]
   go_up = <Alt>k
   go_down = <Alt>j
@@ -23,7 +24,7 @@
     background_color = "#002b36"
     cursor_blink = False
     cursor_color = "#98968d"
-    font = DejaVu Sans Mono 14
+    font = JetBrains Mono NL Medium Italic 14
     foreground_color = "#eee8d5"
     show_titlebar = False
     scrollbar_position = hidden

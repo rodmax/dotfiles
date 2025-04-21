@@ -1,7 +1,7 @@
 {
-    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
+    "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 16,
-    "editor.fontLigatures": true,
+    "editor.fontLigatures": false,
     "editor.rulers": [120],
     "editor.bracketPairColorization.enabled": true,
     "terminal.integrated.copyOnSelection": true,
@@ -102,6 +102,7 @@
         "dockercompose",
         "jinja-properties",
         "jinja-yaml",
+        "toml",
         "pip-requirements"
     ],
     "workbench.tree.renderIndentGuides": "always",
@@ -110,12 +111,18 @@
         "panel.border": "#bbb",
         "editor.wordHighlightBackground": "#0c0d0d",
         "editor.selectionBackground": "#031c49",
+        "editor.wordHighlightBorder": "#0c0d0d",
+        "editor.selectionHighlightBackground": "#0c0d0d",
 
         "list.focusBackground": "#2a3744",
         "list.inactiveFocusBackground": "#2a3744",
 
         "list.activeSelectionBackground": "#1d3a75",
         "list.inactiveSelectionBackground": "#1f4081",
+        "terminal.background": "#002b36",
+        "editorCursor.background": "#008",
+        "editorCursor.foreground": "#eef",
+
     },
     "editor.suggestSelection": "first",
     "telemetry.telemetryLevel": "off",
@@ -186,7 +193,7 @@
     "yaml.customTags": ["!encrypted/pkcs1-oaep scalar", "!vault scalar"],
     "redhat.telemetry.enabled": false,
     "emmet.excludeLanguages": ["markdown", "typescriptreact"],
-    "editor.tabSize": 8,
+    "editor.tabSize": 4,
     "editor.cursorStyle": "line",
     "editor.insertSpaces": false,
     "editor.lineNumbers": "on",
@@ -258,13 +265,16 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "workbench.colorTheme": "Atom Material Theme",
     "metals.javaHome": "/home/max/.jabba/jdk/openjdk@1.17.0",
-    "cSpell.userWords": ["organisation"],
+    "cSpell.userWords": ["organisation", "syscall"],
     "vs-kubernetes": {
         "vscode-kubernetes.helm-path-linux": "/home/max/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
         "vscode-kubernetes.kubectl-path-linux": "/home/max/.local/state/vs-kubernetes/tools/kubectl/kubectl",
         "vscode-kubernetes.minikube-path-linux": "/home/max/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
     },
-    "metals.serverVersion": "1.3.5+68-5948c4fe-SNAPSHOT",
+    "metals.serverVersion": "1.5.1+42-34e995eb-SNAPSHOT",
     "makefile.configureOnOpen": false,
-    "workbench.activityBar.location": "hidden"
+    "workbench.activityBar.location": "hidden",
+    "terminal.integrated.tabs.location": "left",
+    "git.blame.statusBarItem.enabled": true,
+    "terminal.integrated.fontFamily": "monospace"
 }
