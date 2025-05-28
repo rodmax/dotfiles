@@ -91,13 +91,11 @@ def parse_config(config_file: str) -> SSHThemeConfig:
         raise SSHThemeToggleError("Invalid JSON file: {}".format(config_file), 2)
 
 
-def get_colors(config: SSHThemeConfig, hostname: str) -> typing.Tuple[str, str] | None:
+def get_colors(config: SSHThemeConfig, hostname: str) -> typing.Tuple[str, str]:
     """
     Return ANSI Escape sequences for local and remote hostname's background colors
     """
-    local_bg_color = config["local_terminal_background"]
-    remote_bg_color = config["remote_fallback_background"]
-
+    remote_bg_color: str | None =  None
     for profile in config["profiles"]:
         for pattern in profile["host_patterns"]:
             if re.match(pattern, hostname):
@@ -105,9 +103,12 @@ def get_colors(config: SSHThemeConfig, hostname: str) -> typing.Tuple[str, str] 
                 break
         if remote_bg_color:
             break
+    else:
+        remote_bg_color = config["remote_fallback_background"]
+
 
     return (
-        bg_esc.format(local_bg_color),
+        bg_esc.format(config["local_terminal_background"]),
         bg_esc.format(remote_bg_color)
     )
 

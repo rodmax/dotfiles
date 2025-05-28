@@ -6,7 +6,8 @@
       "name": "dev",
       "background": "#1A1A2B",
       "host_patterns":  [
-        ".*dev.*"
+        ".*dev.*",
+        "bigdate"
       ]
     },
     {
@@ -21,7 +22,8 @@
       "name": "prod",
       "background": "#3C0A0A",
       "host_patterns":  [
-        ".*prod.*"
+        ".*prod.*",
+        ".*production"
       ]
     }
   ]
