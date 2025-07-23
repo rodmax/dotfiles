@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Fetch latest remote info
+git fetch
+
+# Get current branch name
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+# List remote branches not merged into current branch
+echo "Remote branches NOT merged into $current_branch:"
+for branch in $(git branch -r --no-merged "$current_branch" | grep -v '\->'); do
+    last_commit_info=$(git log -1 --pretty=format:'Last commit author: %ae %ad' --date=short "$branch")
+    echo "$branch - $last_commit_info"
+done

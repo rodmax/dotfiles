@@ -1,0 +1,14 @@
+#!/bin/bash
+# filepath: ./git-clean-local-branches.sh
+
+# Fetch latest remote info and prune deleted branches
+git fetch --prune
+
+# List all local branches except current one
+for branch in $(git branch --format='%(refname:short)' | grep -v "$(git branch --show-current)"); do
+    # Check if branch exists on origin
+    if ! git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
+        echo "Deleting local branch: $branch"
+        git branch -D "$branch"
+    fi
+done
