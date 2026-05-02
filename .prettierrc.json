@@ -1,26 +1,20 @@
 {
-    "bracketSpacing": true,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "printWidth": 100,
+    "trailingComma": "es5",
+
     "tabWidth": 4,
-    "useTabs": false,
-    "semi": true,
+    "semi": false,
+    "singleQuote": true,
+
+    "printWidth": 100,
+    "quoteProps": "as-needed",
     "jsxSingleQuote": true,
+    "bracketSpacing": true,
     "jsxBracketSameLine": false,
     "arrowParens": "avoid",
     "overrides": [
         {
-            "files": "package*json",
-            "options": {
-                "tabWidth": 2
-            }
-        },
-        {
-            "files": "*.html",
-            "options": {
-                "printWidth": 100
-            }
+            "files": "*.{json,jsonc,yaml,yml,md}",
+            "options": { "tabWidth": 2 }
         }
     ]
 }

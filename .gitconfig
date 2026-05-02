@@ -9,7 +9,7 @@
 	prompt = false
 [alias]
 	st = status -s -b
-	lg = log --graph --pretty=tformat:'%<(10)%C(red)%h %<(14,trunc)%C(blue)%an %C(reset)%s %C(cyan)%cd%C(reset) %C(green)%d' --date=format:'%d-%b/%a %H:%M'
+    lg = log --graph --pretty=tformat:'%C(cyan)%cd%C(reset) %<(10)%C(red)%h %<(14,trunc)%C(blue)%an %C(reset)%<(70,trunc)%s %C(green)%d' --date=format:'%Y-%m-%d %H:%M'
 	gg = grep -En --break --heading
 	ap = add -p
 	ca = commit --amend
@@ -52,3 +52,8 @@
 	path = ~/.gitconfig.nooga
 [includeIf "gitdir:~/w/me/"]
 	path = ~/.gitconfig.me
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

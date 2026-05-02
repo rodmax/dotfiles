@@ -6,10 +6,6 @@ ZSH_THEME="rodmax"
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -17,8 +13,9 @@ eval "$(pyenv init -)"
 plugins=(docker kubectl zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
-
+#
 # User configuration
+#
 export EDITOR='vim'
 
 alias open-file=xdg-open
@@ -30,14 +27,32 @@ alias g=git
 alias r='npm run'
 alias notify-cmd-status='zenity --notification --window-icon=face-cool --text="CLI Task Done!!!" || zenity --error --text="CLI Task Failed"'
 
-toru() {
-    trans en:ru "$*"
-}
-toen() {
-    trans ru:en "$*"
-}
 
+#
+# pyenv
+#
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+
+#
+# npm/nvm
+#
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Auto-use .nvmrc when starting a shell in the project
+if [ -f "$PWD/.nvmrc" ]; then
+    nvm use --silent
+fi
+eval "$(npm completion)"
+
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if [ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]; then
+    export SDKMAN_DIR="$HOME/.sdkman"
+    source "$HOME/.sdkman/bin/sdkman-init.sh"
+fi

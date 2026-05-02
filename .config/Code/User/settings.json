@@ -1,280 +1,245 @@
 {
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 16,
-    "editor.fontLigatures": false,
-    "editor.rulers": [120],
-    "editor.bracketPairColorization.enabled": true,
-    "terminal.integrated.copyOnSelection": true,
-    "files.trimTrailingWhitespace": true,
-    "files.autoSave": "onFocusChange",
-    "files.associations": {
-        "*.hql": "sql",
-        ".env.*": "dotenv"
-    },
-    "workbench.editor.showTabs": "multiple",
-    "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 6,
-    "vim.handleKeys": {
-        "<C-f>": false,
-        "<C-a>": false,
-        "<C-p>": false
-    },
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.settings.useSplitJSON": true,
-    "update.mode": "none",
-    "vim.normalModeKeyBindingsNonRecursive": [
+  "python-envs.terminal.autoActivationType": "off",
+  "python-envs.terminal.showActivateButton": true,
+  "window.zoomLevel": 1,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": false,
+  "editor.rulers": [120],
+  "editor.bracketPairColorization.enabled": true,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.shellIntegration.enabled": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "files.associations": {
+    "*.hql": "sql",
+    ".env.*": "dotenv",
+    "SKILL.md": "markdown",
+  },
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 6,
+  "vim.handleKeys": {
+    "<C-f>": false,
+    "<C-a>": false,
+    "<C-p>": false,
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.settings.useSplitJSON": true,
+  "update.mode": "none",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "r"],
+      "commands": [
         {
-            "before": ["g", "r"],
-            "commands": [
-                {
-                    "command": "editor.action.referenceSearch.trigger"
-                }
-            ]
-        }
-    ],
-    "terminal.integrated.fontSize": 15,
-    "terminal.integrated.lineHeight": 1.25,
-    "vscode_custom_css.imports": ["file:///home/max/.config/Code/User/custom-css/index.css"],
-    "merge-conflict.codeLens.enabled": false,
-    "editor.parameterHints.enabled": false,
-    "breadcrumbs.enabled": true,
-    "workbench.settings.editor": "json",
-    "advancedNewFile.exclude": {
-        "frontend/node_modules": true,
-        "node_modules": true
+          "command": "editor.action.referenceSearch.trigger",
+        },
+      ],
     },
-    "html.format.wrapAttributes": "force-expand-multiline",
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-    "editor.minimap.enabled": false,
-    "material-icon-theme.folders.theme": "classic",
-    "xmlTools.enableXmlTreeViewCursorSync": true,
-    "xmlTools.splitAttributesOnFormat": true,
-    "explorer.autoReveal": true,
-    "workbench.list.keyboardNavigation": "simple",
-    "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
-    "typescript.preferences.quoteStyle": "single",
-    "cSpell.language": "en,ru",
-    "cSpell.enabledLanguageIds": [
-        "asciidoc",
-        "properties",
-        "postgres",
-        "c",
-        "cpp",
-        "csharp",
-        "css",
-        "csv",
-        "git-commit",
-        "go",
-        "graphql",
-        "handlebars",
-        "haskell",
-        "html",
-        "jade",
-        "java",
-        "javascript",
-        "javascriptreact",
-        "json",
-        "jsonc",
-        "jupyter",
-        "latex",
-        "less",
-        "markdown",
-        "php",
-        "plaintext",
-        "python",
-        "pug",
-        "restructuredtext",
-        "rust",
-        "scala",
-        "scss",
-        "sql",
-        "shellscript",
-        "swift",
-        "text",
-        "typescript",
-        "typescriptreact",
-        "vue",
-        "yaml",
-        "yml",
-        "ansible",
-        "ansible-jinja",
-        "makefile",
-        "dockercompose",
-        "jinja-properties",
-        "jinja-yaml",
-        "toml",
-        "pip-requirements"
-    ],
-    "workbench.tree.renderIndentGuides": "always",
-    "workbench.tree.indent": 16,
-    "workbench.colorCustomizations": {
-        "panel.border": "#bbb",
-        "editor.wordHighlightBackground": "#0c0d0d",
-        "editor.selectionBackground": "#031c49",
-        "editor.wordHighlightBorder": "#0c0d0d",
-        "editor.selectionHighlightBackground": "#0c0d0d",
+  ],
+  "terminal.integrated.fontSize": 13,
+  // "terminal.integrated.lineHeight": 1.25,
+  "merge-conflict.codeLens.enabled": false,
+  "editor.parameterHints.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.settings.editor": "json",
+  "advancedNewFile.exclude": {
+    "frontend/node_modules": true,
+    "node_modules": true,
+  },
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "editor.minimap.enabled": false,
+  "material-icon-theme.folders.theme": "classic",
+  "xmlTools.enableXmlTreeViewCursorSync": true,
+  "xmlTools.splitAttributesOnFormat": true,
+  "explorer.autoReveal": true,
+  "workbench.list.keyboardNavigation": "simple",
+  "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+  "typescript.preferences.quoteStyle": "single",
+  "cSpell.language": "en,ru",
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "properties",
+    "postgres",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "csv",
+    "git-commit",
+    "go",
+    "graphql",
+    "handlebars",
+    "haskell",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "jupyter",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "python",
+    "pug",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "sql",
+    "shellscript",
+    "swift",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "yaml",
+    "yml",
+    "ansible",
+    "ansible-jinja",
+    "makefile",
+    "dockercompose",
+    "jinja-properties",
+    "jinja-yaml",
+    "toml",
+    "pip-requirements",
+  ],
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.indent": 16,
+  "workbench.colorCustomizations": {
+    "[Atom Material Theme]": {
+      "tab.activeBackground": "#32454f",
+    },
+  },
+  "editor.suggestSelection": "first",
+  "telemetry.telemetryLevel": "off",
+  "qub-xml-vscode.telemetry.enabled": false,
+  "prettier.configPath": "/home/max/.prettierrc.json",
+  "typescript.tsserver.log": "off",
+  "editor.linkedEditing": true,
+  "editor.semanticHighlighting.enabled": true,
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.annotations": false,
+  "i18n-ally.keystyle": "flat",
+  "i18n-ally.preferredDelimiter": ".",
+  "i18n-ally.review.enabled": false,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+  },
+  "[yaml][javascript][markdown][html][typescriptreact][typescript][jsonc][json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+  },
+  "[scala]": {
+    "editor.defaultFormatter": "scalameta.metals",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+  },
+  "emojisense.emojiDecoratorsEnabled": false,
+  "editor.renderWhitespace": "selection",
+  "explorer.confirmDelete": false,
+  "python.languageServer": "Pylance",
+  "cSpell.enableFiletypes": ["dockerfile", "shellscript", "dotenv"],
+  "emojisense.unicodeCompletionsEnabled": false,
 
-        "list.focusBackground": "#2a3744",
-        "list.inactiveFocusBackground": "#2a3744",
-
-        "list.activeSelectionBackground": "#1d3a75",
-        "list.inactiveSelectionBackground": "#1f4081",
-        "terminal.background": "#002b36",
-        "editorCursor.background": "#008",
-        "editorCursor.foreground": "#eef",
-
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+  },
+  "redhat.telemetry.enabled": false,
+  "emmet.excludeLanguages": ["markdown", "typescriptreact"],
+  "editor.tabSize": 4,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "yaml.schemas": {
+    "file:///home/max/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left",
+  },
+  "shellcheck.enableQuickFix": true,
+  "shellcheck.exclude": ["SC1091", "SC2164"],
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true,
+  },
+  "yaml.customTags": [
+    "!encrypted/pkcs1-oaep scalar",
+    "!vault scalar",
+    "!reset sequence", // used in docker-compose files
+    "!reset mapping", // used in docker-compose files
+  ],
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools",
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "metals.serverVersion": "1.6.4",
+  "makefile.configureOnOpen": false,
+  "workbench.activityBar.location": "top",
+  "terminal.integrated.tabs.location": "left",
+  "git.blame.statusBarItem.enabled": true,
+  "terminal.integrated.fontFamily": "monospace",
+  "docker.extension.enableComposeLanguageServer": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true,
     },
-    "editor.suggestSelection": "first",
-    "telemetry.telemetryLevel": "off",
-    "qub-xml-vscode.telemetry.enabled": false,
-    "prettier.configPath": "/home/max/.prettier.config.js",
-    "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 4,
-    "prettier.printWidth": 100,
-    "prettier.useEditorConfig": true,
-    "typescript.tsserver.log": "off",
-    "editor.linkedEditing": true,
-    "editor.semanticHighlighting.enabled": true,
-    "i18n-ally.sortKeys": true,
-    "i18n-ally.annotations": false,
-    "i18n-ally.keystyle": "flat",
-    "i18n-ally.preferredDelimiter": ".",
-    "i18n-ally.review.enabled": false,
-    "[terraform]": {
-        "editor.defaultFormatter": "hashicorp.terraform",
-        "editor.formatOnSave": true,
-        "editor.formatOnSaveMode": "file"
-    },
-    "[terraform-vars]": {
-        "editor.defaultFormatter": "hashicorp.terraform",
-        "editor.formatOnSave": true,
-        "editor.formatOnSaveMode": "file"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[code-snippets]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-    "emojisense.emojiDecoratorsEnabled": false,
-    "editor.renderWhitespace": "selection",
-    "explorer.confirmDelete": false,
-    "python.languageServer": "Pylance",
-    "cSpell.enableFiletypes": ["dockerfile", "shellscript", "dotenv"],
-    "emojisense.unicodeCompletionsEnabled": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "[yaml]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "yaml.customTags": ["!encrypted/pkcs1-oaep scalar", "!vault scalar"],
-    "redhat.telemetry.enabled": false,
-    "emmet.excludeLanguages": ["markdown", "typescriptreact"],
-    "editor.tabSize": 4,
-    "editor.cursorStyle": "line",
-    "editor.insertSpaces": false,
-    "editor.lineNumbers": "on",
-    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "editor.wordWrap": "off",
-    "yaml.schemas": {
-        "file:///home/max/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-    },
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "shellcheck.enableQuickFix": true,
-    "shellcheck.exclude": ["SC1091", "SC2164"],
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "files.watcherExclude": {
-        "**/.bloop": true,
-        "**/.metals": true,
-        "**/.ammonite": true
-    },
-    "yaml.customTags": ["!reference sequence"],
-    "peacock.favoriteColors": [
-        {
-            "name": "Angular Red",
-            "value": "#dd0531"
-        },
-        {
-            "name": "Azure Blue",
-            "value": "#007fff"
-        },
-        {
-            "name": "JavaScript Yellow",
-            "value": "#f9e64f"
-        },
-        {
-            "name": "Mandalorian Blue",
-            "value": "#1857a4"
-        },
-        {
-            "name": "Node Green",
-            "value": "#215732"
-        },
-        {
-            "name": "React Blue",
-            "value": "#61dafb"
-        },
-        {
-            "name": "Something Different",
-            "value": "#832561"
-        },
-        {
-            "name": "Svelte Orange",
-            "value": "#ff3d00"
-        },
-        {
-            "name": "Vue Green",
-            "value": "#42b883"
-        }
-    ],
-    "[sql]": {
-        "editor.defaultFormatter": "mtxr.sqltools"
-    },
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "workbench.colorTheme": "Atom Material Theme",
-    "metals.javaHome": "/home/max/.jabba/jdk/openjdk@1.17.0",
-    "cSpell.userWords": ["organisation", "syscall"],
-    "vs-kubernetes": {
-        "vscode-kubernetes.helm-path-linux": "/home/max/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
-        "vscode-kubernetes.kubectl-path-linux": "/home/max/.local/state/vs-kubernetes/tools/kubectl/kubectl",
-        "vscode-kubernetes.minikube-path-linux": "/home/max/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
-    },
-    "metals.serverVersion": "1.5.1+42-34e995eb-SNAPSHOT",
-    "makefile.configureOnOpen": false,
-    "workbench.activityBar.location": "hidden",
-    "terminal.integrated.tabs.location": "left",
-    "git.blame.statusBarItem.enabled": true,
-    "terminal.integrated.fontFamily": "monospace"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "terminal.integrated.stickyScroll.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "workbench.colorTheme": "Atom Material Theme",
+  "gitlab.duoAgentPlatform.enabled": false,
+  "gitlab.duoCodeSuggestions.enabled": false,
+  "gitlab.duoChat.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescriptreact": false,
+    "typescript": true,
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "playwright.reuseBrowser": false,
+  "chat.useNestedAgentsMdFiles": true,
+  "diffEditor.renderSideBySide": false,
+  "chat.agentsControl.enabled": false,
+  "chat.viewSessions.orientation": "stacked",
+  "github.copilot.nextEditSuggestions.enabled": true,
 }

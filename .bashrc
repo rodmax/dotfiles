@@ -94,15 +94,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# uncomment below if your ~/bin/executables not discovered by shell
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH";
-fi
-if [ -d "/opt/montavista" ]; then
-    PATH="$PATH:/opt/montavista/pro/devkit/arm/v5t_le/bin:/opt/montavista/pro/bin:/opt/montavista/common/bin";
-fi
-export PATH
-
 EDITOR=vim
 export EDITOR=vim
 stty stop undef
@@ -134,3 +125,7 @@ export NVM_DIR="$HOME/.nvm"
 shopt -s globstar
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
